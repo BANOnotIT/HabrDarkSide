@@ -1,0 +1,16 @@
+{
+  "name": "HabrDarkSide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out.css",
+  "scripts": {
+    "build": "sass --sourcemap=none -C -t compressed source.sass out.css",
+    "dev":"sass --watch source.sass:out.css"
+  },
+  "keywords": [],
+  "author": "BANO.notIT <bano.notit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^0.5.0"
+  }
+}

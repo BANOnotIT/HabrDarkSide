@@ -1,0 +1,1200 @@
+$light-grey: #ddd
+$main: #393939
+$grey: #777
+$second: #434343
+$azure: #5ec2ff
+$dark-azure: #4d7285
+
+/*
+  Основная страница
+
+body.nl
+  color: $grey
+  background: #4d5052
+
+  .layout
+    background: #4d5052
+
+    &__row
+      &_navbar
+        background-color: transparent
+        color: #fff
+        border-color: #000
+
+      &_footer
+        background: $main
+        &-links
+          padding: 20px 0
+          border-top: 1px solid #000
+
+    &__navbar .main-navbar
+      height: 53px
+
+.column-wrapper
+  &_bordered
+    margin-top: 0
+    padding-top: 0
+    border-top: 0
+
+  .sidebar_right .live-broadcast
+    margin-top: -20px
+
+  .js-sidebar_right.sidebar_right .block, .sidebar_right .company_widgets .block
+    background: $main
+    margin: 0
+    padding: 20px
+    border-bottom: 1px solid $grey
+  .js-sidebar_right.sidebar_right .block:last-child
+    border-bottom: 0
+
+  &_comments
+    padding-top: 0
+    .comments_list
+      padding-top: 20px
+
+  &_tabs .sidebar_right
+    margin-top: 0 !important
+    padding-top: 0
+    border-top: none
+
+.layout__elevator:hover
+  background: rgba(119, 119, 119, 0.5) !important
+
+/*
+  Табы
+
+.tabs
+  background: $main
+  margin-bottom: 0
+  padding: 10px 20px 0
+
+  &__menu
+    background: $grey
+    color: #fff
+
+  &-menu
+    margin: 0 -20px
+    padding: 0 20px
+    &_habrahabr
+      color: #cdcdcd
+      border-color: $grey
+      background: $grey
+
+.tab-item
+  background: $second
+  color: #b5b5b6
+  border-color: $grey
+  &:hover, &_current
+    a &
+      background: $grey
+      color: #fff
+
+    .counter_new
+      color: #8ad43a
+
+  &_stacked
+    height: 50px !important
+    padding: 5px
+
+  &_current &__value
+    color: #fff
+
+/*
+  Главы страниц
+
+.page-header
+  &__title
+    position: static
+
+  &_110
+    margin-top: 20px
+    height: 53px
+    background: $main
+    padding: 0 20px
+    border-bottom: 1px solid black
+    .dropdown_flows
+      top: 0
+
+  &__info
+    padding: 0 12px
+    &-desc
+      margin-top: 0
+      color: $grey
+
+    &-title
+      color: #8b8b8b
+      &:hover
+        color: #8b8b8b
+
+    .media-obj__body_post-header
+      margin-right: 12px
+      &_branding .page-header__info
+        height: 48px
+
+    .media-obj__body_post-header &
+      margin: 0 -12px
+
+  &__nickname:before
+    top: inherit
+
+  &__buttons
+    vertical-align: middle
+    background: $main
+    height: 48px
+    padding: 0 10px
+    width: 280px
+    text-align: center
+    .btn
+      margin-top: 6px
+
+    .page-header_full &
+      width: inherit !important
+
+  &__stats
+    background: $main
+    padding: 0 12px
+
+    &-label
+      left: 12px
+
+    &-value_branding
+      font-size: 12px
+      margin-left: 3px
+      top: -3px
+
+  &.page-header_full
+    height: inherit !important
+    padding: 10px
+    margin: 20px 0
+    background: $main
+
+    .page-header__info
+      padding: 6px 22px 0
+      margin: 0 -10px
+      border-top: 1px solid $grey
+
+//.media-obj__body_page-header_branding .page-header__info
+.media-obj__body_page-header
+  margin-left: 0
+/*
+  Боковые блоки
+
+.sidebar
+
+  &_right .block
+    border-color: $grey
+
+    // твиттер
+    &.twitter_stream .tweets .tweet .text, &.people_karmograph, &.people_statistics
+      color: #cdcdcd
+
+    // компании
+    &.best_company .company_info p a, &.last_links .links .link a, &.top_hub_invest table.users tr td.userinfo .username a:visited
+      color: #fff
+
+    // посты
+    .posts_list .post_item a
+      &.post_name, &:hover.post_name, &:visited:hover.post_name
+        color: #fff
+        border-color: $grey
+        background: $second
+      &:visited.post_name, &:hover:visited.post_name
+        color: #b5b5b5
+
+    // топы
+    &.top_hub_invest table.users tr td.userinfo .username .bar
+      background: $main
+
+    > .title
+      color: #fff
+      border-color: $grey
+
+  &-block
+    &__paragraph
+      color: $grey
+      margin-top: 5px
+
+    &__footer a
+      color: #b5b5b5
+
+    &:last-child
+      margin: 0
+
+    &__title, &__content, &__footer
+      color: #fff
+      border-color: $grey
+/* 
+  Страницы
+
+.search-page
+  .page__body
+    background: $main
+    padding-top: 1px
+  .tabs__level_bottom
+    background: $main
+    padding: 20px 10px
+    margin: 0 !important
+    border-bottom: 1px $grey solid
+
+.page__body_users-list, .page__body_hubs-list
+  background: $main
+  padding: 20px 15px 0
+
+  .search-field
+    margin: 0 -15px
+    width: inherit
+
+.list-snippet__fullname, .list-snippet__title-link
+  color: $dark-azure
+  &:hover
+    text-decoration: underline
+
+/*
+  Футер
+
+.footer
+  &-block__title
+    color: #999
+
+  &__copyright
+    color: #999
+
+/*
+  Логотипы
+
+.icon-svg_geektimes, .icon-svg_habrahabr, body.nl .logo, .icon-svg_logo-geektimes
+  color: #fff
+
+/*
+  Блок информации об авторе
+
+.author-info
+  background-color: $main
+  &__image-pic
+    border-radius: 0
+  &__name
+    color: $grey !important
+  &__nickname
+    color: $azure
+
+/*
+  Компании
+
+.company
+  &_profile
+    border-color: $grey
+    background: $main
+    color: #cdcdcd
+    background: $main
+    padding: 20px 0
+    dl
+      margin: 0 10px 15px 10px
+
+  &_blog
+    padding: 20px 0
+    background: $main
+    color: #cdcdcd
+    border-color: $grey
+
+  .companies & .icon img
+    border-radius: 0
+
+/*
+  Менюшки
+
+.menu_sub
+  background: $grey
+  color: #fff
+
+  .menu__item-link
+    color: #b5b5b5
+    &_current
+      color: #fff
+
+.menu__item-tab
+  color: #b5b5b6
+  &:hover
+    background: $grey
+    color: #fff
+
+  .active &
+    background: $grey
+    color: #fff
+
+.tabs__menu
+  background: $grey
+  color: #fff
+/*
+  Реклама
+
+.promo-block
+  border-left: 0
+  border-right: 0
+
+  &, &__service, &__header, &__title-link, &__footer
+    color: #fff
+    border-color: $grey
+
+  &__header
+    color: #fff
+    border-color: #fff
+    background: $main
+
+  &__footer-link
+    color: #cdcdcd
+    &:hover
+      color: #cdcdcd
+
+  &__see-all
+    color: #00ce00
+    &:hover
+      color: #00ce00
+      text-decoration: underline
+
+/*
+  Медиа элементы
+
+//
+
+.html_banner_wrap + div, .post + .html_banner, .post_show + .html_banner, .post-additionals + div
+  margin-top: 0
+
+.content-list_posts .content-list__item
+  background: $second
+  color: #b5b5b6
+  border-color: $grey
+
+.teaser__body-title
+  color: #b5b5b5
+
+.nav-links__item-link
+  height: 40px
+  line-height: 40px
+  color: #b5b5b5
+
+.digest span
+  height: 40px
+  line-height: 40px
+  color: #b5b5b5
+
+.vacancies .vacancy .location
+  color: #b5b5b5
+
+.nav-links__item-link_current
+  color: #fff
+  &:hover
+    color: #fff
+
+.btn_navbar_write-topic
+  color: #fff
+  border-color: #fff
+  background: $main
+  &:visited
+    color: #fff
+    border-color: #fff
+    background: $main
+/*
+  Инпуты
+
+.checkbox__label
+  background: $second
+  color: #b5b5b6
+  border-color: $grey
+  line-height: 20px
+  &:before
+    border-color: #5aaadb
+    background: transparent
+    border-radius: 0
+
+.buttons
+  a.button, button
+    color: #fff
+    border-color: #fff
+    background: $main
+  input
+    &[type=button], &[type=submit]
+      color: #fff
+      border-color: #fff
+      background: $main
+
+.btn_navbar_write-topic:hover
+  background-color: #4d5052
+  border-color: #fff
+
+  &.btn_focus, &:focus
+    color: $main
+    background: #fff
+
+.top-hubs__item-title
+  color: $azure !important
+//&:visited, &:hover, &:visited:hover
+//  color: $azure
+
+.blue_buttons_panel,
+.dropdown-container,
+.n-dropdown-menu,
+.chosen-container,
+.chosen-container-active.chosen-with-drop .chosen-single
+  background: $second
+  border-color: $grey
+
+.chosen-container
+  .chosen-results, &.chosen-with-drop .chosen-drop
+    background: $second
+    border-color: $grey
+
+.chosen-container-single .chosen-single, .chosen-container-multi .chosen-choices, .chosen-container .chosen-results .no-results, div.block.corporate_blog > div.posts_list, .live-broadcast__tabs, .fonts-loaded .live-broadcast__title
+  background: $second
+  border-color: $grey
+
+.similar-posts__title
+  color: #fff
+  border-color: $grey
+
+.similar-posts__flow-link
+  color: #fff
+  border-color: $grey
+  &:hover
+    color: #fff
+    border-color: $grey
+
+.similar-posts__flow, .live-broadcast__title
+  color: #fff
+  border-color: $grey
+
+.post .poll
+  .poll_title, table.result tr td strong
+    color: #fff
+    border-color: $grey
+
+.html_format
+  h1, h2, h3, h4, h5, h6
+    color: #fff
+    border-color: $grey
+
+.content-list_promo .content-list__item,
+.live-broadcast__content,
+.post_show,
+.post-type,
+.html_format .spoiler .spoiler_text,
+.fonts-loaded .page-header__title,
+.info_page,
+.editor .text-holder,
+.abuse-form__text-field:focus
+  color: #fff
+  border-color: $grey
+
+form .item
+  input
+    &[type=email]:focus, &[type=password]:focus, &[type=text]:focus
+      color: #fff
+      border-color: $grey
+  textarea:focus
+    color: #fff
+    border-color: $grey
+  input
+    &[type=email], &[type=password], &[type=text]
+      color: #fff
+      border-color: $grey
+
+.editor .editor__footer .markdown_checkbox,
+form .item > label,
+.dropdown-container,
+.dropdown-container_white .user-info__special,
+.n-dropdown-menu,
+.dropdown__user-stats,
+.n-dropdown-menu__item-link,
+.n-dropdown-menu__item_border,
+.post__title,
+.post__title_link,
+.user_profile
+  color: #fff
+  border-color: $grey
+
+.tracker_page table
+  &.tracker_comments tr
+    td, th
+      color: #fff
+      border-color: $grey
+  &.tracker_folowers tr
+    th, td.event_type
+      color: #fff
+      border-color: $grey
+  &.tracker_mentions tr td, &.tracker_folowers tr td
+    color: #fff
+    border-color: $grey
+  &.tracker_mentions tr
+    th, td.mention_type
+      color: #fff
+      border-color: $grey
+
+#global_notify .inner_notice, .global_notify .inner_notice, .chosen-container-active.chosen-with-drop .chosen-single
+  color: #fff
+  border-color: $grey
+
+.chosen-container
+  .chosen-results, .chosen-drop
+    color: #fff
+    border-color: $grey
+
+.chosen-container-single .chosen-single, .chosen-container-multi .chosen-choices, .chosen-container-active .chosen-choices .search-field input[type=text], form .item .checkbox_single label
+  color: #fff
+  border-color: $grey
+
+.icon-svg_logo-habrahabr
+  color: #fff
+  border-color: $grey
+
+.user_settings .notification_table tr
+  td, th
+    color: #fff
+    border-color: $grey
+
+form .item.one_column .checkbox_list label,
+label
+  color: #fff
+  border-color: $grey
+
+.vacancies .vacancy
+  color: #fff
+  border-color: $grey
+  .meta .published
+    color: #fff
+    border-color: $grey
+
+.empty_list, .comments_form h2.title, .comments_list h2.title
+  color: #fff
+  border-color: $grey
+
+.comments_form h2.title
+  a, span
+    color: #fff
+    border-color: $grey
+
+.editor .editor__footer, .is_topic_starter .comment-item__username, .is_author .comment-item__username, .is_topic_starter .comment-item__username:hover, .is_author .comment-item__username:hover, .comment-item__status, #footer
+  color: #fff
+  border-color: $grey
+
+.fonts-loaded .live-broadcast:not(.live-broadcast_feed) .live-broadcast__title
+  border-top: 5px solid $grey
+
+.comments_form h2.title, .comments_list h2.title
+  font-weight: bold
+
+#global_notify .inner_notice, .global_notify .inner_notice
+  border: 4px solid #d3f2c0 !important
+  background: transparent
+
+#hubs_chosen.chosen-container-active > ul > li.search-field > input.default
+  color: #fff !important
+
+.top-users.top-user_rating tr td.userinfo .username .bar,
+.post-type,
+.html_format .spoiler .spoiler_text,
+.dropdown__user-stats
+  background: $main
+
+.vacancies
+  .vacancy
+    background: $main
+  background: $main
+
+.comments_form
+  background: $main
+
+.conversation_page
+  background: $main
+
+.users .user .lion_king
+  background: url(https://habrastorage.org/files/8cf/321/98f/8cf32198fb8f4a1585d1ff2ae8e42085.png) no-repeat
+
+.chosen-container .chosen-results li em
+  background: #999
+
+.top-users.top-user_rating tr td.userinfo .username a, .checkbox-tutorial
+  color: #fff
+
+.hub_name a
+  &:link, &:visited, &:hover
+    color: #fff
+
+.editor .panel .wysiwyg_wrapper .help_holder dl dd
+  color: #fff
+
+form .item .radio_list label
+  color: #fff
+
+.buttons
+  a.button
+    &.disabled, &[disabled]
+      background: $grey
+      color: #333
+  button
+    &.disabled, &[disabled]
+      background: $grey
+      color: #333
+  input
+    &[type=button]
+      &.disabled, &[disabled]
+        background: $grey
+        color: #333
+    &[type=submit]
+      &.disabled, &[disabled]
+        background: $grey
+        color: #333
+
+.chosen-container-multi .chosen-choices .search-choice
+  background: $grey
+
+.buttons
+  a.button
+    &.disabled
+      &.btn_focus, &:focus, &:hover
+        background: #888
+        color: #333
+    &[disabled]
+      &.btn_focus, &:focus, &:hover
+        background: #888
+        color: #333
+  button
+    &.disabled
+      &.btn_focus, &:focus, &:hover
+        background: #888
+        color: #333
+    &[disabled]
+      &.btn_focus, &:focus, &:hover
+        background: #888
+        color: #333
+  input
+    &[type=button]
+      &.disabled
+        &.btn_focus, &:focus, &:hover
+          background: #888
+          color: #333
+      &[disabled]
+        &.btn_focus, &:focus, &:hover
+          background: #888
+          color: #333
+    &[type=submit]
+      &.disabled
+        &.btn_focus, &:focus, &:hover
+          background: #888
+          color: #333
+      &[disabled]
+        &.btn_focus, &:focus, &:hover
+          background: #888
+          color: #333
+
+a.habracut:hover
+  background: #888
+  color: #333
+
+//.tabs-menu_habrahabr,
+.postinfo-panel,
+.posts_list,
+.buttons a.button,
+.user_favorites,
+.hubs_list,
+.peoples_list,
+.user_profile,
+.tracker_comments,
+.tracker_folowers,
+a.habracut,
+.search_results
+  background: $main
+  color: #cdcdcd
+  border-color: $grey
+
+.layout__body-pagination
+  color: #999
+  border-top: 1px solid #4c4f50
+  margin: 0
+  padding: 20px
+  background: $main
+
+.arrows-pagination__item-link
+  color: #999
+
+.posts_list,
+.user_favorites,
+.empty_list
+  padding: 20px 0
+
+.empty_list
+  background: $main
+  padding-left: 10px
+  padding-right: 10px
+
+.posts .post, .user_profile dl
+  margin: 0 10px 15px 10px
+
+.posts .post
+  padding-bottom: 20px
+  border-bottom: 1px solid #4c4f50
+
+.post
+  .hubs a.subscribed
+    color: #ab8bba
+  .content a:visited:not(.habracut)
+    color: #f3f
+
+.post-author__link, .post-author__name, .post-author__link:hover
+  color: $azure
+
+a
+  color: $azure
+  &:hover, &.user_link
+    color: $azure
+
+.content-list__item-link
+  color: $azure
+  &:hover
+    color: $azure
+
+.content-list_promo .content-list__item-link
+  color: $azure
+
+.content-list_feed .content-list__item-link
+  color: $azure
+  &:hover:not(:visited)
+    color: $azure
+
+.top-flows__item > a:visited, #people-tags li a
+  color: $azure
+
+￼.buttons a.button:hover
+  background: #cfcfcf
+  color: $main
+
+.postinfo-panel, .voting-wjt.voting-wjt_infopanel, .postinfo-panel__item_comments .post-comments, .post-type
+  border-color: #4c4f50
+
+.btn_flow-toggle
+  color: #fff
+
+.html_format code
+  color: #d55
+
+input[type="text"], .search-field__input[type=text], textarea, .html_format, .task__aside, .attrs__item
+  color: #cdcdcd
+
+.post__tags, .company_post .post__title, .post__title_link, .t-text
+  color: #cdcdcd
+
+.similar-posts
+  background-color: $second
+
+.live-broadcast
+  &.live-broadcast_habrahabr, &.live-broadcast_geektimes
+    background-color: $second
+  background-color: $second
+
+.article__body, body.nl .layout__row_footer-links
+  background-color: $second
+
+.similar-posts__title_wrap
+  border-top: 1px solid $grey
+
+.post-info__title
+  color: $grey
+
+.post_full
+  padding: 0 10px
+  border-top: 1px solid rgba(0, 0, 0, 0)
+  background: $main
+
+.info_page, .user_comments, .user_settings
+  border-top: 1px solid rgba(0, 0, 0, 0)
+  background: $main
+  margin-top: 0
+  padding: 0 20px 10px
+
+.company_post, .post_show, .compamy_post
+  margin-top: 0
+
+.post__header
+  margin-top: 12px
+
+.page-header__info
+  padding: 0 12px
+  .media-obj__body_post-header &
+    margin: 0 -12px
+
+.media-obj__body_page-header_branding .page-header__info
+  height: 48px
+
+/**
+ * Мегапосты
+
+.default-block
+  background: $main
+  border-top: solid 1px #4c4f50
+  border-bottom: solid 1px #4c4f50
+
+  &_promote
+    margin-top: 20px
+    background-color: transparent
+
+  &__content_promote
+    padding: 10px !important
+    background: $main
+    line-height: inherit !important
+    height: inherit !important
+    .btn
+      width: 100%
+
+  &__header
+    color: #888
+    border-bottom-color: #ababab
+    margin: 0 10px
+
+  &__content
+    padding: 0 10px
+
+.megapost-teasers
+  background: $main
+  border-top: 0
+
+/**
+ * Картинки
+
+img
+  &[alt="en"], &[alt="habr"]
+    opacity: 1
+    filter: none
+    -webkit-filter: none
+
+  .post &, .company_top_banner &, .html_format &, .teaser__image, .article__body &
+    opacity: .5
+    filter: grayscale(1)
+    -webkit-filter: grayscale(1)
+    transition: all .5s ease-in
+
+  &:hover, a.post-author__link &
+    opacity: 1
+    filter: none
+    -webkit-filter: none
+
+.teaser__image:hover
+  opacity: 1
+  filter: none
+  -webkit-filter: none
+
+/*
+  Посты и другие тексто содержащие блоки
+
+.html_format .spoiler, .post .content
+  overflow: visible
+
+.html_format:not(.message)
+  .spoiler .spoiler_text, pre
+    margin-left: -10px
+    margin-right: -10px
+
+.info_page pre
+  margin-left: -10px
+  margin-right: -10px
+
+.post_teaser .html_format:not(.message)
+  .spoiler .spoiler_text, pre
+    margin-left: -10px
+    margin-right: -10px
+
+.madskillz_page code
+  border-radius: 0
+
+.hubs_list .hubs .hub, .hubs_head, .users .user, .vacancies .vacancy .info
+  margin-left: 20px
+
+//.user_settings, .user_profile, .vacancies, #companies, #conversations, .search_results .sort_menu, .alter_search, #tracker_feed_form, .sandbox_edit
+  padding-top: 20px
+
+//.hubs_list, .user_profile, .peoples_list, .post-additionals, #companies, .search_results .sort_menu, .alter_search, #tracker_feed_form
+  padding-bottom: 20px
+
+.peoples_list_bordered
+  border-top: none
+  margin-top: 0
+
+.hubs_list .hubs_suggest
+  margin-top: 0
+
+.people_karmograph
+  margin-top: 20px
+
+//#companies, .search_results .sort_menu, .alter_search
+  padding-left: 20px
+
+.sandbox_edit
+  padding-top: 15px
+  padding-left: 20px
+  padding-right: 20px
+
+#messages
+  padding: 0 10px
+
+.companies_list .companies_suggest, .conversations_suggest, .conversation_page .messages, .search_results .sort_menu
+  margin: 0
+
+.tracker_page, .sandbox_edit
+  background: $main
+
+.conversation_page .messages .message
+  border-color: $grey
+  .info .login a
+    color: #cdcdcd
+  &.my .info
+    .login a
+      color: #fff
+    background: #69474a
+
+#conversation_form .buttons
+  margin: 0 20px
+
+.comments_list, .user_comments, .page-header__info, .media-obj__image, .post-additionals,  #conversations
+  background: $main
+
+.search_results .sort_menu
+  border-bottom: 1px solid $grey
+
+.alter_search
+  border-top: 1px solid $grey
+
+input[type="text"], textarea
+  background: #2e2e2e
+
+.editor
+  .panel, .editor__footer
+    background: #2e2e2e
+
+.conversations .conversation:hover, .tracker_page table.tracker_comments tr.new td
+  background: #2e2e2e
+
+.editor .panel
+  border-color: $grey
+  color: #5489c3
+  .wysiwyg_wrapper
+    .btn, .can_use_html
+      border-color: $grey
+      color: #5489c3
+
+.conversations .conversation
+  border-color: $grey
+  color: #5489c3
+
+.infopanel_wrapper
+  margin: 0 10px
+
+.post-additionals
+  .author-info, .post-type
+    margin: 0 10px
+  .author-info
+    border: 1px solid #4c4f50
+    border-top: 0
+    width: inherit
+
+.post-type
+  width: inherit
+
+.comments_list
+  margin-left: 0
+  padding-right: 20px
+
+.comment-item
+  &.is_topic_starter
+    background: #48543b
+  &.is_new
+    background: #616161
+  &.is_moderated, &.is_author
+    background: #69474a
+  color: #fff
+
+.comments_list .comment_item .message
+  &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
+    background: transparent
+    transition: opacity .3s ease-out
+
+.reply_comments
+  border-left: 1px solid $grey
+  margin-left: -1px
+
+#comments_count
+  color: #ac8cbc
+
+.comment-item__username, a.comment-item__username:hover
+  color: #cdcdcd
+
+.comment-item__time_published
+  color: #9c9c9c
+
+.folding-dot
+  background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
+
+.comments_form
+  padding: 20px
+
+/***\
+ *OchkoEditor
+ *\**
+
+.menu_editor
+  background: $second
+  border-color: $grey
+
+.menu__item_bordered, .menu_editor:after, .ochko-editor__post-area, .ochko-editor__toolbar, .ochko-editor__footer, .ochko-editor__footer-help
+  border-color: $grey
+
+.ochko-editor__textarea, .ochko-editor__toolbar, .ochko-editor__post-area
+  border-top: 0
+
+.ochko-editor__toolbar .menu_editor .menu__item-tab.active
+  background: $grey
+  color: #fff
+
+.menu_editor .menu__item-tab.active
+  background: $grey
+  color: #fff
+  .menu__item-tab-border
+    border: 0
+
+.ochko-editor__toolbar .btn_wysiwyg
+  color: #5489c3
+
+.switch-light__button, .ochko-editor__textarea, .ochko-editor__toolbar
+  background: #2e2e2e
+  border-color: $grey
+  color: #fff
+
+.list-languages
+  background: #2e2e2e
+  border-color: $grey
+  color: #fff
+  li
+    background: #2e2e2e
+    border-color: $grey
+    color: #fff
+    &:hover
+      color: #2e2e2e
+
+.ochko-editor__post-area
+  .post
+    padding: 10px
+  background: $main
+
+.ochko-editor__footer, .sandbox_edit .buttons.blue_buttons_panel
+  background: $main
+
+.switch-light input:checked ~ .switch-light__buttons .switch-light__button:first-child span:hover, .switch-light__button:hover, .switch-light input:checked ~ .switch-light__buttons .switch-light__button:first-child span, .switch-light__button
+  color: $grey
+
+.switch-light input
+  &:checked ~ .switch-light__buttons .switch-light__button:nth-child(2) span, ~ .switch-light__buttons .switch-light__button:first-child span
+    color: $main
+
+.switch-light__buttons:after
+  background-color: #ebebeb
+
+.сm-editor__footer-checkbox
+  color: #fff
+
+/**
+ * hljs Darkula
+
+.madskillz_page pre code, .html_format pre code
+  border: none
+  display: block
+  overflow-x: auto
+  padding: 0.5em
+  color: $grey
+  background: #2b2b2b !important
+
+.madskillz_page pre code, .hljs
+  color: #bababa !important
+
+.hljs-strong, .hljs-emphasis
+  color: #a8a8a2 !important
+
+.hljs-bullet, .hljs-quote, .hljs-link, .hljs-number, .hljs-regexp, .hljs-literal
+  color: #6896ba !important
+
+.hljs-code, .hljs-selector-class
+  color: #a6e22e !important
+
+.hljs-emphasis
+  font-style: italic !important
+
+.hljs-keyword, .hljs-selector-tag, .hljs-section, .hljs-attribute, .hljs-name, .hljs-variable
+  color: #cb7832 !important
+
+.hljs-params
+  color: #b9b9b9 !important
+
+.hljs-string
+  color: #6a8759 !important
+
+.hljs-subst, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-template-tag, .hljs-template-variable, .hljs-addition
+  color: #e0c46c !important
+
+.hljs-comment, .hljs-deletion, .hljs-meta
+  color: #7f7f7f !important
+
+.hljs-attribute, .hljs-name, .hljs-tag
+  color: #ffd245 !important
+
+.html_format:not(.message) pre .hljs, .post_teaser .html_format:not(.message) pre .hljs
+  padding-left: 10px
+  padding-right: 10px
+
+/******************************************
+ *	сворачивание верхней панели с проектами компании
+ *******************************************
+ *#TMpanel {
+ *	overflow: hidden;
+ *	height: 10px;
+ *	border: none;
+ *	transition: height .3s ease;
+ *}
+ *#TMpanel:hover {
+ *	height: 28px;
+ *	transition: height .3s ease;
+ *}
+ *#TMpanel > div {
+ *	opacity: 0;
+ *	transition: opacity .3s ease;
+ *}
+ *#TMpanel:hover > div {
+ *	opacity: 1;
+ *	transition: opacity .3s ease;
+ *}
+/******************************************
+ *	минус реклама...
+ ******************************************
+
+.xyz_wrapper.is_visible
+  display: none !important
+  visibility: hidden !important
+  opacity: 0 !important
+
+body > div.layout > div.layout__base > div
+  &.column-wrapper.js-sticky-wrapper > div.sidebar_right.js-sidebar_right > div
+    &.xyz_wrapper.is_visible, &.wrapper-sticky
+      display: none !important
+      visibility: hidden !important
+      opacity: 0 !important
+  &:nth-child(2) > div.sidebar_right > div.xyz_wrapper.is_visible
+    display: none !important
+    visibility: hidden !important
+    opacity: 0 !important
+  &.content_wrapper.column-wrapper_content > div
+    &.column-wrapper.js-sticky-wrapper > div.sidebar_right.sidebar_content-area.sticky_init > div.wrapper-sticky > div, &:nth-child(2) > div > div.html_banner_wrap
+      display: none !important
+      visibility: hidden !important
+      opacity: 0 !important
+
+.xyz_wrappe, .html_banner_wrap .html_banner
+  display: none !important
+  visibility: hidden !important
+  opacity: 0 !important
+
+.grey a, a.grey
+  color: $light-grey
