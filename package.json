@@ -5,7 +5,7 @@
   "main": "out.css",
   "scripts": {
     "build": "sass --sourcemap=none -C -t compressed source.sass out.css",
-    "dev":"sass --watch source.sass:out.css"
+    "dev": "sass --sourcemap=none --watch source.sass:out.css"
   },
   "keywords": [],
   "author": "BANO.notIT <bano.notit@gmail.com>",
