@@ -240,6 +240,19 @@ body, body.nl
     margin: 0 -15px
     width: inherit
 
+.user
+  &_comments
+    border-top: 1px solid rgba(0, 0, 0, 0)
+    background: $main
+    margin-top: 0
+    padding: 0 20px 10px
+
+  &_profile
+    padding: 20px 0 10px
+    border-color: $grey
+    background: $main
+    color: #cdcdcd
+
 //
 .list-snippet__fullname, .list-snippet__title-link
   color: $dark-azure
@@ -360,8 +373,6 @@ body, body.nl
       text-decoration: underline
 
 // Медиа элементы
-
-//
 
 .html_banner_wrap + div, .post + .html_banner, .post_show + .html_banner, .post-additionals + div
   margin-top: 0
@@ -510,8 +521,7 @@ form .item > label,
 .n-dropdown-menu__item-link,
 .n-dropdown-menu__item_border,
 .post__title,
-.post__title_link,
-.user_profile
+.post__title_link
   color: #fff
   border-color: $grey
 
@@ -571,9 +581,7 @@ label
     color: #fff
     border-color: $grey
 
-.empty_list,
-.comments_form h2.title,
-.comments_list h2.title
+.empty_list
   color: #fff
   border-color: $grey
 
@@ -583,20 +591,12 @@ label
     border-color: $grey
 
 .editor .editor__footer,
-.is_topic_starter .comment-item__username,
-.is_author .comment-item__username,
-.is_topic_starter .comment-item__username:hover,
-.is_author .comment-item__username:hover,
-.comment-item__status,
 #footer
   color: #fff
   border-color: $grey
 
 .fonts-loaded .live-broadcast:not(.live-broadcast_feed) .live-broadcast__title
   border-top: 5px solid $grey
-
-.comments_form h2.title, .comments_list h2.title
-  font-weight: bold
 
 #global_notify .inner_notice, .global_notify .inner_notice
   border: 4px solid #d3f2c0 !important
@@ -614,9 +614,6 @@ label
 .vacancies
   .vacancy
     background: $main
-  background: $main
-
-.comments_form
   background: $main
 
 .conversation_page
@@ -713,7 +710,6 @@ a.habracut:hover
 .user_favorites,
 .hubs_list,
 .peoples_list,
-.user_profile,
 .tracker_comments,
 .tracker_folowers,
 a.habracut,
@@ -833,7 +829,8 @@ textarea,
   border-top: 1px solid rgba(0, 0, 0, 0)
   background: $main
 
-.info_page, .user_comments, .user_settings
+.info_page,
+.user_settings
   border-top: 1px solid rgba(0, 0, 0, 0)
   background: $main
   margin-top: 0
@@ -853,8 +850,7 @@ textarea,
 .media-obj__body_page-header_branding .page-header__info
   height: 48px
 
-/**
- * Мегапосты
+// Мегапосты
 
 .default-block
   background: $main
@@ -878,7 +874,7 @@ textarea,
     border-bottom-color: #ababab
     margin: 0 10px
     &-title
-      color: lighten($azure, 10%)
+      color: #888
 
   &__content
     padding: 0 10px
@@ -887,8 +883,7 @@ textarea,
   background: $main
   border-top: 0
 
-/**
- * Картинки
+// Картинки
 
 img
   &[alt="en"], &[alt="habr"]
@@ -912,7 +907,7 @@ img
   filter: none
   -webkit-filter: none
 
-// Посты и другие тексто содержащие блоки
+// Текст постов и другие тексто содержащие блоки
 
 .html_format .spoiler, .post .content
   overflow: visible
@@ -927,6 +922,7 @@ img
   margin-right: -10px
 
 // Превью постов
+
 .post_teaser .html_format:not(.message)
   .spoiler .spoiler_text, pre
     margin-left: -10px
@@ -990,7 +986,6 @@ img
   border-color: $grey
   color: #5489c3
 
-.comments_list,
 .user_comments,
 .page-header__info,
 .media-obj__image,
@@ -1040,11 +1035,26 @@ input[type="text"], textarea
 .comments_list
   margin-left: 0
   padding-right: 20px
+  background: $main
 
   .comment_item .message
     &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
       background: transparent
       transition: opacity .3s ease-out
+
+  h2.title
+    color: #fff
+    border-color: $grey
+  font-weight: bold
+
+.comments_form
+  padding: 20px
+  background: $main
+
+  h2.title
+    color: #fff
+    border-color: $grey
+  font-weight: bold
 
 .comment-item
   color: #fff
@@ -1056,10 +1066,18 @@ input[type="text"], textarea
     background: #69474a
 
   &__username, &__username:hover
-    color: #cdcdcd
+    color: #cdcdcd !important
 
   &__time_published
     color: #9c9c9c
+
+//.is_topic_starter .comment-item__username,
+//.is_author .comment-item__username,
+//.is_topic_starter .comment-item__username:hover,
+//.is_author .comment-item__username:hover,
+//.comment-item__status
+//  color: #fff
+//  border-color: $grey
 
 .reply_comments
   border-left: 1px solid $grey
@@ -1070,9 +1088,6 @@ input[type="text"], textarea
 
 .folding-dot
   background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
-
-.comments_form
-  padding: 20px
 
 // OchkoEditor
 
