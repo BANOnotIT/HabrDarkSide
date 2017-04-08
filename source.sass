@@ -142,8 +142,12 @@ body, body.nl
     padding: 0 10px
     width: 280px
     text-align: center
+
     .btn
       margin-top: 6px
+
+      .page-header_small &:first-child:last-child
+        width: 100%
 
     .page-header_full &
       width: inherit !important
@@ -232,13 +236,20 @@ body, body.nl
     margin: 0 !important
     border-bottom: 1px $grey solid
 
-.page__body_users-list, .page__body_hubs-list
-  background: $main
-  padding: 20px 15px 0
+.page
+  &__body
+    margin-bottom: 0
+    background: $main
+    padding: 20px 15px
 
-  .search-field
-    margin: 0 -15px
-    width: inherit
+    .search-field
+      margin: 0 -15px
+      width: inherit
+
+  &__footer
+    border-top: 1px solid $grey
+    padding: 15px 20px
+    background: $main
 
 .user
   &_comments
@@ -371,6 +382,20 @@ body, body.nl
     &:hover
       color: #00ce00
       text-decoration: underline
+
+// Сортировщик
+
+a.sort-panel__item-toggler.active
+  background-color: transparent
+
+// Списки
+
+.content-list
+  background: $main
+
+  &_promo &__item
+    padding-left: 10px
+    padding-right: 10px
 
 // Медиа элементы
 
@@ -850,7 +875,7 @@ textarea,
 .media-obj__body_page-header_branding .page-header__info
   height: 48px
 
-// Мегапосты
+// Блоки
 
 .default-block
   background: $main
