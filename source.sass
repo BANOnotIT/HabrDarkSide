@@ -5,10 +5,9 @@ $second: #434343
 $azure: #5ec2ff
 $dark-azure: #4d7285
 
-/*
-  Основная страница
+// Основная страница
 
-body.nl
+body, body.nl
   color: $grey
   background: #4d5052
 
@@ -25,6 +24,7 @@ body.nl
         background: $main
         &-links
           padding: 20px 0
+          background-color: $second
           border-top: 1px solid #000
 
     &__navbar .main-navbar
@@ -60,8 +60,7 @@ body.nl
 .layout__elevator:hover
   background: rgba(119, 119, 119, 0.5) !important
 
-/*
-  Табы
+// Табы
 
 .tabs
   background: $main
@@ -99,8 +98,7 @@ body.nl
   &_current &__value
     color: #fff
 
-/*
-  Главы страниц
+// Главы страниц
 
 .page-header
   &__title
@@ -173,11 +171,10 @@ body.nl
       margin: 0 -10px
       border-top: 1px solid $grey
 
-//.media-obj__body_page-header_branding .page-header__info
+// .media-obj__body_page-header_branding .page-header__info
 .media-obj__body_page-header
   margin-left: 0
-/*
-  Боковые блоки
+// Боковые блоки
 
 .sidebar
 
@@ -223,8 +220,7 @@ body.nl
     &__title, &__content, &__footer
       color: #fff
       border-color: $grey
-/* 
-  Страницы
+// Страницы
 
 .search-page
   .page__body
@@ -244,13 +240,13 @@ body.nl
     margin: 0 -15px
     width: inherit
 
+    //
 .list-snippet__fullname, .list-snippet__title-link
   color: $dark-azure
   &:hover
     text-decoration: underline
 
-/*
-  Футер
+// Футер
 
 .footer
   &-block__title
@@ -259,14 +255,12 @@ body.nl
   &__copyright
     color: #999
 
-/*
-  Логотипы
+// Логотипы
 
 .icon-svg_geektimes, .icon-svg_habrahabr, body.nl .logo, .icon-svg_logo-geektimes
   color: #fff
 
-/*
-  Блок информации об авторе
+// Блок информации об авторе
 
 .author-info
   background-color: $main
@@ -277,11 +271,9 @@ body.nl
   &__nickname
     color: $azure
 
-/*
-  Компании
+// Компании
 
 .company
-
   &-tweet
     &__head
       color: lighten($grey, 10%)
@@ -300,7 +292,6 @@ body.nl
 
   &_profile
     border-color: $grey
-    background: $main
     color: #cdcdcd
     background: $main
     padding: 20px 0
@@ -318,8 +309,7 @@ body.nl
 
 .list-snippet__desc, .list-snippet__lifetime
   color: $grey
-/*
-  Менюшки
+// Менюшки
 
 .menu_sub
   background: $grey
@@ -343,8 +333,7 @@ body.nl
 .tabs__menu
   background: $grey
   color: #fff
-/*
-  Реклама
+// Реклама
 
 .promo-block
   border-left: 0
@@ -370,8 +359,7 @@ body.nl
       color: #00ce00
       text-decoration: underline
 
-/*
-  Медиа элементы
+// Медиа элементы
 
 //
 
@@ -412,8 +400,7 @@ body.nl
     color: #fff
     border-color: #fff
     background: $main
-/*
-  Инпуты
+// Инпуты
 
 .checkbox__label
   background: $second
@@ -446,8 +433,6 @@ body.nl
 
 .top-hubs__item-title
   color: $azure !important
-//&:visited, &:hover, &:visited:hover
-//  color: $azure
 
 .blue_buttons_panel,
 .dropdown-container,
@@ -547,7 +532,9 @@ form .item > label,
       color: #fff
       border-color: $grey
 
-#global_notify .inner_notice, .global_notify .inner_notice, .chosen-container-active.chosen-with-drop .chosen-single
+#global_notify .inner_notice,
+.global_notify .inner_notice,
+.chosen-container-active.chosen-with-drop .chosen-single
   color: #fff
   border-color: $grey
 
@@ -556,7 +543,10 @@ form .item > label,
     color: #fff
     border-color: $grey
 
-.chosen-container-single .chosen-single, .chosen-container-multi .chosen-choices, .chosen-container-active .chosen-choices .search-field input[type=text], form .item .checkbox_single label
+.chosen-container-single .chosen-single,
+.chosen-container-multi .chosen-choices,
+.chosen-container-active .chosen-choices .search-field input[type=text],
+form .item .checkbox_single label
   color: #fff
   border-color: $grey
 
@@ -581,7 +571,9 @@ label
     color: #fff
     border-color: $grey
 
-.empty_list, .comments_form h2.title, .comments_list h2.title
+.empty_list,
+.comments_form h2.title,
+.comments_list h2.title
   color: #fff
   border-color: $grey
 
@@ -590,7 +582,13 @@ label
     color: #fff
     border-color: $grey
 
-.editor .editor__footer, .is_topic_starter .comment-item__username, .is_author .comment-item__username, .is_topic_starter .comment-item__username:hover, .is_author .comment-item__username:hover, .comment-item__status, #footer
+.editor .editor__footer,
+.is_topic_starter .comment-item__username,
+.is_author .comment-item__username,
+.is_topic_starter .comment-item__username:hover,
+.is_author .comment-item__username:hover,
+.comment-item__status,
+#footer
   color: #fff
   border-color: $grey
 
@@ -708,7 +706,7 @@ a.habracut:hover
   background: #888
   color: #333
 
-//.tabs-menu_habrahabr,
+// .tabs-menu_habrahabr,
 .postinfo-panel,
 .posts_list,
 .buttons a.button,
@@ -757,7 +755,9 @@ a.habracut,
   .content a:visited:not(.habracut)
     color: #f3f
 
-.post-author__link, .post-author__name, .post-author__link:hover
+.post-author__link,
+.post-author__name,
+.post-author__link:hover
   color: $azure
 
 a
@@ -785,7 +785,10 @@ a
   background: #cfcfcf
   color: $main
 
-.postinfo-panel, .voting-wjt.voting-wjt_infopanel, .postinfo-panel__item_comments .post-comments, .post-type
+.postinfo-panel,
+.voting-wjt.voting-wjt_infopanel,
+.postinfo-panel__item_comments .post-comments,
+.post-type
   border-color: #4c4f50
 
 .btn_flow-toggle
@@ -794,7 +797,12 @@ a
 .html_format code
   color: #d55
 
-input[type="text"], .search-field__input[type=text], textarea, .html_format, .task__aside, .attrs__item
+input[type="text"],
+.search-field__input[type=text],
+textarea,
+.html_format,
+.task__aside,
+.attrs__item
   color: #cdcdcd
 
 .post__tags, .company_post .post__title, .post__title_link, .t-text
@@ -808,7 +816,7 @@ input[type="text"], .search-field__input[type=text], textarea, .html_format, .ta
     background-color: $second
   background-color: $second
 
-.article__body, body.nl .layout__row_footer-links
+.article__body
   background-color: $second
 
 .similar-posts__title_wrap
@@ -866,6 +874,8 @@ input[type="text"], .search-field__input[type=text], textarea, .html_format, .ta
     color: #888
     border-bottom-color: #ababab
     margin: 0 10px
+    &-title
+      color: lighten($azure, 10%)
 
   &__content
     padding: 0 10px
@@ -899,8 +909,7 @@ img
   filter: none
   -webkit-filter: none
 
-/*
-  Посты и другие тексто содержащие блоки
+// Посты и другие тексто содержащие блоки
 
 .html_format .spoiler, .post .content
   overflow: visible
@@ -914,6 +923,7 @@ img
   margin-left: -10px
   margin-right: -10px
 
+// Превью постов
 .post_teaser .html_format:not(.message)
   .spoiler .spoiler_text, pre
     margin-left: -10px
@@ -925,12 +935,6 @@ img
 .hubs_list .hubs .hub, .hubs_head, .users .user, .vacancies .vacancy .info
   margin-left: 20px
 
-//.user_settings, .user_profile, .vacancies, #companies, #conversations, .search_results .sort_menu, .alter_search, #tracker_feed_form, .sandbox_edit
-  padding-top: 20px
-
-//.hubs_list, .user_profile, .peoples_list, .post-additionals, #companies, .search_results .sort_menu, .alter_search, #tracker_feed_form
-  padding-bottom: 20px
-
 .peoples_list_bordered
   border-top: none
   margin-top: 0
@@ -940,9 +944,6 @@ img
 
 .people_karmograph
   margin-top: 20px
-
-//#companies, .search_results .sort_menu, .alter_search
-  padding-left: 20px
 
 .sandbox_edit
   padding-top: 15px
@@ -958,6 +959,8 @@ img
 .tracker_page, .sandbox_edit
   background: $main
 
+// Сообщения
+
 .conversation_page .messages .message
   border-color: $grey
   .info .login a
@@ -970,7 +973,19 @@ img
 #conversation_form .buttons
   margin: 0 20px
 
-.comments_list, .user_comments, .page-header__info, .media-obj__image, .post-additionals, #conversations
+.conversations .conversation:hover, .tracker_page table.tracker_comments tr.new td
+  background: #2e2e2e
+
+.conversations .conversation
+  border-color: $grey
+  color: #5489c3
+
+.comments_list,
+.user_comments,
+.page-header__info,
+.media-obj__image,
+.post-additionals,
+#conversations
   background: $main
 
 .search_results .sort_menu
@@ -981,13 +996,10 @@ img
 
 input[type="text"], textarea
   background: #2e2e2e
-
+// Поле ввода текста
 .editor
   .panel, .editor__footer
     background: #2e2e2e
-
-.conversations .conversation:hover, .tracker_page table.tracker_comments tr.new td
-  background: #2e2e2e
 
 .editor .panel
   border-color: $grey
@@ -996,10 +1008,6 @@ input[type="text"], textarea
     .btn, .can_use_html
       border-color: $grey
       color: #5489c3
-
-.conversations .conversation
-  border-color: $grey
-  color: #5489c3
 
 .infopanel_wrapper
   margin: 0 10px
@@ -1014,19 +1022,19 @@ input[type="text"], textarea
 
 .post-type
   width: inherit
-
+// Комментарии
 .comments_list
   margin-left: 0
   padding-right: 20px
 
 .comment-item
+  color: #fff
   &.is_topic_starter
     background: #48543b
   &.is_new
     background: #616161
   &.is_moderated, &.is_author
     background: #69474a
-  color: #fff
 
 .comments_list .comment_item .message
   &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
@@ -1052,9 +1060,7 @@ input[type="text"], textarea
 .comments_form
   padding: 20px
 
-/***\
- *OchkoEditor
- *\**
+// OchkoEditor
 
 .menu_editor
   background: $second
@@ -1116,8 +1122,7 @@ input[type="text"], textarea
 .сm-editor__footer-checkbox
   color: #fff
 
-/**
- * hljs Darkula
+// hljs Darkula
 
 .madskillz_page pre code, .html_format pre code
   border: none
@@ -1164,30 +1169,27 @@ input[type="text"], textarea
   padding-left: 10px
   padding-right: 10px
 
-/******************************************
- *	сворачивание верхней панели с проектами компании
- *******************************************
- *#TMpanel {
- *	overflow: hidden;
- *	height: 10px;
- *	border: none;
- *	transition: height .3s ease;
- *}
- *#TMpanel:hover {
- *	height: 28px;
- *	transition: height .3s ease;
- *}
- *#TMpanel > div {
- *	opacity: 0;
- *	transition: opacity .3s ease;
- *}
- *#TMpanel:hover > div {
- *	opacity: 1;
- *	transition: opacity .3s ease;
- *}
-/******************************************
- *	минус реклама...
- ******************************************
+// сворачивание верхней панели с проектами компании
+//
+  #TMpanel
+    overflow: hidden
+    height: 10px
+    border: none
+    transition: height .3s ease
+
+  #TMpanel:hover
+    height: 28px
+    transition: height .3s ease
+
+  #TMpanel > div
+    opacity: 0
+    transition: opacity .3s ease
+
+  #TMpanel:hover > div
+    opacity: 1
+    transition: opacity .3s ease
+
+// минус реклама...
 
 .xyz_wrapper.is_visible
   display: none !important
