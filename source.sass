@@ -240,7 +240,7 @@ body, body.nl
     margin: 0 -15px
     width: inherit
 
-    //
+//
 .list-snippet__fullname, .list-snippet__title-link
   color: $dark-azure
   &:hover
@@ -805,7 +805,10 @@ textarea,
 .attrs__item
   color: #cdcdcd
 
-.post__tags, .company_post .post__title, .post__title_link, .t-text
+.post__tags,
+.company_post .post__title,
+.post__title_link,
+.t-text
   color: #cdcdcd
 
 .similar-posts
@@ -932,7 +935,10 @@ img
 .madskillz_page code
   border-radius: 0
 
-.hubs_list .hubs .hub, .hubs_head, .users .user, .vacancies .vacancy .info
+.hubs_list .hubs .hub,
+.hubs_head,
+.users .user,
+.vacancies .vacancy .info
   margin-left: 20px
 
 .peoples_list_bordered
@@ -953,7 +959,10 @@ img
 #messages
   padding: 0 10px
 
-.companies_list .companies_suggest, .conversations_suggest, .conversation_page .messages, .search_results .sort_menu
+.companies_list .companies_suggest,
+.conversations_suggest,
+.conversation_page .messages,
+.search_results .sort_menu
   margin: 0
 
 .tracker_page, .sandbox_edit
@@ -973,7 +982,8 @@ img
 #conversation_form .buttons
   margin: 0 20px
 
-.conversations .conversation:hover, .tracker_page table.tracker_comments tr.new td
+.conversations .conversation:hover,
+.tracker_page table.tracker_comments tr.new td
   background: #2e2e2e
 
 .conversations .conversation
@@ -996,7 +1006,9 @@ img
 
 input[type="text"], textarea
   background: #2e2e2e
+
 // Поле ввода текста
+
 .editor
   .panel, .editor__footer
     background: #2e2e2e
@@ -1022,10 +1034,17 @@ input[type="text"], textarea
 
 .post-type
   width: inherit
+
 // Комментарии
+
 .comments_list
   margin-left: 0
   padding-right: 20px
+
+  .comment_item .message
+    &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
+      background: transparent
+      transition: opacity .3s ease-out
 
 .comment-item
   color: #fff
@@ -1036,10 +1055,11 @@ input[type="text"], textarea
   &.is_moderated, &.is_author
     background: #69474a
 
-.comments_list .comment_item .message
-  &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
-    background: transparent
-    transition: opacity .3s ease-out
+  &__username, &__username:hover
+    color: #cdcdcd
+
+  &__time_published
+    color: #9c9c9c
 
 .reply_comments
   border-left: 1px solid $grey
@@ -1047,12 +1067,6 @@ input[type="text"], textarea
 
 #comments_count
   color: #ac8cbc
-
-.comment-item__username, a.comment-item__username:hover
-  color: #cdcdcd
-
-.comment-item__time_published
-  color: #9c9c9c
 
 .folding-dot
   background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
