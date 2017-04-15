@@ -1063,29 +1063,30 @@ input[type="text"], textarea
 
 // Комментарии
 
-.comments_list
-  margin-left: 0
-  padding-right: 20px
-  background: $main
+.comments
+  &_list
+    margin-left: 0
+    padding-right: 20px
+    background: $main
 
-  .comment_item .message
-    &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
-      background: transparent
-      transition: opacity .3s ease-out
+    .comment_item .message
+      &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
+        background: transparent
+        transition: opacity .3s ease-out
 
-  h2.title
-    color: #fff
-    border-color: $grey
-    font-weight: bold
+    h2.title
+      color: #fff
+      border-color: $grey
+      font-weight: bold
 
-.comments_form
-  padding: 20px
-  background: $main
+  &_form
+    padding: 20px
+    background: $main
 
-  h2.title
-    color: #fff
-    border-color: $grey
-  font-weight: bold
+    h2.title
+      color: #fff
+      border-color: $grey
+      font-weight: bold
 
 .comment-item
   color: #fff
