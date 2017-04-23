@@ -2,7 +2,8 @@
  * Created by BANO.notIT on 09.04.17.
  */
 
-var sass = require('node-sass'),
+var
+    sass = require('node-sass'),
     parse = require('css').parse;
 
 var compiled = sass.renderSync({
