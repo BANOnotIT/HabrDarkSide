@@ -5,6 +5,7 @@ $second: #434343
 $azure: #5ec2ff
 $dark-azure: #4d7285
 $text: #cdcdcd
+$green: #9eff5e
 
 // Основная страница
 
@@ -392,6 +393,38 @@ body, body.nl
 a.sort-panel__item-toggler.active
   background-color: transparent
 
+// Новые профили
+.profile-section
+  &__user-hub
+    background-color: transparent
+    border: 1px solid darken($azure, 30%)
+    color: darken($azure, 30%)
+    &:hover
+      color: darken($azure, 30%)
+      background-color: transparent
+      text-decoration: underline
+
+    &_cross
+      border-color: darken($green, 35%)
+      color: darken($green, 35%)
+      &:hover
+        color: darken($green, 35%)
+        background-color: transparent
+
+  &__about-text
+    color: $grey
+
+  &__title
+    color: $text
+
+// Информация о пользователе
+.defination-list
+  &__value
+    color: $grey
+
+  &__label
+    color: $text
+
 // Списки
 
 .content-list
@@ -441,6 +474,11 @@ a.sort-panel__item-toggler.active
     border-color: #fff
     background: $main
 
+// Пустые холдеры
+.empty-placeholder
+  background-color: $main
+  &__message
+    color: $grey
 // Данные поста
 
 .post-additionals
