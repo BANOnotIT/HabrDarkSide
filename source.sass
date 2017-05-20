@@ -973,10 +973,10 @@ textarea,
 // Картинки
 
 img
-  &[alt="en"], &[alt="habr"]
-    opacity: 1
-    filter: none
-    -webkit-filter: none
+  &[alt="en"], &[alt="habr"], &:hover, a.post-author__link &
+    opacity: 1 !important
+    filter: none !important
+    -webkit-filter: none !important
 
   .post &, .company_top_banner &, .html_format &, .teaser__image, .article__body &
     opacity: .5
@@ -984,15 +984,10 @@ img
     -webkit-filter: grayscale(1)
     transition: all .5s ease-in
 
-  &:hover, a.post-author__link &
-    opacity: 1
-    filter: none
-    -webkit-filter: none
-
 .teaser__image:hover
-  opacity: 1
-  filter: none
-  -webkit-filter: none
+  opacity: 1 !important
+  filter: none !important
+  -webkit-filter: none !important
 
 // Текст постов и другие тексто содержащие блоки
 
