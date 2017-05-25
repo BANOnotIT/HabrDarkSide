@@ -1,12 +1,13 @@
 $light-grey: #ddd
 $main: #393939
+$dark-main: #2e2e2e
 $grey: #777
 $second: #434343
 $azure: #5ec2ff
 $dark-azure: #4d7285
 $text: #cdcdcd
 $green: #9eff5e
-
+$editor-btns: #5489c3
 // Основная страница
 
 body, body.nl
@@ -270,10 +271,20 @@ body, body.nl
     color: $text
 
 //
-.list-snippet__fullname, .list-snippet__title-link
-  color: $dark-azure
-  &:hover
-    text-decoration: underline
+.list-snippet
+  &__nickname
+    color: $azure
+
+  &__fullname
+    color: $dark-azure
+    &:hover
+      color: $dark-azure
+      text-decoration: underline
+
+  &__title-link
+    color: $dark-azure
+    &:hover
+      text-decoration: underline
 
 // Футер
 
@@ -1006,7 +1017,7 @@ img
 .html_format .spoiler, .post .content
   overflow: visible
 
-.html_format:not(.message)
+.html_format:not(.user-message__body)
   .spoiler .spoiler_text, pre
     margin-left: -10px
     margin-right: -10px
@@ -1017,7 +1028,7 @@ img
 
 // Превью постов
 
-.post_teaser .html_format:not(.message)
+.post_teaser .html_format:not(.user-message__body)
   .spoiler .spoiler_text, pre
     margin-left: -10px
     margin-right: -10px
@@ -1060,7 +1071,14 @@ img
 
 // Сообщения
 
-.conversation_page .messages .message
+.conversations-list
+  margin-left: -15px
+  margin-right: -15px
+
+#conversations
+  background: $main
+
+//.conversation_page .messages .message
   border-color: $grey
   .info .login a
     color: $text
@@ -1069,23 +1087,50 @@ img
       color: #fff
     background: #69474a
 
-#conversation_form .buttons
+//#conversation_form .form__buttons
   margin: 0 20px
 
-.conversations .conversation:hover,
-.tracker_page table.tracker_comments tr.new td
-  background: #2e2e2e
+.media-obj_conversation-header
+  top: 0
 
-.conversations .conversation
-  border-color: $grey
-  color: #5489c3
+.user-info__fullname
+  color: $text
+
+.user-message__username
+  color: $text
+
+.ochko-editor_conversations
+  border-top: 1px solid $grey
+
+.content-list
+  &__item_conversation
+    color: #5489c3
+    border: none
+    border-bottom: 1px solid $grey
+    margin: 0
+    &:hover
+      background: $dark-main
+
+    &:last-child
+      border-bottom: none
+
+    .user-message__body
+      color: $text
+  &_user-dialog
+    border-color: $grey
+
+// Трекер
+
+.tracker_page table.tracker_comments tr.new td
+  background: $dark-main
 
 .user_comments,
 .page-header__info,
 .media-obj__image,
-.post-additionals,
-#conversations
+.post-additionals
   background: $main
+
+//  Поиск
 
 .search_results .sort_menu
   border-bottom: 1px solid $grey
@@ -1094,13 +1139,13 @@ img
   border-top: 1px solid $grey
 
 input[type="text"], textarea
-  background: #2e2e2e
+  background: $dark-main
 
 // Поле ввода текста
 
 .editor
   .panel, .editor__footer
-    background: #2e2e2e
+    background: $dark-main
 
 .editor .panel
   border-color: $grey
@@ -1179,60 +1224,102 @@ input[type="text"], textarea
 .folding-dot
   background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
 
+.menu__item_bordered
+  border-color: $grey
+
 // OchkoEditor
 
 .menu_editor
   background: $second
   border-color: $grey
+  &:after
+    border-color: $grey
 
-.menu__item_bordered, .menu_editor:after, .ochko-editor__post-area, .ochko-editor__toolbar, .ochko-editor__footer, .ochko-editor__footer-help
-  border-color: $grey
+  .menu__item-tab.active
+    background: $grey
+    color: #fff
+    .menu__item-tab-border
+      border: 0
 
-.ochko-editor__textarea, .ochko-editor__toolbar, .ochko-editor__post-area
-  border-top: 0
+.ochko-editor
+  &__tabs.tabs-menu
+    border-color: $grey
+    background: $main
+    padding: 0
+    margin: 0
 
-.ochko-editor__toolbar .menu_editor .menu__item-tab.active
-  background: $grey
-  color: #fff
+    .tabs-menu__item_devided
+      border-color: $grey
 
-.menu_editor .menu__item-tab.active
-  background: $grey
-  color: #fff
-  .menu__item-tab-border
-    border: 0
+      &.active
+        background: $second
+        .tabs-menu__item-text
+          color: $text
+          border-color: $grey
 
-.ochko-editor__toolbar .btn_wysiwyg
-  color: #5489c3
+  &__textarea
+    border-top: 0
+    background: $dark-main
+    border-color: $grey
+    color: #fff
 
-.switch-light__button, .ochko-editor__textarea, .ochko-editor__toolbar
-  background: #2e2e2e
-  border-color: $grey
-  color: #fff
+  &__post-area
+    border-color: $grey
+    border-top: 0
+    background: $main
+    .post
+      padding: 10px
+
+  &__toolbar
+    border-color: $grey
+    border-top: 0
+    background: $dark-main
+    color: #fff
+
+    .menu_editor .menu__item-tab.active
+      background: $grey
+      color: #fff
+    .btn_wysiwyg
+      color: $editor-btns
+
+  &__footer
+    border-color: $grey
+    background: $main
+    &-help
+      border-color: $grey
 
 .list-languages
-  background: #2e2e2e
+  background: $dark-main
   border-color: $grey
   color: #fff
   li
-    background: #2e2e2e
+    background: $dark-main
     border-color: $grey
     color: #fff
     &:hover
-      color: #2e2e2e
+      color: $dark-main
 
-.ochko-editor__post-area
-  .post
-    padding: 10px
+.sandbox_edit .buttons.blue_buttons_panel
   background: $main
 
-.ochko-editor__footer, .sandbox_edit .buttons.blue_buttons_panel
-  background: $main
+.switch-light
+  &__button
+    background: $main
+    border-color: $grey
+    color: $grey
+    &:hover
+      color: $grey
+    &s:after
+      background-color: $light-grey
 
-.switch-light input:checked ~ .switch-light__buttons .switch-light__button:first-child span:hover, .switch-light__button:hover, .switch-light input:checked ~ .switch-light__buttons .switch-light__button:first-child span, .switch-light__button
+.switch-light input:checked ~ .switch-light__buttons .switch-light__button:first-child span
   color: $grey
+  &:hover
+    color: $grey
 
 .switch-light input
-  &:checked ~ .switch-light__buttons .switch-light__button:nth-child(2) span, ~ .switch-light__buttons .switch-light__button:first-child span
+  &:checked ~ .switch-light__buttons .switch-light__button:nth-child(2) span,
+  ~ .switch-light__buttons .switch-light__button:first-child span
     color: $main
 
 .switch-light__buttons:after
@@ -1284,7 +1371,8 @@ input[type="text"], textarea
 .hljs-attribute, .hljs-name, .hljs-tag
   color: #ffd245 !important
 
-.html_format:not(.message) pre .hljs, .post_teaser .html_format:not(.message) pre .hljs
+.html_format:not(.user-message__body) pre .hljs,
+.post_teaser .html_format:not(.user-message__body) pre .hljs
   padding-left: 10px
   padding-right: 10px
 
