@@ -1017,7 +1017,7 @@ img
 .html_format .spoiler, .post .content
   overflow: visible
 
-.html_format:not(.user-message__body)
+.html_format:not(.user-message__body):not(.message)
   .spoiler .spoiler_text, pre
     margin-left: -10px
     margin-right: -10px
@@ -1028,7 +1028,7 @@ img
 
 // Превью постов
 
-.post_teaser .html_format:not(.user-message__body)
+.post_teaser .html_format:not(.user-message__body):not(.message)
   .spoiler .spoiler_text, pre
     margin-left: -10px
     margin-right: -10px
