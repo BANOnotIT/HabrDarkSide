@@ -68,19 +68,33 @@ body, body.nl
 .tabs
   background: $main
   margin-bottom: 0
-  padding: 10px 20px 0
+  padding: 0 20px
 
   &__menu
     background: $grey
     color: #fff
 
+    &__item-text
+      color: $text
+
   &-menu
     margin: 0 -20px
     padding: 0 20px
+    border-color: $grey
+
     &_habrahabr
       color: $text
       border-color: $grey
       background: $grey
+
+    &__item-text
+      color: $text
+
+      &:hover
+        color: $dark-azure
+
+      &_active, .active &
+        color: $azure
 
 .tab-item
   background: $second
@@ -262,7 +276,7 @@ body, body.nl
     border-top: 1px solid rgba(0, 0, 0, 0)
     background: $main
     margin-top: 0
-    padding: 0 20px 10px
+    padding: 20px 10px
 
   &_profile
     padding: 20px 0 10px
@@ -363,16 +377,13 @@ body, body.nl
 .menu__item-tab
   color: #b5b5b6
   &:hover
-    background: $grey
     color: #fff
+    background: $grey
 
   .active &
-    background: $grey
     color: #fff
+    background: $grey
 
-.tabs__menu
-  background: $grey
-  color: #fff
 // Реклама
 
 .promo-block
@@ -495,9 +506,6 @@ a.sort-panel__item-toggler.active
 .post-additionals
   padding-bottom: 20px
 
-  .views-count_post, .favorite-wjt__counter
-    color: $grey
-
   .post-type
     margin: 0 10px
 
@@ -506,6 +514,11 @@ a.sort-panel__item-toggler.active
     border: 1px solid #4c4f50
     border-top: 0
     width: inherit
+
+.postinfo-panel
+  &__item
+    .views-count_post, .favorite-wjt__counter
+      color: $light-grey
 
 // Инпуты
 
@@ -541,6 +554,53 @@ a.sort-panel__item-toggler.active
 .top-hubs__item-title
   color: $azure !important
 
+// Менюхи
+
+.toggle-menu
+  background: $dark-main
+  border-color: $grey
+
+  &__item_pagination:hover
+    background: $dark-main
+
+  //&__most-read, &__most-comments
+    background: $dark-main
+
+  &__item-link
+    color: $text
+    &:hover
+      color: $azure
+
+    &_bordered
+      border-color: $grey
+
+    &.active, &_active
+      color: $text
+      border-color: $grey
+
+      &:hover
+        color: $azure
+
+// Дропдауны
+
+.n-dropdown-menu
+  color: #fff
+  background: $second
+  border-color: $grey
+
+  &__item-link
+    color: #fff
+    border-color: $grey
+    &:hover
+      background: $grey
+
+    &_flow:hover
+      color: #ffffff
+
+// специальный для пользоватееля
+.dropdown-container_white .user-info:hover
+  background: $grey
+
 //  Похожие публикации
 .content-list__item_devided
   border-color: $grey
@@ -556,7 +616,6 @@ a.sort-panel__item-toggler.active
 // тут творится полнейшая анархия!!!
 .blue_buttons_panel,
 .dropdown-container,
-.n-dropdown-menu,
 .chosen-container,
 .chosen-container-active.chosen-with-drop .chosen-single
   background: $second
@@ -624,10 +683,7 @@ form .item
 form .item > label,
 .dropdown-container,
 .dropdown-container_white .user-info__special,
-.n-dropdown-menu,
 .dropdown__user-stats,
-.n-dropdown-menu__item-link,
-.n-dropdown-menu__item_border,
 .post__title,
 .post__title_link
   color: #fff
@@ -1161,19 +1217,6 @@ input[type="text"], textarea
 .post-type
   width: inherit
 
-// Обычые поля ввода
-.wysiwyg-toolbar
-  border-color: $grey
-
-.tm-editor
-  &__textarea
-    top: -1px
-    color: $text
-    background: $dark-main
-    border-color: $grey
-    &:focus
-      border-color: lighten($grey, 30%)
-
 // Комментарии
 
 .comments
@@ -1182,10 +1225,15 @@ input[type="text"], textarea
     padding-right: 20px
     background: $main
 
-    .comment_item .message
-      &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
-        background: transparent
-        transition: opacity .3s ease-out
+    .comment_item
+
+      &_plain .post_info > .grey
+        color: $light-grey
+
+      .message
+        &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
+          background: transparent
+          transition: opacity .3s ease-out
 
     h2.title
       color: #fff
@@ -1271,27 +1319,33 @@ input[type="text"], textarea
           border-color: $grey
 
   &__textarea
-    //border-top: 0
-    background: $dark-main
-    border-color: $grey
+    top: -1px
     color: #fff
+    border-color: $grey
+    background: $dark-main
+
+    &:focus
+      border-color: lighten($grey, 30%)
 
   &__post-area
-    border-color: $grey
-    border-top: 0
     background: $main
+    border-top: 0
+    border-color: $grey
     .post
       padding: 10px
 
   &__toolbar
-    border-color: $grey
-    border-top: 0
-    background: $dark-main
     color: #fff
+    background: $dark-main
+    border-color: $grey
+
+    .wysiwyg-toolbar
+      border-color: $grey
 
     .menu_editor .menu__item-tab.active
-      background: $grey
       color: #fff
+      background: $grey
+
     .btn_wysiwyg
       color: $editor-btns
 
