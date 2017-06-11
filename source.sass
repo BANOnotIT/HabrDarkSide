@@ -1161,6 +1161,19 @@ input[type="text"], textarea
 .post-type
   width: inherit
 
+// Обычые поля ввода
+.wysiwyg-toolbar
+  border-color: $grey
+
+.tm-editor
+  &__textarea
+    top: -1px
+    color: $text
+    background: $dark-main
+    border-color: $grey
+    &:focus
+      border-color: lighten($grey, 30%)
+
 // Комментарии
 
 .comments
@@ -1241,7 +1254,7 @@ input[type="text"], textarea
     .menu__item-tab-border
       border: 0
 
-.ochko-editor
+.tm-editor
   &__tabs.tabs-menu
     border-color: $grey
     background: $main
@@ -1258,7 +1271,7 @@ input[type="text"], textarea
           border-color: $grey
 
   &__textarea
-    border-top: 0
+    //border-top: 0
     background: $dark-main
     border-color: $grey
     color: #fff
