@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Stylish reloader",
+  "version": "0.0.1",
+  "description": "Reload styles",
+  "background": {
+    "page": "bg.html"
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ]
+}

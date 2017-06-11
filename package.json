@@ -5,7 +5,7 @@
   "main": "out.css",
   "scripts": {
     "build": "node ./build.js > out.css",
-    "dev": "sass --sourcemap=none --watch source.sass:out.css"
+    "dev": "node ./dev.js"
   },
   "keywords": [],
   "author": "BANO.notIT <bano.notit@gmail.com>",

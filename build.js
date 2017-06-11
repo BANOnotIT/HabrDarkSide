@@ -2,49 +2,61 @@
  * Created by BANO.notIT on 09.04.17.
  */
 
-var
+const
     sass = require('node-sass'),
     parse = require('css').parse;
 
-var compiled = sass.renderSync({
-    file: './source.sass',
-    // outputStyle: 'compressed',
-    outFile: 'test.css',
-    sourceMap: false // or an absolute or relative (to outFile) path
-});
+function compute() {
 
-var rules = parse(compiled.css + '').stylesheet.rules,
-    result = {};
+    const compiled = sass.renderSync({
+        file: './source.sass',
+        // outputStyle: 'compressed',
+        outFile: 'test.css',
+        sourceMap: false // or an absolute or relative (to outFile) path
+    });
 
-rules.forEach(function (rule) {
-    if (rule.type !== 'rule')
-        return;
+    //noinspection JSUnresolvedVariable
+    let rules = parse(compiled.css + '').stylesheet.rules,
+        result = {};
 
-    var declarations = {};
+    rules.forEach(function (rule) {
+        if (rule.type !== 'rule')
+            return;
 
-    rule.declarations.forEach(function (decl) {
+        let declarations = {};
 
-        if (decl.type === 'declaration')
-            declarations[decl.property] = decl.value;
+        //noinspection SpellCheckingInspection
+        rule.declarations.forEach(function (decl) {
+
+            if (decl.type === 'declaration')
+                declarations[decl.property] = decl.value;
+
+        });
+
+        const key = Object.keys(declarations)
+            .sort()
+            .map(function (key) {
+                return key + ':' + declarations[key];
+            })
+            .join(';');
+
+
+        result[key] = (result[key] || []).concat(rule.selectors);
 
     });
 
-    var key = Object.keys(declarations)
-        .sort()
+    result = Object.keys(result)
         .map(function (key) {
-            return key + ':' + declarations[key];
+            return result[key].join(',') + '{' + key + '}';
         })
-        .join(';');
+        .join('');
+
+    return result;
+}
 
 
-    result[key] = (result[key] || []).concat(rule.selectors);
+if (module.parent === null)
+    console.log(compute());
 
-});
-
-result = Object.keys(result)
-    .map(function (key) {
-        return result[key].join(',') + '{' + key + '}';
-    })
-    .join('');
-
-console.log(result);
+else
+    module.exports = compute;
