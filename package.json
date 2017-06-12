@@ -14,5 +14,7 @@
     "css": "^2.2.1",
     "node-sass": "^4.5.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "request": "latest"
+  }
 }
