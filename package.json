@@ -5,7 +5,8 @@
   "main": "out.css",
   "scripts": {
     "build": "node ./build.js > out.css",
-    "dev": "node ./dev.js"
+    "dev": "node ./dev.js",
+    "publish": "node ./deploy.js"
   },
   "keywords": [],
   "author": "BANO.notIT <bano.notit@gmail.com>",

@@ -1,13 +1,14 @@
-$light-grey: #ddd
-$main: #393939
-$dark-main: #2e2e2e
 $grey: #777
-$second: #434343
-$azure: #5ec2ff
-$dark-azure: #4d7285
 $text: #cdcdcd
+$main: #393939
 $green: #9eff5e
+$azure: #5ec2ff
+$second: #434343
+$dark-main: #2e2e2e
+$dark-azure: #4d7285
+$light-grey: #ddd
 $editor-btns: #5489c3
+
 // Основная страница
 
 body, body.nl
@@ -25,10 +26,11 @@ body, body.nl
 
       &_footer
         background: $main
+
         &-links
           padding: 20px 0
-          background-color: $second
           border-top: 1px solid #000
+          background-color: $second
 
     &__navbar .main-navbar
       height: 53px
@@ -36,17 +38,18 @@ body, body.nl
 .column-wrapper
   &_bordered
     margin-top: 0
-    padding-top: 0
     border-top: 0
+    padding-top: 0
 
   .sidebar_right .live-broadcast
     margin-top: -20px
 
   .js-sidebar_right.sidebar_right .block, .sidebar_right .company_widgets .block
-    background: $main
     margin: 0
     padding: 20px
+    background: $main
     border-bottom: 1px solid $grey
+
   .js-sidebar_right.sidebar_right .block:last-child
     border-bottom: 0
 
@@ -56,9 +59,9 @@ body, body.nl
       padding-top: 20px
 
   &_tabs .sidebar_right
+    border-top: none
     margin-top: 0 !important
     padding-top: 0
-    border-top: none
 
 .layout__elevator:hover
   background: rgba(119, 119, 119, 0.5) !important
@@ -66,13 +69,13 @@ body, body.nl
 // Табы
 
 .tabs
+  padding: 0 20px
   background: $main
   margin-bottom: 0
-  padding: 0 20px
 
   &__menu
-    background: $grey
     color: #fff
+    background: $grey
 
     &__item-text
       color: $text
@@ -84,8 +87,8 @@ body, body.nl
 
     &_habrahabr
       color: $text
-      border-color: $grey
       background: $grey
+      border-color: $grey
 
     &__item-text
       color: $text
@@ -97,13 +100,13 @@ body, body.nl
         color: $azure
 
 .tab-item
-  background: $second
   color: #b5b5b6
+  background: $second
   border-color: $grey
   &:hover, &_current
     a &
-      background: $grey
       color: #fff
+      background: $grey
 
     .counter_new
       color: #8ad43a
@@ -122,10 +125,10 @@ body, body.nl
     position: static
 
   &_110
-    margin-top: 20px
     height: 53px
-    background: $main
     padding: 0 20px
+    background: $main
+    margin-top: 20px
     border-bottom: 1px solid black
     .dropdown_flows
       top: 0
@@ -133,8 +136,8 @@ body, body.nl
   &__info
     padding: 0 12px
     &-desc
-      margin-top: 0
       color: $grey
+      margin-top: 0
 
     &-title
       color: #8b8b8b
@@ -153,12 +156,12 @@ body, body.nl
     top: inherit
 
   &__buttons
-    vertical-align: middle
-    background: $main
+    width: 280px
     height: 48px
     padding: 0 10px
-    width: 280px
+    background: $main
     text-align: center
+    vertical-align: middle
 
     .btn
       margin-top: 6px
@@ -170,31 +173,32 @@ body, body.nl
       width: inherit !important
 
   &__stats
-    background: $main
     padding: 0 12px
+    background: $main
 
     &-label
       left: 12px
 
     &-value_branding
+      top: -3px
       font-size: 12px
       margin-left: 3px
-      top: -3px
 
   &.page-header_full
+    margin: 20px 0
     height: inherit !important
     padding: 10px
-    margin: 20px 0
     background: $main
 
     .page-header__info
-      padding: 6px 22px 0
       margin: 0 -10px
+      padding: 6px 22px 0
       border-top: 1px solid $grey
 
 // .media-obj__body_page-header_branding .page-header__info
 .media-obj__body_page-header
   margin-left: 0
+
 // Боковые блоки
 
 .sidebar
@@ -214,8 +218,8 @@ body, body.nl
     .posts_list .post_item a
       &.post_name, &:hover.post_name, &:visited:hover.post_name
         color: #fff
-        border-color: $grey
         background: $second
+        border-color: $grey
       &:visited.post_name, &:hover:visited.post_name
         color: #b5b5b5
 
@@ -250,39 +254,49 @@ body, body.nl
   .page__body
     background: $main
     padding-top: 1px
+
   .tabs__level_bottom
-    background: $main
-    padding: 20px 10px
     margin: 0 !important
+    padding: 20px 10px
+    background: $main
     border-bottom: 1px $grey solid
 
 .page
   &__body
-    margin-bottom: 0
-    background: $main
     padding: 20px 15px
+    background: $main
+    margin-bottom: 0
 
     .search-field
-      margin: 0 -15px
       width: inherit
+      margin: 0 -15px
 
   &__footer
-    border-top: 1px solid $grey
     padding: 15px 20px
     background: $main
+    border-top: 1px solid $grey
 
 .user
   &_comments
-    border-top: 1px solid rgba(0, 0, 0, 0)
+    padding: 20px 10px
     background: $main
     margin-top: 0
-    padding: 20px 10px
+    border-top: 1px solid rgba(0, 0, 0, 0)
 
   &_profile
-    padding: 20px 0 10px
-    border-color: $grey
-    background: $main
     color: $text
+    padding: 20px 0 10px
+    background: $main
+    border-color: $grey
+
+  &_settings
+    padding: 20px 10px
+    background: $main
+
+    .notification_table tr
+      td, th
+        color: #fff
+        border-color: $grey
 
 //
 .list-snippet
@@ -304,10 +318,11 @@ body, body.nl
 
 .footer
   &-block__title
-    color: #999
+    color: $grey
+    border-color: $grey
 
   &__copyright
-    color: #999
+    color: $grey
 
 // Логотипы
 
@@ -318,10 +333,13 @@ body, body.nl
 
 .author-info
   background-color: $main
+
   &__image-pic
     border-radius: 0
+
   &__name
     color: $grey !important
+
   &__nickname
     color: $azure
 
@@ -331,12 +349,14 @@ body, body.nl
   &-tweet
     &__head
       color: lighten($grey, 10%)
+
     &__text
       color: $grey
 
   &-app
     &__title
       color: lighten($text, 10%)
+
     &__description
       color: $text
 
@@ -349,6 +369,7 @@ body, body.nl
     color: $text
     background: $main
     padding: 20px 0
+
     dl
       margin: 0 10px 15px 10px
 
@@ -363,6 +384,7 @@ body, body.nl
 
 .list-snippet__desc, .list-snippet__lifetime
   color: $grey
+
 // Менюшки
 
 .menu_sub
@@ -370,12 +392,12 @@ body, body.nl
   color: #fff
 
   .menu__item-link
-    color: #b5b5b5
+    color: $grey
     &_current
       color: #fff
 
 .menu__item-tab
-  color: #b5b5b6
+  color: $grey
   &:hover
     color: #fff
     background: $grey
@@ -418,17 +440,17 @@ a.sort-panel__item-toggler.active
 // Новые профили
 .profile-section
   &__user-hub
-    background-color: transparent
-    border: 1px solid darken($azure, 30%)
     color: darken($azure, 30%)
+    border: 1px solid darken($azure, 30%)
+    background-color: transparent
     &:hover
       color: darken($azure, 30%)
-      background-color: transparent
       text-decoration: underline
+      background-color: transparent
 
     &_cross
-      border-color: darken($green, 35%)
       color: darken($green, 35%)
+      border-color: darken($green, 35%)
       &:hover
         color: darken($green, 35%)
         background-color: transparent
@@ -462,22 +484,22 @@ a.sort-panel__item-toggler.active
   margin-top: 0
 
 .content-list_posts .content-list__item
-  background: $second
   color: #b5b5b6
+  background: $second
   border-color: $grey
 
 .teaser__body-title
   color: #b5b5b5
 
 .nav-links__item-link
+  color: #b5b5b5
   height: 40px
   line-height: 40px
-  color: #b5b5b5
 
 .digest span
+  color: #b5b5b5
   height: 40px
   line-height: 40px
-  color: #b5b5b5
 
 .vacancies .vacancy .location
   color: #b5b5b5
@@ -489,12 +511,12 @@ a.sort-panel__item-toggler.active
 
 .btn_navbar_write-topic
   color: #fff
-  border-color: #fff
   background: $main
+  border-color: #fff
   &:visited
     color: #fff
-    border-color: #fff
     background: $main
+    border-color: #fff
 
 // Пустые холдеры
 .empty-placeholder
@@ -510,45 +532,48 @@ a.sort-panel__item-toggler.active
     margin: 0 10px
 
   .author-info
+    width: inherit
     margin: 0 10px
     border: 1px solid #4c4f50
     border-top: 0
-    width: inherit
 
 .postinfo-panel
-  &__item
-    //
-    .favorite-wjt__counter
-      color: $light-grey
-    .views-count_post
-      color: $light-grey
+  &__item  .favorite-wjt__counter
+    color: $light-grey
+  &__item .views-count_post
+    color: $light-grey
 
 // Инпуты
 
+//.btn_blue
+  background-color: $editor-btns
+  &:hover
+    background-color: darken($editor-btns, 10%)
+
 .checkbox__label
-  background: $second
   color: #b5b5b6
-  border-color: $grey
+  background: $second
   line-height: 20px
+  border-color: $grey
   &:before
-    border-color: #5aaadb
     background: transparent
+    border-color: #5aaadb
     border-radius: 0
 
 .buttons
   a.button, button
     color: #fff
-    border-color: #fff
     background: $main
+    border-color: #fff
   input
     &[type=button], &[type=submit]
       color: #fff
-      border-color: #fff
       background: $main
+      border-color: #fff
 
 .btn_navbar_write-topic:hover
-  background-color: #4d5052
   border-color: #fff
+  background-color: #4d5052
 
   &.btn_focus, &:focus
     color: $main
@@ -591,14 +616,18 @@ a.sort-panel__item-toggler.active
   background: $second
   border-color: $grey
 
-  &__item-link
-    color: #fff
-    border-color: $grey
-    &:hover
-      background: $grey
+  &__item
+    &_border
+      border-color: $grey
 
-    &_flow:hover
-      color: #ffffff
+    &-link
+      color: #fff
+      border-color: $grey
+      &:hover
+        background: $grey
+
+      &_flow:hover
+        color: #ffffff
 
 // специальный для пользоватееля
 .dropdown-container_white .user-info:hover
@@ -733,11 +762,6 @@ form .item .checkbox_single label
   color: #fff
   border-color: $grey
 
-.user_settings .notification_table tr
-  td, th
-    color: #fff
-    border-color: $grey
-
 form .item.one_column .checkbox_list label,
 label
   color: #fff
@@ -781,9 +805,10 @@ label
   background: $main
 
 .vacancies
+  background: $main
+
   .vacancy
     background: $main
-  background: $main
 
 .conversation_page
   background: $main
@@ -810,21 +835,21 @@ form .item .radio_list label
 .buttons
   a.button
     &.disabled, &[disabled]
-      background: $grey
       color: #333
+      background: $grey
   button
     &.disabled, &[disabled]
-      background: $grey
       color: #333
+      background: $grey
   input
     &[type=button]
       &.disabled, &[disabled]
-        background: $grey
         color: #333
+        background: $grey
     &[type=submit]
       &.disabled, &[disabled]
-        background: $grey
         color: #333
+        background: $grey
 
 .chosen-container-multi .chosen-choices .search-choice
   background: $grey
@@ -833,44 +858,44 @@ form .item .radio_list label
   a.button
     &.disabled
       &.btn_focus, &:focus, &:hover
-        background: #888
         color: #333
+        background: #888
     &[disabled]
       &.btn_focus, &:focus, &:hover
-        background: #888
         color: #333
+        background: #888
   button
     &.disabled
       &.btn_focus, &:focus, &:hover
-        background: #888
         color: #333
+        background: #888
     &[disabled]
       &.btn_focus, &:focus, &:hover
-        background: #888
         color: #333
+        background: #888
   input
     &[type=button]
       &.disabled
         &.btn_focus, &:focus, &:hover
-          background: #888
           color: #333
+          background: #888
       &[disabled]
         &.btn_focus, &:focus, &:hover
-          background: #888
           color: #333
+          background: #888
     &[type=submit]
       &.disabled
         &.btn_focus, &:focus, &:hover
-          background: #888
           color: #333
+          background: #888
       &[disabled]
         &.btn_focus, &:focus, &:hover
-          background: #888
           color: #333
+          background: #888
 
 a.habracut:hover
-  background: #888
   color: #333
+  background: #888
 
 // .tabs-menu_habrahabr,
 .postinfo-panel,
@@ -883,16 +908,16 @@ a.habracut:hover
 .tracker_folowers,
 a.habracut,
 .search_results
-  background: $main
   color: $text
+  background: $main
   border-color: $grey
 
 .layout__body-pagination
   color: #999
-  border-top: 1px solid #4c4f50
   margin: 0
   padding: 20px
   background: $main
+  border-top: 1px solid #4c4f50
 
 .arrows-pagination__item-link
   color: #999
@@ -911,8 +936,8 @@ a.habracut,
   margin: 0 10px 15px 10px
 
 .posts .post
-  padding-bottom: 20px
   border-bottom: 1px solid #4c4f50
+  padding-bottom: 20px
 
 .post
   .hubs a.subscribed
@@ -947,8 +972,8 @@ a
   color: $azure
 
 ￼.buttons a.button:hover
-  background: #cfcfcf
   color: $main
+  background: #cfcfcf
 
 .postinfo-panel,
 .voting-wjt.voting-wjt_infopanel,
@@ -980,9 +1005,10 @@ textarea,
   background-color: $second
 
 .live-broadcast
+  background-color: $second
+
   &.live-broadcast_habrahabr, &.live-broadcast_geektimes
     background-color: $second
-  background-color: $second
 
 .article__body
   background-color: $second
@@ -995,15 +1021,14 @@ textarea,
 
 .post_full
   padding: 0 10px
-  border-top: 1px solid rgba(0, 0, 0, 0)
   background: $main
-
-.info_page,
-.user_settings
   border-top: 1px solid rgba(0, 0, 0, 0)
+
+.info_page
+  padding: 0 20px 10px
   background: $main
   margin-top: 0
-  padding: 0 20px 10px
+  border-top: 1px solid rgba(0, 0, 0, 0)
 
 .company_post, .post_show, .compamy_post
   margin-top: 0
@@ -1013,6 +1038,7 @@ textarea,
 
 .page-header__info
   padding: 0 12px
+
   .media-obj__body_post-header &
     margin: 0 -12px
 
@@ -1031,17 +1057,18 @@ textarea,
     background-color: transparent
 
   &__content_promote
+    height: inherit !important
     padding: 10px !important
     background: $main
     line-height: inherit !important
-    height: inherit !important
     .btn
       width: 100%
 
   &__header
     color: #888
-    border-bottom-color: #ababab
     margin: 0 10px
+    border-bottom-color: $grey
+
     &-title
       color: #888
 
@@ -1061,14 +1088,14 @@ img
     -webkit-filter: none !important
 
   .post &, .company_top_banner &, .html_format &, .teaser__image, .article__body &
-    opacity: .5
     filter: grayscale(1)
+    opacity: .5
     -webkit-filter: grayscale(1)
     transition: all .5s ease-in
 
 .teaser__image:hover
-  opacity: 1 !important
   filter: none !important
+  opacity: 1 !important
   -webkit-filter: none !important
 
 // Текст постов и другие тексто содержащие блоки
@@ -1164,9 +1191,9 @@ img
 .content-list
   &__item_conversation
     color: #5489c3
+    margin: 0
     border: none
     border-bottom: 1px solid $grey
-    margin: 0
     &:hover
       background: $dark-main
 
@@ -1175,6 +1202,7 @@ img
 
     .user-message__body
       color: $text
+
   &_user-dialog
     border-color: $grey
 
@@ -1200,6 +1228,25 @@ img
 input[type="text"], textarea
   background: $dark-main
 
+.search-field
+  &__select
+    color: $text
+    background: $main
+    border-color: $grey
+    &:active, &:focus
+      border-color: $dark-azure
+
+  &__select ~ &__input
+    border-right: none
+
+//&__btn
+  background: $dark-azure
+  &:hover
+    background:
+
+.sort-panel
+  border-color: $grey
+
 // Поле ввода текста
 
 .editor
@@ -1207,12 +1254,13 @@ input[type="text"], textarea
     background: $dark-main
 
 .editor .panel
-  border-color: $grey
   color: #5489c3
+  border-color: $grey
+
   .wysiwyg_wrapper
     .btn, .can_use_html
-      border-color: $grey
       color: #5489c3
+      border-color: $grey
 
 .infopanel_wrapper
   margin: 0 10px
@@ -1224,9 +1272,9 @@ input[type="text"], textarea
 
 .comments
   &_list
+    background: $main
     margin-left: 0
     padding-right: 20px
-    background: $main
 
     .comment_item
 
@@ -1240,8 +1288,8 @@ input[type="text"], textarea
 
     h2.title
       color: #fff
-      border-color: $grey
       font-weight: bold
+      border-color: $grey
 
   &_form
     padding: 20px
@@ -1249,8 +1297,8 @@ input[type="text"], textarea
 
     h2.title
       color: #fff
-      border-color: $grey
       font-weight: bold
+      border-color: $grey
 
 .comment-item
   color: #fff
@@ -1279,8 +1327,8 @@ input[type="text"], textarea
 //  border-color: $grey
 
 .reply_comments
-  border-left: 1px solid $grey
   margin-left: -1px
+  border-left: 1px solid $grey
 
 #comments_count
   color: #ac8cbc
@@ -1300,18 +1348,19 @@ input[type="text"], textarea
     border-color: $grey
 
   .menu__item-tab.active
-    background: $grey
     color: #fff
+    background: $grey
+
     .menu__item-tab-border
       border: 0
 
 .tm-editor
   &__tabs.tabs-menu
-    border-color: $grey
-    background: $main
-    padding: 0
     margin: 0
+    padding: 0
+    background: $main
 
+    border-color: $grey
     .tabs-menu__item_devided
       border-color: $grey
 
@@ -1324,8 +1373,8 @@ input[type="text"], textarea
   &__textarea
     top: -1px
     color: #fff
-    border-color: $grey
     background: $dark-main
+    border-color: $grey
 
     &:focus
       border-color: lighten($grey, 30%)
@@ -1353,19 +1402,19 @@ input[type="text"], textarea
       color: $editor-btns
 
   &__footer
-    border-color: $grey
     background: $main
+    border-color: $grey
     &-help
       border-color: $grey
 
 .list-languages
+  color: #fff
   background: $dark-main
   border-color: $grey
-  color: #fff
   li
+    color: #fff
     background: $dark-main
     border-color: $grey
-    color: #fff
     &:hover
       color: $dark-main
 
@@ -1374,9 +1423,9 @@ input[type="text"], textarea
 
 .switch-light
   &__button
+    color: $grey
     background: $main
     border-color: $grey
-    color: $grey
     &:hover
       color: $grey
     &s:after
@@ -1398,14 +1447,18 @@ input[type="text"], textarea
 .сm-editor__footer-checkbox
   color: #fff
 
+// wysiwyg
+.wysiwyg_wrapper .btn + .btn
+  margin-left: 0
+
 // hljs Darkula
 
 .madskillz_page pre code, .html_format pre code
+  color: $grey
   border: none
+  padding: 0.5em
   display: block
   overflow-x: auto
-  padding: 0.5em
-  color: $grey
   background: #2b2b2b !important
 
 .madskillz_page pre code, .hljs
@@ -1469,30 +1522,32 @@ input[type="text"], textarea
 // минус реклама...
 
 .xyz_wrapper.is_visible
+  opacity: 0 !important
   display: none !important
   visibility: hidden !important
-  opacity: 0 !important
 
 body > div.layout > div.layout__base > div
   &.column-wrapper.js-sticky-wrapper > div.sidebar_right.js-sidebar_right > div
     &.xyz_wrapper.is_visible, &.wrapper-sticky
+      opacity: 0 !important
       display: none !important
       visibility: hidden !important
-      opacity: 0 !important
+
   &:nth-child(2) > div.sidebar_right > div.xyz_wrapper.is_visible
+    opacity: 0 !important
     display: none !important
     visibility: hidden !important
-    opacity: 0 !important
+
   &.content_wrapper.column-wrapper_content > div
     &.column-wrapper.js-sticky-wrapper > div.sidebar_right.sidebar_content-area.sticky_init > div.wrapper-sticky > div, &:nth-child(2) > div > div.html_banner_wrap
+      opacity: 0 !important
       display: none !important
       visibility: hidden !important
-      opacity: 0 !important
 
 .xyz_wrappe, .html_banner_wrap .html_banner
+  opacity: 0 !important
   display: none !important
   visibility: hidden !important
-  opacity: 0 !important
 
 .grey a, a.grey
   color: $light-grey
