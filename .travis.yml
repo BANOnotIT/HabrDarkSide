@@ -13,3 +13,5 @@ before_deploy:
 deploy:
   provider: script
   script: node ./deploy.js
+  on:
+    all_branches: true
