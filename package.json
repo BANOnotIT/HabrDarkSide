@@ -2,6 +2,10 @@
   "name": "HabrDarkSide",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
   "main": "out.css",
   "scripts": {
     "build": "node ./build.js > out.css",
