@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/BANOnotIT/HabrDarkSide.svg?branch=master)](https://travis-ci.org/BANOnotIT/HabrDarkSide)
+
 # Установка
 Для того, чтобы собрать стиль нужен [Node.js][node] и [NPM][npm].
 
@@ -21,6 +23,6 @@ sass --sourcemap=none --watch source.sass:out.css
 - [x] Исправить дурацкий профиль
 - [x] Придумать как хакнуть без зацепок поиск по компаниям
 - [x] Поправить чекбоксы на "интересных публикациях"
-- [ ] Подумать над табами
+- [x] Подумать над табами
 - [ ] Удалить ненужные классы
 - [ ] Сделать дев-билдер на ноде
