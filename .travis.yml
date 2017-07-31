@@ -12,6 +12,6 @@ before_deploy:
 - npm i -D
 deploy:
   provider: script
-  script: node ./deploy.js
+  script: ls && node ./deploy.js
   on:
     all_branches: true
