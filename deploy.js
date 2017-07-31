@@ -3,8 +3,8 @@
  */
 
 const
-    css = require("./build")(),
     request = require("request"),
+    css = require("./build")(),
     read = require("fs").readFileSync,
     conf = require("./deploy/stylish-conf.json");
 
