@@ -1,17 +1,20 @@
 language: node_js
 node_js:
-- '8'
+  - '8'
 
 cache:
   directories:
     - "node_modules"
 
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_c4fb91895430_key -iv $encrypted_c4fb91895430_iv
-  -in stylish-conf.json.enc -out deploy/stylish-conf.json -d
-- npm i -D
+  - openssl aes-256-cbc -K $encrypted_c4fb91895430_key -iv $encrypted_c4fb91895430_iv
+    -in stylish-conf.json.enc -out deploy/stylish-conf.json -d
+  -
 deploy:
   provider: script
-  script: ls && node ./deploy.js
+  script:
+    - npm i -D
+    - ls
+    - node ./deploy.js
   on:
     all_branches: true
