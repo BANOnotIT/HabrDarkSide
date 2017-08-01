@@ -1083,20 +1083,19 @@ textarea,
 
 img
   &[alt="en"], &[alt="habr"], &:hover, a.post-author__link &
-    opacity: 1 !important
-    filter: none !important
-    -webkit-filter: none !important
+    @extend .teaser__image:hover
 
   .post &, .company_top_banner &, .html_format &, .teaser__image, .article__body &
     filter: grayscale(1)
     opacity: .5
     -webkit-filter: grayscale(1)
-    transition: all .5s ease-in
+    transition: all .5s ease-in-out
 
 .teaser__image:hover
   filter: none !important
   opacity: 1 !important
   -webkit-filter: none !important
+  transition-duration: .3s !important
 
 // Текст постов и другие тексто содержащие блоки
 
@@ -1503,6 +1502,7 @@ input[type="text"], textarea
 .hljs-addition
   background: #314631
 
+// Блоки кода
 .html_format:not(.user-message__body) pre .hljs,
 .post_teaser .html_format:not(.user-message__body) pre .hljs
   padding-left: 10px

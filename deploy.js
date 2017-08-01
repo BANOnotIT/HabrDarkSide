@@ -21,8 +21,7 @@ const formData = {
     "style[short_description]": conf["short desc"],
     "style[screenshot_url_override]": conf.screenshot_url_override,
     "style[style_code_attributes][id]": conf.code_id,
-    "style[style_code_attributes][code]": `@-moz-document ${conf.domains.map(dom => 'domain("' + dom + '")').join()}
-    {${css}}`,
+    "style[style_code_attributes][code]": `@-moz-document ${conf.domains.map(dom => 'domain("' + dom + '")').join()}{${css}}`,
 };
 
 request.post({
