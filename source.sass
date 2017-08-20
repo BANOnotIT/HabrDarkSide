@@ -66,9 +66,14 @@ body, body.nl
 .layout__elevator:hover
   background: rgba(119, 119, 119, 0.5) !important
 
-
 .grey a, a.grey
   color: $light-grey
+
+//#TMpanel
+  background: $grey
+  border-color: $dark-main
+  .container .bmenu>a
+    color: #7cb3e5
 
 // Табы
 
@@ -132,7 +137,7 @@ body, body.nl
     height: 53px
     padding: 0 20px
     background: $main
-    margin-top: 20px
+    //margin-top: 20px // todo это вообще нужно?
     border-bottom: 1px solid black
     .dropdown_flows
       top: 0
@@ -353,7 +358,7 @@ body, body.nl
     border-top: 1px solid rgba(0, 0, 0, 0)
     margin-bottom: 0
 
-  &__type-label
+  //&__type-label
     // todo
     //background: $second
 
@@ -551,7 +556,7 @@ body, body.nl
 
   &__header
     color: #fff
-    border: 2px $grey
+    border-bottom: 2px solid $grey
     background: $main
 
   &__footer-link
@@ -717,6 +722,9 @@ a.sort-panel__item-toggler.active
 
       &:hover
         color: $azure
+
+.stacked-menu__item_devided
+  border-color: $grey
 
 // Дропдауны
 
@@ -1167,7 +1175,7 @@ textarea,
   &__header
     color: #888
     margin: 0 10px
-    border-bottom-color: $grey
+    border-bottom: 2px $grey solid
 
     &-title
       color: #888
@@ -1547,7 +1555,7 @@ input[type="text"], textarea
 
 // hljs Darkula
 
-.madskillz_page pre code, .html_format pre code
+.madskillz_page pre code
   color: $grey
   border: none
   padding: 0.5em
@@ -1579,10 +1587,10 @@ input[type="text"], textarea
 .hljs-string
   color: #6a8759 !important
 
-.hljs-subst, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-template-tag, .hljs-template-variable, .hljs-addition
+.hljs-subst, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-template-tag, .hljs-template-variable
   color: #e0c46c !important
 
-.hljs-comment, .hljs-deletion, .hljs-meta
+.hljs-comment, .hljs-meta
   color: #7f7f7f !important
 
 .hljs-attribute, .hljs-name, .hljs-tag
@@ -1594,7 +1602,7 @@ input[type="text"], textarea
 .hljs-addition
   background: #314631
 
-// Блоки кода
+// Блоки кода todo проверить, существуют ли вообще такие селекторы ещё
 .html_format:not(.user-message__body) pre .hljs,
 .post_teaser .html_format:not(.user-message__body) pre .hljs
   padding-left: 10px
@@ -1620,7 +1628,8 @@ input[type="text"], textarea
     opacity: 1
     transition: opacity .3s ease
 
-// минус реклама...
+.xyz_wrapper_inner
+  background: $dark-main
 
 .xyz_wrapper.is_visible
   opacity: 0 !important
