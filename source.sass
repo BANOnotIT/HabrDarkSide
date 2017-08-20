@@ -66,6 +66,10 @@ body, body.nl
 .layout__elevator:hover
   background: rgba(119, 119, 119, 0.5) !important
 
+
+.grey a, a.grey
+  color: $light-grey
+
 // Табы
 
 .tabs
@@ -349,6 +353,10 @@ body, body.nl
     border-top: 1px solid rgba(0, 0, 0, 0)
     margin-bottom: 0
 
+  &__type-label
+    // todo
+    //background: $second
+
   &-additionals
     background: $main
     //padding-bottom: 20px
@@ -403,6 +411,10 @@ body, body.nl
 
   &-stats
     border-color: $grey
+
+  &__translatation
+    // todo сделать нормальный, когда починят
+    background: $dark-main
 
 .content-list__item_post.content-list__item
   background: $main
@@ -1348,37 +1360,39 @@ input[type="text"], textarea
 
 // Комментарии
 
-.comments
-  &_list
-    background: $main
-    margin-left: 0
-    padding-right: 20px
+.comments-section
+  background: $main
 
-    .comment_item
+  &__head
+    padding: 0 10px
+    border-color: $grey
 
-      &_plain .post_info > .grey
-        color: $light-grey
-
-      .message
-        &.bad5, &.bad4, &.bad3, &.bad2, &.bad1
-          background: transparent
-          transition: opacity .3s ease-out
-
-    h2.title
+    &-title
       color: #fff
-      font-weight: bold
-      border-color: $grey
 
-  &_form
-    padding: 20px
-    background: $main
+    &-counter
+      color: #ac8cbc
 
-    h2.title
-      color: #fff
-      font-weight: bold
-      border-color: $grey
+// todo сделать форму комента когда будет инет
 
-.comment-item
+.comment
+  &__message, &-form__preview
+    color: $text
+    pre code
+      border: none
+      background: $dark-main
+      //padding: 7px 10px 10px
+    .spoiler .spoiler_text
+      border: 1px solid $grey
+
+  &__message
+    &_downgrade
+      transition: opacity .3s ease-out
+  &__date-time_published
+    color: #9c9c9c
+
+// todo реализовать подсветку заголовков для "иных" коментов
+//.comment-item
   color: #fff
   &.is_topic_starter
     background: #48543b
@@ -1393,28 +1407,30 @@ input[type="text"], textarea
   &__time_published
     color: #9c9c9c
 
-.comments_list .comment_item .reply_comments .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .comment_item .reply_comments
-  border-left: none
+.content-list_comments
+  margin-left: 10px
+  margin-right: 10px
 
-//.is_topic_starter .comment-item__username,
-//.is_author .comment-item__username,
-//.is_topic_starter .comment-item__username:hover,
-//.is_author .comment-item__username:hover,
-//.comment-item__status
-//  color: #fff
-//  border-color: $grey
+// todo реализовать с @for ?
+.content-list_nested-comments-0, .content-list_nested-comments-1, .content-list_nested-comments-2, .content-list_nested-comments-3, .content-list_nested-comments-4, .content-list_nested-comments-5, .content-list_nested-comments-6, .content-list_nested-comments-7, .content-list_nested-comments-8, .content-list_nested-comments-9, .content-list_nested-comments-10, .content-list_nested-comments-11, .content-list_nested-comments-12, .content-list_nested-comments-13
+  &.content-list_nested-comments
+    //margin-left: -1px
+    border-left: 1px solid $grey
 
-.reply_comments
-  margin-left: -1px
-  border-left: 1px solid $grey
-
-#comments_count
-  color: #ac8cbc
-
-.folding-dot
-  background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
+.content-list_nested-comments .comment__folding-dotholder
+  // turn dot on
+  display: block
+  &:before
+    background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
 
 .menu__item_bordered
+  border-color: $grey
+
+.user-info__nickname_comment
+  color: $azure
+
+.for_users_only_msg
+  color: $text
   border-color: $grey
 
 // OchkoEditor
@@ -1633,6 +1649,3 @@ body > div.layout > div.layout__base > div
   opacity: 0 !important
   display: none !important
   visibility: hidden !important
-
-.grey a, a.grey
-  color: $light-grey
