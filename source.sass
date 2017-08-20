@@ -194,6 +194,8 @@ body, body.nl
       margin: 0 -10px
       padding: 6px 22px 0
       border-top: 1px solid $grey
+  &_bordered
+    border-color: $light-grey
 
 // .media-obj__body_page-header_branding .page-header__info
 .media-obj__body_page-header
@@ -336,6 +338,113 @@ body, body.nl
   &__copyright
     color: $grey
 
+// Посты
+.post
+  .company_ &, &_show
+    margin-top: 0
+
+  &_full
+    padding: 10px 10px 20px
+    background: $main
+    border-top: 1px solid rgba(0, 0, 0, 0)
+    margin-bottom: 0
+
+  &-additionals
+    background: $main
+    //padding-bottom: 20px
+    padding: 0 10px
+
+    .post-type
+      margin: 0 10px
+
+    .author-info
+      width: inherit
+      margin: 0 10px
+      border: 1px solid #4c4f50
+      border-top: 0
+    .post-share
+      margin-left: -10px
+      margin-right: -10px
+      background: $main
+      padding: 20px
+      border: none
+      border-top: 1px solid $grey
+      &__title
+        color: $light-grey
+
+  &__body
+    color: $text
+    &_full
+      overflow: visible
+
+  &__title-text
+    color: $light-grey
+
+  &__text-html
+    color: $light-grey
+    overflow: visible
+
+    .spoiler
+      overflow: visible
+
+    .spoiler .spoiler_text, pre
+      margin-left: -10px
+      margin-right: -10px
+
+    blockquote
+      background: hsl(41, 49%, 19%)
+      margin-left: -10px
+      margin-right: -10px
+
+    pre code
+      border: none
+      padding: 17px 10px 20px
+      background: $dark-main
+
+  &-stats
+    border-color: $grey
+
+.content-list__item_post.content-list__item
+  background: $main
+  color: #b5b5b6
+  border-color: $grey
+  border-bottom: 1px solid
+
+  &:last-child
+    border-bottom: none
+
+  > .default-block, > .promo-block
+    border: none
+    margin-top: -20px
+    margin-bottom: -20px
+
+.post_preview
+  background: $main
+  padding-left: 10px
+  padding-right: 10px
+
+.user-info__specialization
+  color: $text
+
+.company-info
+  &_post-additional
+    border-color: $grey
+    > *
+      border-color: $grey
+  &__author
+    background: $main
+    border-color: $grey
+
+//.postinfo-panel
+  &__item  .favorite-wjt__counter
+    color: $light-grey
+  &__item .views-count_post
+    color: $light-grey
+
+.info_page pre
+  margin-left: -10px
+  margin-right: -10px
+
 // Логотипы
 
 .icon-svg_geektimes, .icon-svg_habrahabr, body.nl .logo, .icon-svg_logo-geektimes
@@ -430,7 +539,7 @@ body, body.nl
 
   &__header
     color: #fff
-    border-color: #fff
+    border: 2px $grey
     background: $main
 
   &__footer-link
@@ -495,11 +604,6 @@ a.sort-panel__item-toggler.active
 .html_banner_wrap + div, .post + .html_banner, .post_show + .html_banner, .post-additionals + div
   margin-top: 0
 
-.content-list_posts .content-list__item
-  color: #b5b5b6
-  background: $second
-  border-color: $grey
-
 .teaser__body-title
   color: #b5b5b5
 
@@ -535,25 +639,6 @@ a.sort-panel__item-toggler.active
   background-color: $main
   &__message
     color: $grey
-// Данные поста
-
-.post-additionals
-  padding-bottom: 20px
-
-  .post-type
-    margin: 0 10px
-
-  .author-info
-    width: inherit
-    margin: 0 10px
-    border: 1px solid #4c4f50
-    border-top: 0
-
-.postinfo-panel
-  &__item  .favorite-wjt__counter
-    color: $light-grey
-  &__item .views-count_post
-    color: $light-grey
 
 // Инпуты
 
@@ -1007,8 +1092,7 @@ textarea,
 .attrs__item
   color: $text
 
-.post__tags,
-//.company_post .post__title,
+//.post__tags,
 .post__title_link,
 .t-text
   color: $text
@@ -1031,19 +1115,11 @@ textarea,
 .post-info__title
   color: $grey
 
-.post_full
-  padding: 0 10px
-  background: $main
-  border-top: 1px solid rgba(0, 0, 0, 0)
-
 .info_page
   padding: 0 20px 10px
   background: $main
   margin-top: 0
   border-top: 1px solid rgba(0, 0, 0, 0)
-
-.company_post, .post_show, .compamy_post
-  margin-top: 0
 
 .post__header
   margin-top: 12px
@@ -1111,17 +1187,6 @@ img
 
 // Текст постов и другие тексто содержащие блоки
 
-.html_format .spoiler, .post .content
-  overflow: visible
-
-.html_format:not(.user-message__body):not(.message)
-  .spoiler .spoiler_text, pre
-    margin-left: -10px
-    margin-right: -10px
-
-.info_page pre
-  margin-left: -10px
-  margin-right: -10px
 
 // Превью постов
 
@@ -1227,8 +1292,7 @@ img
 
 .user_comments,
 .page-header__info,
-.media-obj__image,
-.post-additionals
+.media-obj__image
   background: $main
 
 //  Поиск
