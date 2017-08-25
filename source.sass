@@ -443,6 +443,15 @@ body, body.nl
 .user-info__specialization
   color: $text
 
+.h-message
+  border-color: $grey
+
+  &__content
+    color: $text
+  &__controls
+    background: $second
+    border-color: $grey
+
 .company-info
   &_post-additional
     border-color: $grey
@@ -461,6 +470,9 @@ body, body.nl
 .info_page pre
   margin-left: -10px
   margin-right: -10px
+
+.author-panel
+  border-color: $grey
 
 // Логотипы
 
@@ -666,7 +678,7 @@ a.sort-panel__item-toggler.active
 
 .checkbox__label
   color: #b5b5b6
-  background: $second
+  //background: $second
   line-height: 20px
   border-color: $grey
   &:before
@@ -1143,6 +1155,8 @@ textarea,
 
 .post__header
   margin-top: 12px
+.page-header_bordered
+  border-color: $grey
 
 .page-header__info
   padding: 0 12px
@@ -1278,11 +1292,16 @@ img
 .media-obj_conversation-header
   top: 0
 
-.user-info__fullname
-  color: $text
+.user-info
+  &__fullname
+    color: $text
+  &__contacts
+    border-color: $grey
 
-.user-message__username
-  color: $text
+.user-message
+  &__body,
+  &__username
+    color: $text
 
 .ochko-editor_conversations
   border-top: 1px solid $grey
@@ -1389,7 +1408,7 @@ input[type="text"], textarea
     pre code
       border: none
       background: $dark-main
-      //padding: 7px 10px 10px
+    //padding: 7px 10px 10px
     .spoiler .spoiler_text
       border: 1px solid $grey
 
@@ -1399,25 +1418,24 @@ input[type="text"], textarea
   &__date-time_published
     color: #9c9c9c
 
-// todo реализовать подсветку заголовков для "иных" коментов
-//.comment-item
+.comment__head
   color: #fff
-  &.is_topic_starter
+  &_topic-author
     background: #48543b
-  &.is_new
+  &_new-comment
     background: #616161
-  &.is_moderated, &.is_author
+  &_moderated, &_my-comment
     background: #69474a
 
-  &__username, &__username:hover
-    color: $text !important
+//&__username, &__username:hover
+  color: $text !important
 
-  &__time_published
-    color: #9c9c9c
+//&__time_published
+  color: #9c9c9c
 
 .content-list_comments
-  margin-left: 10px
-  margin-right: 10px
+  margin-left: 0
+  margin-right: 20px
 
 // todo реализовать с @for ?
 .content-list_nested-comments-0, .content-list_nested-comments-1, .content-list_nested-comments-2, .content-list_nested-comments-3, .content-list_nested-comments-4, .content-list_nested-comments-5, .content-list_nested-comments-6, .content-list_nested-comments-7, .content-list_nested-comments-8, .content-list_nested-comments-9, .content-list_nested-comments-10, .content-list_nested-comments-11, .content-list_nested-comments-12, .content-list_nested-comments-13
@@ -1425,9 +1443,10 @@ input[type="text"], textarea
     //margin-left: -1px
     border-left: 1px solid $grey
 
+.content-list_comments .comment__folding-dotholder,
 .content-list_nested-comments .comment__folding-dotholder
   // turn dot on
-  display: block
+  //display: block
   &:before
     background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
 
@@ -1440,6 +1459,14 @@ input[type="text"], textarea
 .for_users_only_msg
   color: $text
   border-color: $grey
+
+.comment-form
+  background: $main
+  border-top: 1px solid $grey
+  &__title
+    padding: 20px
+    color: $text
+    margin-bottom: 0
 
 // OchkoEditor
 
@@ -1457,6 +1484,9 @@ input[type="text"], textarea
       border: 0
 
 .tm-editor
+  &_comments
+    background: $main
+
   &__tabs.tabs-menu
     margin: 0
     padding: 0
@@ -1508,6 +1538,11 @@ input[type="text"], textarea
     border-color: $grey
     &-help
       border-color: $grey
+
+.tm-editor_comments
+  .tm-editor__toolbar
+    margin-left: 0
+    border-color: $grey
 
 .list-languages
   color: #fff
