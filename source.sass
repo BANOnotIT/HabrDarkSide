@@ -363,9 +363,9 @@ body, body.nl
     //background: $second
 
   &-additionals
+    padding: 0 10px
     background: $main
     //padding-bottom: 20px
-    padding: 0 10px
 
     .post-type
       margin: 0 10px
@@ -375,13 +375,14 @@ body, body.nl
       margin: 0 10px
       border: 1px solid #4c4f50
       border-top: 0
+
     .post-share
+      border: none
+      padding: 20px
+      background: $main
+      border-top: 1px solid $grey
       margin-left: -10px
       margin-right: -10px
-      background: $main
-      padding: 20px
-      border: none
-      border-top: 1px solid $grey
       &__title
         color: $light-grey
 
@@ -396,6 +397,7 @@ body, body.nl
   &__text-html
     color: $light-grey
     overflow: visible
+    padding-right: 0
 
     .spoiler
       overflow: visible
