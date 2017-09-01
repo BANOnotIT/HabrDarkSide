@@ -11,9 +11,11 @@ function compute() {
     const compiled = sass.renderSync({
         file: './source.sass',
         // outputStyle: 'compressed',
-        outFile: 'test.css',
-        sourceMap: false // or an absolute or relative (to outFile) path
+        // outFile: 'test.css',
+        // sourceMap: true // or an absolute or relative (to outFile) path
     });
+
+    // console.log(compiled);
 
     //noinspection JSUnresolvedVariable
     let rules = parse(compiled.css + '').stylesheet.rules,

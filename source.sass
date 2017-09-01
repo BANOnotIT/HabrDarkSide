@@ -93,6 +93,7 @@ body, body.nl
     margin: 0 -20px
     padding: 0 20px
     border-color: $grey
+    width: inherit !important
 
     &_habrahabr
       color: $text
@@ -277,6 +278,21 @@ body, body.nl
   .page__body
     background: $main
     padding-top: 1px
+
+    > .content-list
+      margin-top: 15px
+
+      &_posts
+        margin-left: -15px
+        margin-right: -15px
+
+  .alter_search
+    padding: 20px
+    font-size: 15px
+    background: $main
+
+  .page__footer
+    margin-top: 0
 
   .tabs__level_bottom
     margin: 0 !important
@@ -1476,11 +1492,11 @@ input[type="text"], textarea
   margin-left: 0
   margin-right: 20px
 
-// todo реализовать с @for ?
-.content-list_nested-comments-0, .content-list_nested-comments-1, .content-list_nested-comments-2, .content-list_nested-comments-3, .content-list_nested-comments-4, .content-list_nested-comments-5, .content-list_nested-comments-6, .content-list_nested-comments-7, .content-list_nested-comments-8, .content-list_nested-comments-9, .content-list_nested-comments-10, .content-list_nested-comments-11, .content-list_nested-comments-12, .content-list_nested-comments-13
-  &.content-list_nested-comments
-    //margin-left: -1px
-    border-left: 1px solid $grey
+.content-list_nested-comments
+  @for $i from 0 through 13
+    &.content-list_nested-comments-#{$i}
+      //margin-left: -1px
+      border-left: 1px solid $grey
 
 .content-list_comments .comment__folding-dotholder,
 .content-list_nested-comments .comment__folding-dotholder
