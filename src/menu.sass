@@ -4,29 +4,48 @@
   background: $dark-main
   border-color: $grey
 
-  &__item_pagination:hover
-    background: $dark-main
+  &__item
+    &_pagination:hover
+      background: $dark-main
 
-  //&__most-read, &__most-comments
-    background: $dark-main
-
-  &__item-link
-    color: $text
-    &:hover
-      color: $azure
-
-    &_bordered
-      border-color: $grey
-
-    &.active, &_active
+    &-link
       color: $text
-      border-color: $grey
-
       &:hover
         color: $azure
+
+      &_bordered
+        border-color: $grey
+
+      &.active, &_active
+        color: $text
+        border-color: $grey
+
+        &:hover
+          color: $azure
 
 .stacked-menu__item_devided
   border-color: $grey
 
-.menu__item_bordered
-  border-color: $grey
+.menu
+  &__item
+    &_bordered
+      border-color: $grey
+
+    &-tab
+      color: $grey
+      &:hover
+        color: #fff
+        background: $grey
+
+      .active &
+        color: #fff
+        background: $grey
+
+.menu_sub
+  background: $grey
+  color: #fff
+
+  .menu__item-link
+    color: $grey
+    &_current
+      color: #fff

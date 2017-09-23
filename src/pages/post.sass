@@ -1,0 +1,99 @@
+@import "../colors"
+
+.company_post
+  margin-top: 0
+  .promo-block_vacancies
+    border: none
+    background: $main
+    margin-top: 0
+    margin-bottom: 20px
+
+.post
+  &_preview
+    background: $main
+    padding-left: 10px
+    padding-right: 10px
+
+  &_show
+    margin-top: 0
+
+  &_full
+    padding: 10px 10px 20px
+    background: $main
+    border-top: 1px solid rgba(0, 0, 0, 0)
+    margin-bottom: 0
+
+  //&__type-label
+    // todo
+    //background: $second
+
+  &-additionals
+    padding: 0 10px
+    background: $main
+    margin-bottom: 20px
+    //padding-bottom: 20px
+
+    .post-type
+      margin: 0 10px
+
+    .author-info
+      width: inherit
+      margin: 0 10px
+      border: 1px solid #4c4f50
+      border-top: 0
+
+    .post-share
+      border: none
+      padding: 20px
+      background: $main
+      border-top: 1px solid $grey
+      margin-left: -10px
+      margin-right: -10px
+      &__title
+        color: $light-grey
+
+  &__body
+    color: $text
+    &_full
+      overflow: visible
+
+  &__title-text
+    color: $light-grey
+
+  &__text-html
+    color: $light-grey
+    overflow: visible
+    padding-right: 0
+
+    .spoiler
+      overflow: visible
+
+    .spoiler .spoiler_text, pre
+      margin-left: -10px
+      margin-right: -10px
+
+    blockquote
+      background: hsl(41, 49%, 19%)
+      margin-left: -10px
+      margin-right: -10px
+      border-left: 2px solid $lemon
+
+    pre code
+      border: none
+      padding: 17px 10px 20px
+      background: $dark-main
+
+    code
+      color: $carrot
+
+  &-stats
+    border-color: $grey
+
+  &__translatation
+    // todo сделать нормальный, когда починят
+    background: $dark-main
+
+.btn_post-stats
+  background: $second
+
+
