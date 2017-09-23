@@ -128,6 +128,9 @@ body, body.nl
   &_current &__value
     color: #fff
 
+//  попап
+@import "popup"
+
 // Главы страниц
 
 .page-header
@@ -263,9 +266,7 @@ body, body.nl
 
 // Страницы
 
-.feedback_page
-  padding: 20px 10px
-  background: $main
+@import "pages/index.sass"
 
 .h-info
   li, p
@@ -273,47 +274,6 @@ body, body.nl
 
   h2, h3
     color: #fff
-
-.search-page
-  .page__body
-    background: $main
-    padding-top: 1px
-
-    > .content-list
-      margin-top: 15px
-
-      &_posts
-        margin-left: -15px
-        margin-right: -15px
-
-  .alter_search
-    padding: 20px
-    font-size: 15px
-    background: $main
-
-  .page__footer
-    margin-top: 0
-
-  .tabs__level_bottom
-    margin: 0 !important
-    padding: 20px 10px
-    background: $main
-    border-bottom: 1px $grey solid
-
-.page
-  &__body
-    padding: 20px 15px
-    background: $main
-    margin-bottom: 0
-
-    .search-field
-      width: inherit
-      margin: 0 -15px
-
-  &__footer
-    padding: 15px 20px
-    background: $main
-    border-top: 1px solid $grey
 
 .user
   &_comments
@@ -327,15 +287,6 @@ body, body.nl
     padding: 20px 0 10px
     background: $main
     border-color: $grey
-
-  &_settings
-    padding: 20px 10px
-    background: $main
-
-    .notification_table tr
-      td, th
-        color: #fff
-        border-color: $grey
 
 //
 .list-snippet
@@ -862,7 +813,6 @@ a.sort-panel__item-toggler.active
 .post_show,
 .post-type,
 .fonts-loaded .page-header__title,
-.info_page,
 .editor .text-holder,
 .abuse-form__text-field:focus
   color: #fff
@@ -1193,12 +1143,6 @@ textarea,
 
 .post-info__title
   color: $grey
-
-.info_page
-  padding: 0 20px 10px
-  background: $main
-  margin-top: 0
-  border-top: 1px solid rgba(0, 0, 0, 0)
 
 .post__header
   margin-top: 12px
