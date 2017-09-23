@@ -3,6 +3,9 @@
 // включаем тему для подстветки кода
 @import "hljs"
 
+// делаем, чтобы реклама не ломала нам всё
+@import "ads"
+
 // Основная страница
 
 body, body.nl
@@ -492,7 +495,10 @@ body, body.nl
     background: $second
     border-color: $grey
 
-.sidebar_comments, .comments-section
+.sidebar_comments
+  padding-top: 0
+
+.comments-section
   margin-top: 0
 
 .h-message
@@ -614,32 +620,6 @@ body, body.nl
   .active &
     color: #fff
     background: $grey
-
-// Реклама
-
-.promo-block
-  border-left: 0
-  border-right: 0
-
-  &, &__service, &__header, &__title-link, &__footer
-    color: $grey
-    border-color: $grey
-
-  &__header
-    color: #fff
-    border-bottom: 2px solid $grey
-    background: $main
-
-  &__footer-link
-    color: $text
-    &:hover
-      color: $text
-
-  &__see-all
-    color: mix($green, $main, 70%)
-    &:hover
-      color: $green
-      text-decoration: underline
 
 // Сортировщик
 
@@ -1134,6 +1114,7 @@ a.habracut,
   border-bottom: 1px solid #4c4f50
   padding-bottom: 20px
 
+// todo check for remove
 .post
   .hubs a.subscribed
     color: #ab8bba

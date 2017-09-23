@@ -1,0 +1,28 @@
+@import "colors"
+
+.content_left .dfp-slot
+  margin-bottom: 20px
+
+.promo-block
+  border-left: 0
+  border-right: 0
+
+  &, &__service, &__header, &__title-link, &__footer
+    color: $grey
+    border-color: $grey
+
+  &__header
+    color: #fff
+    border-bottom: 2px solid $grey
+    background: $main
+
+  &__footer-link
+    color: $text
+    &:hover
+      color: $text
+
+  &__see-all
+    color: mix($green, $main, 70%)
+    &:hover
+      color: $green
+      text-decoration: underline
