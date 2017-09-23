@@ -6,10 +6,10 @@ const
     sass = require('node-sass'),
     parse = require('css').parse;
 
-function compute() {
+function compile() {
 
     const compiled = sass.renderSync({
-        file: './source.sass',
+        file: './src/main.sass',
         // outputStyle: 'compressed',
         // outFile: 'test.css',
         // sourceMap: true // or an absolute or relative (to outFile) path
@@ -58,7 +58,7 @@ function compute() {
 
 
 if (module.parent === null)
-    console.log(compute());
+    console.log(compile());
 
 else
-    module.exports = compute;
+    module.exports = compile;

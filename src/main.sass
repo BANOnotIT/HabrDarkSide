@@ -1,13 +1,4 @@
-$grey: #777
-$text: #cdcdcd
-$main: #393939
-$green: #9eff5e
-$azure: #5ec2ff
-$second: #434343
-$dark-main: #2e2e2e
-$dark-azure: #4d7285
-$light-grey: #ddd
-$editor-btns: #5489c3
+@import "colors"
 
 // включаем тему для подстветки кода
 @import "hljs"
@@ -16,10 +7,10 @@ $editor-btns: #5489c3
 
 body, body.nl
   color: $grey
-  background: #4d5052
+  background: $page-background
 
   .layout
-    background: #4d5052
+    background: $page-background
 
     &__row
       &_navbar
@@ -442,7 +433,7 @@ body, body.nl
       background: hsl(41, 49%, 19%)
       margin-left: -10px
       margin-right: -10px
-      border-left: 2px solid #c7c705
+      border-left: 2px solid $lemon
 
     pre code
       border: none
@@ -450,7 +441,7 @@ body, body.nl
       background: $dark-main
 
     code
-      color: #ff6161
+      color: $carrot
 
   &-stats
     border-color: $grey
@@ -464,7 +455,7 @@ body, body.nl
 
 .content-list__item_post.content-list__item
   background: $main
-  color: #b5b5b6
+  color: #b5b5b5
   border-color: $grey
   border-bottom: 1px solid
 
@@ -645,9 +636,9 @@ body, body.nl
       color: $text
 
   &__see-all
-    color: mix(#00ce00, $main, 70%)
+    color: mix($green, $main, 70%)
     &:hover
-      color: #00ce00
+      color: $green
       text-decoration: underline
 
 // Сортировщик
@@ -667,10 +658,10 @@ a.sort-panel__item-toggler.active
       background-color: transparent
 
     &_cross
-      color: darken($green, 35%)
-      border-color: darken($green, 35%)
+      color: darken($light-green, 35%)
+      border-color: darken($light-green, 35%)
       &:hover
-        color: darken($green, 35%)
+        color: darken($light-green, 35%)
         background-color: transparent
 
   &__about-text
