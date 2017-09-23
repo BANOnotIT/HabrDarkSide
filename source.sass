@@ -69,6 +69,9 @@ body, body.nl
 .grey a, a.grey
   color: $light-grey
 
+.layout__cell_body
+  padding-bottom: 20px
+
 //#TMpanel
   background: $grey
   border-color: $dark-main
@@ -364,8 +367,17 @@ body, body.nl
     color: $grey
 
 // Посты
+
+.company_post
+  margin-top: 0
+  .promo-block_vacancies
+    border: none
+    background: $main
+    margin-top: 0
+    margin-bottom: 20px
+
 .post
-  .company_ &, &_show
+  &_show
     margin-top: 0
 
   &_full
@@ -616,7 +628,7 @@ body, body.nl
   border-right: 0
 
   &, &__service, &__header, &__title-link, &__footer
-    color: #fff
+    color: $grey
     border-color: $grey
 
   &__header
@@ -630,7 +642,7 @@ body, body.nl
       color: $text
 
   &__see-all
-    color: #00ce00
+    color: mix(#00ce00, $main, 70%)
     &:hover
       color: #00ce00
       text-decoration: underline
@@ -818,6 +830,8 @@ a.sort-panel__item-toggler.active
 //  Похожие публикации
 .content-list__item_devided
   border-color: $grey
+  &:last-child
+    border-bottom: none
 
 // чекбоксы (хабр и гт)
 .checkbox_custom.checkbox_most-read:hover
@@ -949,9 +963,14 @@ label
   color: #fff
   border-color: $grey
 
+.vacancy
+  &__aside
+    color: $grey
+
 .vacancies .vacancy
   color: #fff
   border-color: $grey
+
   .meta .published
     color: #fff
     border-color: $grey
@@ -1730,7 +1749,7 @@ input[type="text"], textarea
   display: none !important
   visibility: hidden !important
 
-body > div.layout > div.layout__base > div
+//body > div.layout > div.layout__base > div
   &.column-wrapper.js-sticky-wrapper > div.sidebar_right.js-sidebar_right > div
     &.xyz_wrapper.is_visible, &.wrapper-sticky
       opacity: 0 !important
@@ -1748,7 +1767,7 @@ body > div.layout > div.layout__base > div
       display: none !important
       visibility: hidden !important
 
-.xyz_wrappe, .html_banner_wrap .html_banner
+//.xyz_wrappe, .html_banner_wrap .html_banner
   opacity: 0 !important
   display: none !important
   visibility: hidden !important
