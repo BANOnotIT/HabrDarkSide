@@ -1,0 +1,42 @@
+@import "../colors"
+
+$btn-color: #333
+
+.buttons
+  a.button.disabled,
+  a.button[disabled],
+  button.disabled,
+  button[disabled],
+  input[type=button][disabled],
+  input[type=button].disabled,
+  input[type=submit].disabled,
+  input[type=submit][disabled]
+    color: $main !important
+    background: $grey !important
+    &:focus, &:hover, &.btn_focus
+      color: $main !important
+      background: lighten($grey, 10%) !important
+
+.buttons button,
+.buttons input[type=button],
+.buttons input[type=submit],
+.buttons a.button
+  color: $text !important
+  background: darken($main, 10%) !important
+  border-color: $light-grey !important
+
+  &:hover
+    background: darken($main, 14%) !important
+
+.btn_blue.btn
+  &.disabled, &[disabled]
+    background-color: $light-grey
+    color: $main
+    &:hover, &:focus, &.btn_focus
+      background-color: $grey
+
+.btn_outline_blue.btn
+  &.disabled, &[disabled]
+    color: $grey
+    &:hover, &:focus, &.btn_focus
+      color: mix($grey,$main,50%)

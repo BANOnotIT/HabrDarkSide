@@ -626,11 +626,6 @@ a.sort-panel__item-toggler.active
 .teaser__body-title
   color: #b5b5b5
 
-.nav-links__item-link
-  color: #b5b5b5
-  height: 40px
-  line-height: 40px
-
 .digest span
   color: #b5b5b5
   height: 40px
@@ -639,20 +634,6 @@ a.sort-panel__item-toggler.active
 .vacancies .vacancy .location
   color: #b5b5b5
 
-.nav-links__item-link_current
-  color: #fff
-  &:hover
-    color: #fff
-
-.btn_navbar_write-topic
-  color: #fff
-  background: $main
-  border-color: #fff
-  &:visited
-    color: #fff
-    background: $main
-    border-color: #fff
-
 // Пустые холдеры
 .empty-placeholder
   background-color: $main
@@ -660,6 +641,8 @@ a.sort-panel__item-toggler.active
     color: $grey
 
 // Инпуты
+
+@import "inputs/index"
 
 //.btn_blue
   background-color: $editor-btns
@@ -675,25 +658,6 @@ a.sort-panel__item-toggler.active
     background: transparent
     border-color: #5aaadb
     border-radius: 0
-
-.buttons
-  a.button, button
-    color: #fff
-    background: $main
-    border-color: #fff
-  input
-    &[type=button], &[type=submit]
-      color: #fff
-      background: $main
-      border-color: #fff
-
-.btn_navbar_write-topic:hover
-  border-color: #fff
-  background-color: #4d5052
-
-  &.btn_focus, &:focus
-    color: $main
-    background: #fff
 
 .top-hubs__item-title
   color: $azure !important
@@ -957,66 +921,8 @@ label
 form .item .radio_list label
   color: #fff
 
-.buttons
-  a.button
-    &.disabled, &[disabled]
-      color: #333
-      background: $grey
-  button
-    &.disabled, &[disabled]
-      color: #333
-      background: $grey
-  input
-    &[type=button]
-      &.disabled, &[disabled]
-        color: #333
-        background: $grey
-    &[type=submit]
-      &.disabled, &[disabled]
-        color: #333
-        background: $grey
-
 .chosen-container-multi .chosen-choices .search-choice
   background: $grey
-
-.buttons
-  a.button
-    &.disabled
-      &.btn_focus, &:focus, &:hover
-        color: #333
-        background: #888
-    &[disabled]
-      &.btn_focus, &:focus, &:hover
-        color: #333
-        background: #888
-  button
-    &.disabled
-      &.btn_focus, &:focus, &:hover
-        color: #333
-        background: #888
-    &[disabled]
-      &.btn_focus, &:focus, &:hover
-        color: #333
-        background: #888
-  input
-    &[type=button]
-      &.disabled
-        &.btn_focus, &:focus, &:hover
-          color: #333
-          background: #888
-      &[disabled]
-        &.btn_focus, &:focus, &:hover
-          color: #333
-          background: #888
-    &[type=submit]
-      &.disabled
-        &.btn_focus, &:focus, &:hover
-          color: #333
-          background: #888
-      &[disabled]
-        &.btn_focus, &:focus, &:hover
-          color: #333
-          background: #888
 
 a.habracut:hover
   color: #333
@@ -1025,7 +931,6 @@ a.habracut:hover
 // .tabs-menu_habrahabr,
 .postinfo-panel,
 .posts_list,
-.buttons a.button,
 .user_favorites,
 .hubs_list,
 .peoples_list,
@@ -1097,10 +1002,6 @@ a
 .top-flows__item > a:visited, #people-tags li a
   color: $azure
 
-￼.buttons a.button:hover
-  color: $main
-  background: #cfcfcf
-
 .postinfo-panel,
 .voting-wjt.voting-wjt_infopanel,
 .postinfo-panel__item_comments .post-comments,
@@ -1110,13 +1011,9 @@ a
 .btn_flow-toggle
   color: #fff
 
-.html_format code
-  color: #d55
-
 input[type="text"],
 .search-field__input[type=text],
 textarea,
-.html_format,
 .task__aside,
 .attrs__item
   color: $text
@@ -1201,7 +1098,7 @@ img
   &[alt="en"], &[alt="habr"], &:hover, a.post-author__link &, &.user-info__image-pic
     @extend .teaser__image:hover
 
-  .post &, .company_top_banner &, .html_format &, .teaser__image, .article__body &
+  .post &, .company_top_banner &, .teaser__image, .article__body &
     filter: grayscale(1)
     opacity: .5
     -webkit-filter: grayscale(1)
@@ -1212,13 +1109,6 @@ img
   opacity: 1 !important
   -webkit-filter: none !important
   transition-duration: .3s !important
-
-// Превью постов
-
-.post_teaser .html_format:not(.user-message__body):not(.message)
-  .spoiler .spoiler_text, pre
-    margin-left: -10px
-    margin-right: -10px
 
 .madskillz_page code
   border-radius: 0
