@@ -1,0 +1,32 @@
+@import "colors"
+
+.toggle-menu
+  background: $dark-main
+  border-color: $grey
+
+  &__item_pagination:hover
+    background: $dark-main
+
+  //&__most-read, &__most-comments
+    background: $dark-main
+
+  &__item-link
+    color: $text
+    &:hover
+      color: $azure
+
+    &_bordered
+      border-color: $grey
+
+    &.active, &_active
+      color: $text
+      border-color: $grey
+
+      &:hover
+        color: $azure
+
+.stacked-menu__item_devided
+  border-color: $grey
+
+.menu__item_bordered
+  border-color: $grey

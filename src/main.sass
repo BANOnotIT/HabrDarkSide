@@ -663,34 +663,7 @@ a.sort-panel__item-toggler.active
   color: $azure !important
 
 // Менюхи
-
-.toggle-menu
-  background: $dark-main
-  border-color: $grey
-
-  &__item_pagination:hover
-    background: $dark-main
-
-  //&__most-read, &__most-comments
-    background: $dark-main
-
-  &__item-link
-    color: $text
-    &:hover
-      color: $azure
-
-    &_bordered
-      border-color: $grey
-
-    &.active, &_active
-      color: $text
-      border-color: $grey
-
-      &:hover
-        color: $azure
-
-.stacked-menu__item_devided
-  border-color: $grey
+@import "menu"
 
 // Дропдауны
 
@@ -743,7 +716,12 @@ a.sort-panel__item-toggler.active
     background: $second
     border-color: $grey
 
-.chosen-container-single .chosen-single, .chosen-container-multi .chosen-choices, .chosen-container .chosen-results .no-results, div.block.corporate_blog > div.posts_list, .live-broadcast__tabs, .fonts-loaded .live-broadcast__title
+.chosen-container-single .chosen-single,
+.chosen-container-multi .chosen-choices,
+.chosen-container .chosen-results .no-results,
+div.block.corporate_blog > div.posts_list,
+.live-broadcast__tabs,
+.fonts-loaded .live-broadcast__title
   background: $second
   border-color: $grey
 
@@ -1334,8 +1312,6 @@ input[type="text"], textarea
   &:before
     background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
 
-.menu__item_bordered
-  border-color: $grey
 
 .user-info__nickname_comment
   color: $azure
