@@ -7,7 +7,7 @@ const
     SITE_MATCHES = ["*://*.habrahabr.ru/*", "*://*.geektimes.ru/*"],
 
     server = require("http").createServer,
-    watch = require('fs').watchFile,
+    watch = require("chokidar").watch,
     compile = require("./build");
 
 let
@@ -23,7 +23,7 @@ server((req, res) => {
     .listen(8852, () => console.log('listening'));
 
 
-watch('source.sass', () => {
+watch('src').on("all", () => {
     state.revision = +new Date();
     state.css = compile();
     console.log('replacing');
