@@ -13,3 +13,14 @@ $light-green: #9eff5e
 $editor-btns: #5489c3
 $page-background: #4d5052
 
+@mixin image-grayscale()
+  filter: grayscale(1)
+  opacity: .5
+  -webkit-filter: grayscale(1)
+  transition: all .6s ease-in-out
+
+@mixin image-grayscale-off()
+  filter: none !important
+  opacity: 1 !important
+  -webkit-filter: none !important
+  transition-duration: .2s !important

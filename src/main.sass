@@ -324,7 +324,8 @@ body, body.nl
   &:last-child
     border-bottom: none
 
-  > .default-block, > .promo-block
+  > .default-block,
+  > .promo-block
     border: none
     margin-top: -20px
     margin-bottom: -20px
@@ -939,6 +940,12 @@ textarea,
     padding-left: 10px
     padding-right: 10px
 
+// Социальные виджеты компаний
+
+@import "company-wjts"
+
+// мегапосты
+
 .megapost-teasers
   background: $main
   border-top: 0
@@ -946,20 +953,19 @@ textarea,
 // Картинки
 
 img
-  &[alt="en"], &[alt="habr"], &:hover, a.post-author__link &, &.user-info__image-pic
-    @extend .teaser__image:hover
+  &[alt="en"], &[alt="habr"],
+  &:hover,
+  a.post-author__link &,
+  &.user-info__image-pic
+    @include image-grayscale-off
 
-  .post &, .company_top_banner &, .teaser__image, .article__body &
-    filter: grayscale(1)
-    opacity: .5
-    -webkit-filter: grayscale(1)
-    transition: all .5s ease-in-out
+  .post &,
+  .company_top_banner &,
+  .teaser__image, .article__body &
+    @include image-grayscale
 
 .teaser__image:hover
-  filter: none !important
-  opacity: 1 !important
-  -webkit-filter: none !important
-  transition-duration: .3s !important
+  @include image-grayscale-off
 
 .madskillz_page code
   border-radius: 0
