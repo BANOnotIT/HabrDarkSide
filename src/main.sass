@@ -1134,16 +1134,22 @@ input[type="text"], textarea
 .comment
   &__message, &-form__preview
     color: $text
+
     pre code
       border: none
       background: $dark-main
     //padding: 7px 10px 10px
+
+    code
+      color: $carrot
+
     .spoiler .spoiler_text
       border: 1px solid $grey
 
   &__message
     &_downgrade
       transition: opacity .3s ease-out
+
   &__date-time_published
     color: #9c9c9c
 
