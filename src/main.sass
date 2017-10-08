@@ -144,11 +144,13 @@ body, body.nl
     background: $main
     //margin-top: 20px // todo это вообще нужно?
     border-bottom: 1px solid black
+
     .dropdown_flows
       top: 0
 
   &__info
     padding: 0 12px
+    background: $main
     &-desc
       color: $grey
       margin-top: 0
@@ -206,7 +208,7 @@ body, body.nl
       padding-left: 22px
 
   &_bordered
-    border-color: $light-grey
+    border-color: $grey
 
 // .media-obj__body_page-header_branding .page-header__info
 
@@ -884,12 +886,6 @@ textarea,
 .post__header
   margin-top: 12px
 
-.page-header_bordered
-  border-color: $grey
-
-.page-header__info
-  padding: 0 12px
-
 // Блоки
 
 .default-block
@@ -1045,8 +1041,7 @@ img
 .tracker_page table.tracker_comments tr.new td
   background: $dark-main
 
-.user_comments,
-.page-header__info
+.user_comments
   background: $main
 
 //.media-obj__image
