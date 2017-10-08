@@ -158,14 +158,6 @@ body, body.nl
       &:hover
         color: #8b8b8b
 
-    .media-obj__body_post-header
-      margin-right: 12px
-      &_branding .page-header__info
-        height: 48px
-
-    .media-obj__body_post-header &
-      margin: 0 -12px
-
   &__nickname:before
     top: inherit
 
@@ -205,15 +197,18 @@ body, body.nl
     background: $main
 
     .page-header__info
-      margin: 0 -10px
+      margin: 0 -10px -10px
       padding: 12px 22px
       border-top: 1px solid $grey
+
+    .page-header_wrapper
+      margin-left: -10px
+      padding-left: 22px
+
   &_bordered
     border-color: $light-grey
 
 // .media-obj__body_page-header_branding .page-header__info
-.media-obj__body_page-header
-  margin-left: 0
 
 // Боковые блоки
 
@@ -363,13 +358,6 @@ body, body.nl
     color: $text
   &__controls
     background: $second
-    border-color: $grey
-
-.h-popover
-  background: $dark-main
-  border-color: $grey
-
-  &__stats
     border-color: $grey
 
 .company-info
@@ -902,12 +890,6 @@ textarea,
 .page-header__info
   padding: 0 12px
 
-  .media-obj__body_post-header &
-    margin: 0 -12px
-
-.media-obj__body_page-header_branding .page-header__info
-  height: 48px
-
 // Блоки
 
 .default-block
@@ -1024,8 +1006,7 @@ img
 //#conversation_form .form__buttons
   margin: 0 20px
 
-.media-obj_conversation-header
-  top: 0
+@import "media-obj"
 
 .user-info
   &__fullname
@@ -1065,9 +1046,10 @@ img
   background: $dark-main
 
 .user_comments,
-.page-header__info,
-.media-obj__image
+.page-header__info
   background: $main
+
+//.media-obj__image
 
 //  Поиск
 
