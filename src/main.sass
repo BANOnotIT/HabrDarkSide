@@ -315,10 +315,27 @@ body, body.nl
 .content-list__item_post.content-list__item
   background: $main
   color: #b5b5b5
-  border-color: $grey
-  border-bottom: 1px solid
 
-  &:last-child
+  &:not([id])
+    border: 1px solid $grey
+    margin-top: -1px
+    border-left: none
+    border-right: none
+    padding: 20px 10px
+
+  &[id]:not(:last-child)
+    margin-bottom: 1px
+
+    &:after
+      content: " "
+      left: 10px
+      width: 760px
+      bottom: -1px
+      position: absolute
+      border-color: $grey
+      border-bottom: 1px solid
+
+  //&:last-child
     border-bottom: none
 
   > .default-block,
@@ -338,9 +355,9 @@ body, body.nl
   &_favorites-tags
     background: $main
     margin-bottom: 0
-  //padding-bottom: 10px
 
-  &__legend, &__desc
+  &__legend,
+  &__desc
     color: $text
 
   &__footer
