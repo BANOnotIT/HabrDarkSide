@@ -4,7 +4,7 @@
 
 let store = {match: [''], css: '', revision: -Infinity};
 
-const pl = 1e4;
+const pl = 5000;
 
 longpoll(listener);
 chrome.tabs.onUpdated.addListener(tabExecuter);
@@ -76,7 +76,7 @@ function codeGen(css) {
 
     return `
 var createDRStyle = function() {
-    var css = '${css}';
+    var css = '${css.replace("'", "\\'")}';
     var style = document.createElement('style');
     style.setAttribute('id', 'stylish-reloader');
     style.type = 'text/css';
