@@ -262,6 +262,9 @@ body, body.nl
       color: #fff
       border-color: $grey
 
+  &_comments
+    padding-top: 0
+
 // Страницы
 
 @import "pages/index.sass"
@@ -275,10 +278,11 @@ body, body.nl
 
 .user
   &_comments
-    padding: 20px 10px
+    //padding: 20px 10px
     background: $main
     margin-top: 0
     border-top: 1px solid rgba(0, 0, 0, 0)
+    padding-bottom: 20px
 
   &_profile
     color: $text
@@ -363,12 +367,6 @@ body, body.nl
   &__footer
     background: $second
     border-color: $grey
-
-.sidebar_comments
-  padding-top: 0
-
-.comments-section
-  margin-top: 0
 
 .h-message
   border-color: $grey
@@ -726,11 +724,6 @@ label
   color: #fff
   border-color: $grey
 
-.comments_form h2.title
-  a, span
-    color: #fff
-    border-color: $grey
-
 .editor .editor__footer,
 #footer
   color: #fff
@@ -1058,9 +1051,6 @@ img
 .tracker_page table.tracker_comments tr.new td
   background: $dark-main
 
-.user_comments
-  background: $main
-
 //.media-obj__image
 
 //  Поиск
@@ -1114,54 +1104,9 @@ input[type="text"], textarea
 .post-type
   width: inherit
 
-// Комментарии
+@import "comments"
 
-.comments-section
-  background: $main
-
-  &__head
-    padding: 0 10px
-    border-color: $grey
-
-    &-title
-      color: #fff
-
-    &-counter
-      color: #ac8cbc
-
-// todo сделать форму комента когда будет инет
-
-.comment
-  &__message, &-form__preview
-    color: $text
-
-    pre code
-      border: none
-      background: $dark-main
-    //padding: 7px 10px 10px
-
-    code
-      color: $carrot
-
-    .spoiler .spoiler_text
-      border: 1px solid $grey
-
-  &__message
-    &_downgrade
-      transition: opacity .3s ease-out
-
-  &__date-time_published
-    color: #9c9c9c
-
-.comment__head
-  color: #fff
-  &_topic-author
-    background: #48543b
-  &_new-comment
-    background: #616161
-  &_moderated, &_my-comment
-    background: #69474a
-
+// Опросы
 .default-block__polling-title
   color: #fff
 
@@ -1174,37 +1119,10 @@ input[type="text"], textarea
 //&__time_published
   color: #9c9c9c
 
-.content-list_comments
-  margin-left: 0
-  margin-right: 20px
-
-.content-list_nested-comments
-  @for $i from 0 through 13
-    &.content-list_nested-comments-#{$i}
-      //margin-left: -1px
-      border-left: 1px solid $grey
-
-.content-list_comments .comment__folding-dotholder,
-.content-list_nested-comments .comment__folding-dotholder
-  // turn dot on
-  //display: block
-  &:before
-    background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
-
-.user-info__nickname_comment
-  color: $azure
-
+// Сообщения об ошибках
 .for_users_only_msg
   color: $text
   border-color: $grey
-
-.comment-form
-  background: $main
-  border-top: 1px solid $grey
-  &__title
-    padding: 20px
-    color: $text
-    margin-bottom: 0
 
 // OchkoEditor
 
@@ -1224,6 +1142,10 @@ input[type="text"], textarea
 .tm-editor
   &_comments
     background: $main
+
+    .tm-editor__toolbar
+      margin-left: 0
+      border-color: $grey
 
   &__tabs.tabs-menu
     margin: 0
@@ -1277,15 +1199,11 @@ input[type="text"], textarea
     &-help
       border-color: $grey
 
-.tm-editor_comments
-  .tm-editor__toolbar
-    margin-left: 0
-    border-color: $grey
-
 .list-languages
   color: #fff
   background: $dark-main
   border-color: $grey
+
   li
     color: #fff
     background: $dark-main
@@ -1333,6 +1251,7 @@ input[type="text"], textarea
   display: block
   overflow-x: auto
   background: #2b2b2b !important
+
 // Блоки кода todo проверить, существуют ли вообще такие селекторы ещё
 .html_format:not(.user-message__body) pre .hljs,
 .post_teaser .html_format:not(.user-message__body) pre .hljs

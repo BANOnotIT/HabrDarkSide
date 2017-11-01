@@ -1,0 +1,103 @@
+@import "colors"
+
+.comments
+
+  &_form h2.title
+    a, span
+      color: #fff
+      border-color: $grey
+
+  &-section
+    margin-top: 0
+    background: $main
+
+    &__head
+      padding: 0 10px
+      border-color: $grey
+
+      &-title
+        color: #fff
+
+      &-counter
+        color: #ac8cbc
+
+.comment
+  &__post-title
+    border: none
+    padding: 0 9px 0 0
+    position: relative
+    margin-right: 10px
+    //border-right: 1px solid $grey
+    &:after
+      top: 0
+      //right: 0
+      //bottom: 0
+      left: 100%
+      width: 1px
+      height: 44px
+      content: " "
+      display: block
+      position: absolute
+      background: $grey
+
+  &__post-link
+    color: $text
+    font-weight: bold
+
+  &__message, &-form__preview
+    color: $text
+
+    pre code
+      border: none
+      background: $dark-main
+    //padding: 7px 10px 10px
+
+    code
+      color: $carrot
+
+    .spoiler .spoiler_text
+      border: 1px solid $grey
+
+  &__message
+    &_downgrade
+      transition: opacity .3s ease-out
+
+  &__date-time_published
+    color: #9c9c9c
+
+  &__head
+    color: #fff
+    &_topic-author
+      background: #48543b
+    &_new-comment
+      background: #616161
+    &_moderated, &_my-comment
+      background: #69474a
+
+.content-list_comments
+  margin-left: 0
+  margin-right: 20px
+
+.content-list_nested-comments
+  @for $i from 0 through 13
+    &.content-list_nested-comments-#{$i}
+      //margin-left: -1px
+      border-left: 1px solid $grey
+
+.content-list_comments .comment__folding-dotholder,
+.content-list_nested-comments .comment__folding-dotholder
+  // turn dot on
+  //display: block
+  &:before
+    background-image: url(https://habrastorage.org/files/5c3/c65/363/5c3c6536366c43f9a7f787545c3eebb0.png)
+
+.user-info__nickname_comment
+  color: $azure
+
+.comment-form
+  background: $main
+  border-top: 1px solid $grey
+  &__title
+    padding: 20px
+    color: $text
+    margin-bottom: 0
