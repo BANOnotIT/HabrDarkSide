@@ -4,7 +4,7 @@
 
 const
 
-    SITE_MATCHES = ["*://*.habrahabr.ru/*", "*://*.geektimes.ru/*"],
+    SITE_MATCHES = ["*://*.habr.com/*", "*://*.geektimes.com/*"],
 
     server = require("http").createServer,
     watch = require("chokidar").watch,
