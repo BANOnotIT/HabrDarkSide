@@ -16,11 +16,11 @@
   "author": "BANO.notIT <bano.notit@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "css": "^2.2.1",
-    "node-sass": "^4.5.2"
+    "css": "^2.2.4",
+    "node-sass": "^4.9.3"
   },
   "devDependencies": {
     "chokidar": "^1.7.0",
-    "request": "latest"
+    "request": "^2.88.0"
   }
 }
