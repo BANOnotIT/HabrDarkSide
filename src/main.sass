@@ -334,10 +334,10 @@ body, body.nl
     &:after
       content: " "
       left: 10px
-      width: 760px
+      right: 10px
       bottom: -1px
       position: absolute
-      border-color: $grey
+      border-color: $third
       border-bottom: 1px solid
 
   //&:last-child
@@ -380,9 +380,9 @@ body, body.nl
 
 .company-info
   &_post-additional
-    border-color: $grey
+    border-color: $third
     > *
-      border-color: $grey
+      border-color: $third
   &__author
     background: $main
     border-color: $grey
@@ -901,8 +901,9 @@ textarea,
 
 .default-block
   background: $main
-  border-top: solid 1px #4c4f50
-  border-bottom: solid 1px #4c4f50
+  border-top: solid 1px
+  border-bottom: solid 1px
+  border-color: #4c4f50 !important
 
   &_promote
     margin-top: 20px
