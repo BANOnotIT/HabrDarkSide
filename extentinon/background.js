@@ -4,37 +4,41 @@
 
 let store = {match: [''], css: '', revision: -Infinity};
 
-const pl = 5000;
+const
+    HOST = 'http://localhost:8852/';
 
-longpoll(listener);
+fetchStyle(listener);
 chrome.tabs.onUpdated.addListener(tabExecuter);
 chrome.tabs.onReplaced.addListener(tabExecuter);
 
-function longpoll(callback) {
+
+const events = new EventSource(HOST + 'events');
+
+events.onopen = events.onmessage = e => {
+    console.log(e);
+    fetchStyle(listener)
+}
+
+
+function fetchStyle(callback) {
 
     let req = new XMLHttpRequest();
 
-    req.open('GET', 'http://localhost:8852/');
+    req.open('GET', HOST + 'source.json');
     req.onerror = (args) => {
-        setTimeout(() => longpoll(callback), pl * 10);
-        console.error('baaad', args);
+        setTimeout(() => fetchStyle(callback), 1000);
+        console.error(args);
     };
 
     req.onload = () => {
-
         if (req.status >= 200 && req.status < 300) {
             callback(req.responseText);
             console.log('received data');
-            setTimeout(() => longpoll(callback), pl);
-
-        } else
-            setTimeout(() => longpoll(callback), pl);
-
+        }
     };
 
     req.send();
 
-    console.log('send');
 
 }
 
