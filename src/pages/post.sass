@@ -8,6 +8,36 @@
     margin-top: 0
     margin-bottom: 20px
 
+
+.post-stats
+    border-color: $third
+
+.post-additionals
+  padding: 10px 10px 0
+  margin-top: 0
+  background: $main
+  margin-bottom: 20px
+  //padding-bottom: 20px
+
+  .post-type
+    margin: 0 10px
+
+  .author-info
+    width: inherit
+    margin: 0 10px
+    border: 1px solid #4c4f50
+    border-top: 0
+
+  .post-share
+    border: none
+    padding: 20px
+    background: $main
+    border-top: 1px solid $grey
+    margin-left: -10px
+    margin-right: -10px
+    &__title
+      color: $light-grey
+
 .post
   &_preview
     background: $main
@@ -26,32 +56,6 @@
   //&__type-label
     // todo
     //background: $second
-
-  &-additionals
-    padding: 0 10px
-    margin-top: 0
-    background: $main
-    margin-bottom: 20px
-    //padding-bottom: 20px
-
-    .post-type
-      margin: 0 10px
-
-    .author-info
-      width: inherit
-      margin: 0 10px
-      border: 1px solid #4c4f50
-      border-top: 0
-
-    .post-share
-      border: none
-      padding: 20px
-      background: $main
-      border-top: 1px solid $grey
-      margin-left: -10px
-      margin-right: -10px
-      &__title
-        color: $light-grey
 
   &__body
     color: $text
@@ -88,12 +92,13 @@
     code
       color: $carrot
 
-  &-stats
-    border-color: $third
 
   &__translatation
     // todo сделать нормальный, когда починят
     background: $dark-main
+
+  &__tags-label
+    color: $grey
 
 .btn_post-stats
   background: $second
