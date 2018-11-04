@@ -2,14 +2,23 @@
 
 $btn-color: #333
 
+.btn
+  border-color: currentColor !important
+
+.btn_subscribed:not(:hover), .btn_subscribe:hover, .btn_outline_blue:hover
+  border-color: transparent !important
+
+.btn_navbar_registration
+  border: 1px solid transparent !important
+
 .buttons
   button,
   input[type=button],
   input[type=submit],
   a.button
-    color: $text !important
-    background: darken($main, 10%) !important
-    border-color: $light-grey !important
+    color: $text
+    background: darken($main, 10%)
+    border-color: currentcolor !important
 
     &:hover
       background: darken($main, 14%) !important
@@ -25,8 +34,8 @@ $btn-color: #333
   &.disabled, &[disabled]
     background-color: $light-grey
     color: $main
-    &:hover, &:focus, &.btn_focus
-      background-color: $grey
+//&:hover, &:focus, &.btn_focus
+  background-color: $grey
 
 .btn_outline_blue.btn
   &.disabled, &[disabled]
