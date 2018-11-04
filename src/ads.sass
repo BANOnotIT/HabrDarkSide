@@ -3,9 +3,19 @@
 .content_left > .dfp-slot
   margin-bottom: 20px
 
+.promo-item
+  &:hover
+    background: $second
+
+  &__title
+    color: $grey
+  &__attrs-item
+    color: $third
+
 .promo-block
-  border-left: 0
-  border-right: 0
+  background: $main
+  border-radius: 0
+  border-width: 0
 
   &, &__service, &__header, &__title-link, &__footer
     color: $grey
@@ -16,10 +26,14 @@
     border-bottom: 2px solid $grey
     background: $main
 
+  &__content
+    padding: 0
+
   &__footer-link
-    color: $text
+    color: $grey
     &:hover
       color: $text
+      text-decoration: underline
 
   &__see-all
     color: mix($green, $main, 70%)
@@ -37,3 +51,12 @@
 
     &:before
       display: none
+
+
+
+.partner-info
+  background: $second
+  &__title
+    color: $text
+  &__description
+    color: $grey
