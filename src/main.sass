@@ -52,6 +52,7 @@ body, body.nl
 
   &_comments
     padding-top: 0
+
     .comments_list
       padding-top: 20px
 
@@ -113,6 +114,7 @@ body, body.nl
   color: #b5b5b6
   background: $second
   border-color: $grey
+
   &:hover, &_current
     a &
       color: #fff
@@ -150,12 +152,14 @@ body, body.nl
   &__info
     padding: 0 12px
     background: $main
+
     &-desc
       color: $grey
       margin-top: 0
 
     &-title
       color: #8b8b8b
+
       &:hover
         color: #8b8b8b
 
@@ -232,6 +236,7 @@ body, body.nl
         color: #fff
         background: $second
         border-color: $grey
+
       &:visited.post_name, &:hover:visited.post_name
         color: #b5b5b5
 
@@ -296,22 +301,25 @@ body, body.nl
 
   &__fullname
     color: $dark-azure
+
     &:hover
       color: $dark-azure
       text-decoration: underline
 
   &__title-link
     color: $dark-azure
+
     &:hover
       text-decoration: underline
 
 // Футер
 
-.footer
-  &-block__title
-    color: $grey
+.footer-block
+  &__title
+    color: $light-grey
     border-color: $grey
 
+.footer
   &__copyright
     color: $grey
 
@@ -320,7 +328,7 @@ body, body.nl
   color: #b5b5b5
 
   &:not([id])
-    border: 1px solid $grey
+    border: 1px solid $third
     margin-top: -1px
     border-left: none
     border-right: none
@@ -372,6 +380,7 @@ body, body.nl
 
   &__content
     color: $text
+
   &__controls
     background: $second
     border-color: $grey
@@ -379,8 +388,10 @@ body, body.nl
 .company-info
   &_post-additional
     border-color: $third
+
     > *
       border-color: $third
+
   &__image-pic
     border-radius: 0
 
@@ -395,7 +406,7 @@ body, body.nl
     color: $light-grey
 
 .author-panel
-  border-color: $grey
+  border-color: $third
 
 // Блок информации об авторе
 
@@ -464,6 +475,7 @@ a.sort-panel__item-toggler.active
     color: darken($azure, 30%)
     border: 1px solid darken($azure, 30%)
     background-color: transparent
+
     &:hover
       color: darken($azure, 30%)
       text-decoration: underline
@@ -472,6 +484,7 @@ a.sort-panel__item-toggler.active
     &_cross
       color: darken($light-green, 35%)
       border-color: darken($light-green, 35%)
+
       &:hover
         color: darken($light-green, 35%)
         background-color: transparent
@@ -501,7 +514,7 @@ a.sort-panel__item-toggler.active
 
 // Медиа элементы
 
-.html_banner_wrap + div, .post + .html_banner, .post_show + .html_banner, .post-additionals + div
+.html_banner_wrap + div, .post + .html_banner, .post_show + .html_banner
   margin-top: 0
 
 .teaser__body-title
@@ -518,6 +531,7 @@ a.sort-panel__item-toggler.active
 // Пустые холдеры
 .empty-placeholder
   background-color: $main
+
   &__message
     color: $grey
 
@@ -535,6 +549,7 @@ a.sort-panel__item-toggler.active
   //background: $second
   line-height: 20px
   border-color: $grey
+
   &:before
     background: transparent
     border-color: #5aaadb
@@ -560,6 +575,7 @@ a.sort-panel__item-toggler.active
     &-link
       color: #fff
       border-color: $grey
+
       &:hover
         background: $grey
 
@@ -572,7 +588,8 @@ a.sort-panel__item-toggler.active
 
 //  Похожие публикации
 .content-list__item_devided
-  border-color: $grey
+  border-color: $third
+
   &:last-child
     border-bottom: none
 
@@ -613,6 +630,7 @@ div.block.corporate_blog > div.posts_list,
 .similar-posts__flow-link
   color: #fff
   border-color: $grey
+
   &:hover
     color: #fff
     border-color: $grey
@@ -646,9 +664,11 @@ form .item
     &[type=email]:focus, &[type=password]:focus, &[type=text]:focus
       color: #fff
       border-color: $grey
+
   textarea:focus
     color: #fff
     border-color: $grey
+
   input
     &[type=email], &[type=password], &[type=text]
       color: #fff
@@ -667,17 +687,21 @@ form .item > label,
 .tracker_page table
   tr.new
     background: $dark-main !important
+
   &.tracker_comments tr
     td, th
       color: #fff
       border-color: $grey
+
   &.tracker_folowers tr
     th, td.event_type
       color: #fff
       border-color: $grey
+
   &.tracker_mentions tr td, &.tracker_folowers tr td
     color: #fff
     border-color: $grey
+
   &.tracker_mentions tr
     th, td.mention_type
       color: #fff
@@ -826,6 +850,7 @@ a.habracut,
 .post
   .hubs a.subscribed
     color: #ab8bba
+
   .content a:visited:not(.habracut)
     color: #f3f
 
@@ -836,11 +861,13 @@ a.habracut,
 
 a
   color: $azure
+
   &:hover, &.user_link
     color: $azure
 
 .content-list__item-link
   color: $azure
+
   &:hover
     color: $azure
 
@@ -849,6 +876,7 @@ a
 
 .content-list_feed .content-list__item-link
   color: $azure
+
   &:hover:not(:visited)
     color: $azure
 
@@ -914,6 +942,7 @@ textarea,
     padding: 10px !important
     background: $main
     line-height: inherit !important
+
     .btn
       width: 100%
 
@@ -1026,8 +1055,9 @@ img
 .user-info
   &__fullname
     color: $text
+
   &__contacts
-    border-color: $grey
+    border-color: $third
 
 .user-message
   &__body,
@@ -1043,6 +1073,7 @@ img
     margin: 0
     border: none
     border-bottom: 1px solid $grey
+
     &:hover
       background: $dark-main
 
@@ -1078,6 +1109,7 @@ input[type="text"], textarea
     color: $text
     background: $main
     border-color: $grey
+
     &:active, &:focus
       border-color: $dark-azure
 
@@ -1138,6 +1170,7 @@ input[type="text"], textarea
 .menu_editor
   background: $second
   border-color: $grey
+
   &:after
     border-color: $grey
 
@@ -1162,11 +1195,13 @@ input[type="text"], textarea
     background: $main
 
     border-color: $grey
+
     .tabs-menu__item_devided
       border-color: $grey
 
       &.active
         background: $second
+
         .tabs-menu__item-text
           color: $text
           border-color: $grey
@@ -1184,6 +1219,7 @@ input[type="text"], textarea
     background: $main
     border-top: 0
     border-color: $grey
+
     .post
       padding: 10px
 
@@ -1205,6 +1241,7 @@ input[type="text"], textarea
   &__footer
     background: $main
     border-color: $grey
+
     &-help
       border-color: $grey
 
@@ -1217,6 +1254,7 @@ input[type="text"], textarea
     color: #fff
     background: $dark-main
     border-color: $grey
+
     &:hover
       color: $dark-main
 
@@ -1228,13 +1266,16 @@ input[type="text"], textarea
     color: $grey
     background: $main
     border-color: $grey
+
     &:hover
       color: $grey
+
     &s:after
       background-color: $light-grey
 
 .switch-light input:checked ~ .switch-light__buttons .switch-light__button:first-child span
   color: $grey
+
   &:hover
     color: $grey
 
