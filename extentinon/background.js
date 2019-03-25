@@ -27,7 +27,7 @@ function fetchStyle(callback) {
     req.open('GET', HOST + 'source.json');
     req.onerror = (args) => {
         setTimeout(() => fetchStyle(callback), 1000);
-        console.error(args);
+        console.log(args);
     };
 
     req.onload = () => {
@@ -68,7 +68,7 @@ function tabExecuter() {
             console.log(id);
             chrome.tabs.executeScript(id, {
                 code: css,
-                runAt: 'document_start'
+                runAt: 'document_end'
             })
         })
 
