@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
+    "url": "git://github.com/BANOnotIT/HabrDarkSide.git"
   },
   "main": "out.css",
   "scripts": {
