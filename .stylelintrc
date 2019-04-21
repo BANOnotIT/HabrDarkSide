@@ -6,7 +6,17 @@
     "tizo/unused": {
       "pages": [
         "https://habr.com/",
-        "https://habr.com/ru/post/438402/"
+        "https://habr.com/ru/post/438402/",
+        "https://habr.com/ru/post/448324/",
+        "https://habr.com/ru/company/mailru/",
+        "https://habr.com/ru/company/mailru/blog/405759/",
+        "https://habr.com/ru/search/?q=test",
+        "https://habr.com/ru/users/bano-notit/",
+        "https://habr.com/ru/users/bano-notit/posts/",
+        "https://habr.com/ru/users/bano-notit/comments/",
+        "https://habr.com/ru/company/ruvds/blog/447136/",
+        "https://habr.com/ru/company/tm/blog/93946/",
+        "test_pages/*"
       ]
     }
   }

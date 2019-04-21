@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registered user menu</title>
+</head>
+<body>
+<div class="main-navbar__section main-navbar__section_right">
+
+    <a class="btn btn_medium btn_navbar_tracker" href="https://habr.com/ru/tracker/" title="Трекер">
+        <svg aria-hidden="true" class="icon-svg icon-svg_navbar-tracker" height="32" role="img" version="1.1"
+             viewBox="0 0 29 32" width="29">
+            <path d="M14.313.25c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5zM16.224 26.75c-.192 1-.976 1.667-1.912 1.667s-1.72-.667-1.912-1.667H9.312c.216 3 2.363 5 5 5s4.784-2 5-5h-3.088zM28.313 24.75c0 1.105-.895 2-2 2h-24c-1.105 0-2-.895-2-2s.895-2 2-2h24c1.105 0 2 .895 2 2z"></path>
+            <path d="M7.313 22.75v-8c0-3.86 3.14-7 7-7s7 3.14 7 7v8h4v-8c0-6.075-4.925-11-11-11s-11 4.925-11 11v8h4z"></path>
+        </svg>
+
+    </a>
+
+
+    <a class="btn btn_medium btn_navbar_write-topic" href="https://habr.com/ru/topic/add/">
+        <span class="btn__text">Написать</span>
+        <svg aria-hidden="true" class="icon-svg icon-svg_navbar-pencil" height="32" role="img" version="1.1"
+             viewBox="0 0 33 32" width="33">
+            <path d="M7.038 27.08L5.6 25.617c-.284.757-.57 1.513-.856 2.27.764-.27 1.53-.538 2.294-.807zm7.956-2.8c-.51-.282-.997-.63-1.437-1.045-.82-.775-1.373-1.665-1.625-2.57-.012-.012-.026-.02-.038-.033-1.187-.24-2.355-.84-3.31-1.744-.114-.107-.216-.22-.32-.33-.6 1.595-1.203 3.19-1.806 4.786l2.876 2.928c1.886-.664 3.772-1.328 5.66-1.99zM1.057 29.932l5.798-15.358c.01-.024.023-.043.033-.066.06-.193.164-.383.337-.56l12.43-12.65c1.246-1.27 3.18.697 1.932 1.966L9.573 15.492c.098.424.412.92.873 1.358.628.594 1.408.972 2.155 1.08 2.982-3.032 5.962-6.066 8.942-9.1 1.247-1.27 3.18.698 1.933 1.967l-8.92 9.08c.107.416.415.896.863 1.32.904.855 2.125 1.273 3.108 1.066l.004.02c3.646-3.713 7.293-7.424 10.94-11.135 1.246-1.27 3.18.698 1.932 1.967L19.4 25.332c-.11.11-.225.19-.34.254-.15.175-.345.322-.606.414L3.066 31.415c-.98.556-2.506-.164-2.008-1.483z"></path>
+        </svg>
+    </a>
+
+    <div class="dropdown dropdown_user">
+        <button aria-expanded="false" aria-haspopup="true" class="btn btn_medium btn_navbar_user-dropdown"
+                data-toggle="dropdown" role="button" tabindex="0" title="bano-notit" type="button">
+            <img alt="user avatar" height="32"
+                 src="//habrastorage.org/getpro/habr/avatars/abe/c44/ef1/abec44ef1c1b3cfff8a884776bc9353a.png"
+                 width="32">
+        </button>
+        <div aria-hidden="true" class="dropdown-container dropdown-container_white" role="menu">
+            <a class="dropdown__user-info user-info" href="https://habr.com/ru/users/bano-notit/">
+                <span class="user-info__nickname">bano-notit</span><br>
+                <span class="user-info__special">Профиль</span>
+            </a><br>
+            <span class="dropdown__user-stats">У&nbsp;вас <strong>6</strong> голосов за&nbsp;карму и&nbsp;публикации, и ещё <strong>12</strong> голосов&nbsp;за комментарии</span>
+            <ul class="n-dropdown-menu n-dropdown-menu_profile">
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link"
+                       href="https://habr.com/ru/users/bano-notit/posts/">Публикации</a>
+                </li>
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link" href="https://habr.com/ru/users/bano-notit/posts/drafts/">Черновики</a>
+                </li>
+
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link" href="https://habr.com/ru/users/bano-notit/comments/">Комментарии</a>
+                </li>
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link" href="https://habr.com/ru/conversations/">Диалоги </a>
+                </li>
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link" href="https://habr.com/ru/users/bano-notit/favorites/">Закладки</a>
+                </li>
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link" href="https://habr.com/ru/beta/">Бета-тестирование</a>
+                </li>
+
+                <li class="n-dropdown-menu__item n-dropdown-menu__item_border">
+                    <a class="n-dropdown-menu__item-link n-dropdown-menu__item-link_user-menu js-show_lang_settings"
+                       href="#">
+                        <svg class="icon-svg icon-svg_user-dropdown" height="16" width="16">
+                            <use xlink:href="https://habr.com/images/1555674062/common-svg-sprite.svg#globus"></use>
+                        </svg>
+                        Настройка языка
+                    </a>
+                </li>
+
+                <li class="n-dropdown-menu__item ">
+                    <a class="n-dropdown-menu__item-link n-dropdown-menu__item-link_user-menu"
+                       href="https://habr.com/ru/auth/settings/profile/">
+                        <svg class="icon-svg icon-svg_user-dropdown" height="16" width="16">
+                            <use xlink:href="https://habr.com/images/1555674062/common-svg-sprite.svg#settings"></use>
+                        </svg>
+                        Настройки
+                    </a>
+                </li>
+                <li class="n-dropdown-menu__item">
+                    <a class="n-dropdown-menu__item-link n-dropdown-menu__item-link_user-menu">
+                        <svg class="icon-svg icon-svg_user-dropdown" height="16" width="16">
+                            <use xlink:href="https://habr.com/images/1555674062/common-svg-sprite.svg#logout"></use>
+                        </svg>
+                        Выйти
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

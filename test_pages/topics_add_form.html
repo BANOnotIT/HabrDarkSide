@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Topics Form</title>
+</head>
+<body>
+<form action="/json/favorites/" class="form form_bordered form_favorites-tags" id="edit_tags_form" method="post">
+    <input name="action" type="hidden" value="add">
+    <input name="ti" type="hidden" value="448324">
+    <input name="tt" type="hidden" value="2">
+
+    <button class="btn form__close-btn" onclick="closeForm(this)" title="Закрыть" type="button">
+        <svg aria-hidden="true" class="icon-svg icon-svg_navbar-close-search" height="32" role="img" version="1.1"
+             viewBox="0 0 31 32" width="31">
+            <path d="M26.67 0L15.217 11.448 3.77 0 0 3.77l11.447 11.45L0 26.666l3.77 3.77L15.218 18.99l11.45 11.448 3.772-3.77-11.448-11.45L30.44 3.772z"></path>
+        </svg>
+    </button>
+
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">Пометьте публикацию своими метками</legend>
+        <input autocomplete="off" class="form__text-field" name="tags_string" type="text">
+        <span class="form__desc">Метки лучше разделять запятой. Например: <i>программирование, алгоритмы</i></span>
+    </fieldset>
+
+    <div class="form__footer">
+        <button class="btn btn_x-large btn_outline_blue" type="submit">Сохранить</button>
+    </div>
+</form>
+</body>
+</html>

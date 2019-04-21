@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracker</title>
+</head>
+<body>
+<div class="tracker_page" id="tracker-page">
+    <form action="javascript:void(0);" id="tracker_feed_form" method="post">
+        <div class="buttons">
+            <input class="remove_button" disabled="disabled" name="r" type="submit" value="Удалить из трекера">
+            <input class="mark_read_button" disabled="disabled" name="m" type="submit"
+                   value="Пометить как прочитанное ">
+        </div>
+
+        <table class="tracker-table tracker_comments">
+            <tbody>
+            <tr>
+                <th class="tracker-table__header post_author">Автор</th>
+                <th class="tracker-table__header post_title">Заголовок</th>
+                <th class="tracker-table__header comment_count">Комментарии</th>
+                <th class="tracker-table__header" width="1%"><input id="check_all" type="checkbox"></th>
+            </tr>
+
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/EugeneKudashev/">EugeneKudashev</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/448498/">«Россия 404»: Сколько осталось жить свободному
+                        интернету</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/448498/#comments">296</a>
+                    <a href="https://habr.com/ru/post/448498/#first_unread"><span class="new">+98</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[448498]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/KirutNdert/">KirutNdert</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/448358/">Слушаем музыку и лекции с Youtube с заблокированным
+                        экраном смартфона и без рекламы с помощью Telegram</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/448358/#comments">138</a>
+                    <a href="https://habr.com/ru/post/448358/#first_unread"><span class="new">+33</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[448358]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/kireevmp/">kireevmp</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/447148/">(Не)официальное приложение Хабра — HabrApp 2.0: получение
+                        доступа</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/447148/#comments">76</a>
+                    <a href="https://habr.com/ru/post/447148/#first_unread"><span class="new">+12</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[447148]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/EverydayTools/">EverydayTools</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/everydaytools/blog/447854/">Восемь ошибок, которые я допускал,
+                        когда был джуниором</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/everydaytools/blog/447854/#comments">21</a>
+                    <a href="https://habr.com/ru/company/everydaytools/blog/447854/#first_unread"><span
+                            class="new">+2</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[447854]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/take/">take</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/443694/">Как браузер помогает товарищу майору</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/443694/#comments">321</a>
+                    <a href="https://habr.com/ru/post/443694/#first_unread"><span class="new">+192</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[443694]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/pushi/">pushi</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/446000/">Что не так с Яндекс.Музыкой? UX/UI разбор</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/446000/#comments">196</a>
+                    <a href="https://habr.com/ru/post/446000/#first_unread"><span class="new">+119</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[446000]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/ivanzviahin/">ivanzviahin</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/442166/">Альтернативная схема метро Минска</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/442166/#comments">186</a>
+                    <a href="https://habr.com/ru/post/442166/#first_unread"><span class="new">+74</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[442166]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/dizaar/">dizaar</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/446336/">Как запретить стандартные пароли и заставить всех тебя
+                        ненавидеть</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/446336/#comments">84</a>
+                    <a href="https://habr.com/ru/post/446336/#first_unread"><span class="new">+69</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[446336]" type="checkbox"></td>
+            </tr>
+            <tr>
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/alizar/">alizar</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/news/t/446374/">Хакеры заставили автопилот «Теслы» выехать на
+                        «встречку»</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/news/t/446374/#comments">20</a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[446374]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/m1rko/">m1rko</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/331658/">Ubuntu для мобильных устройств: посмертный анализ</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/331658/#comments">260</a>
+                    <a href="https://habr.com/ru/post/331658/#first_unread"><span class="new">+3</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[331658]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/scv0/">scv0</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/442006/">File management done wrong — Часть 2: Masterpiece of&nbsp;shit</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/442006/#comments">31</a>
+                    <a href="https://habr.com/ru/post/442006/#first_unread"><span class="new">+13</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[442006]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/Milfgard/">Milfgard</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/mosigra/blog/439036/">Главное не попасть в торговом центре под
+                        сверку часов</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/mosigra/blog/439036/#comments">198</a>
+                    <a href="https://habr.com/ru/company/mosigra/blog/439036/#first_unread"><span class="new">+69</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[439036]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/Gbdrm/">Gbdrm</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/312022/">Каково оно учить JavaScript в 2016</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/312022/#comments">298</a>
+                    <a href="https://habr.com/ru/post/312022/#first_unread"><span class="new">+1</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[312022]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/Plarium/">Plarium</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/plarium/blog/442116/">Повышаем производительность в
+                        компонентах-функциях React с помощью React.memo ()</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/plarium/blog/442116/#comments">11</a>
+                    <a href="https://habr.com/ru/company/plarium/blog/442116/#first_unread"><span class="new">+5</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[442116]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/Vsevo10d/">Vsevo10d</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/435406/">Изучение английского: a geeky way</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/435406/#comments">113</a>
+                    <a href="https://habr.com/ru/post/435406/#first_unread"><span class="new">+64</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[435406]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/mary_arti/">mary_arti</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/mailru/blog/441274/">Как стать тестировщиком — необходимые
+                        знания и навыки</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/mailru/blog/441274/#comments">12</a>
+                    <a href="https://habr.com/ru/company/mailru/blog/441274/#first_unread"><span
+                            class="new">+4</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[441274]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/Andrey2008/">Andrey2008</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/pvs-studio/blog/443342/">Бесплатные варианты лицензирования
+                        PVS-Studio</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/pvs-studio/blog/443342/#comments">14</a>
+                    <a href="https://habr.com/ru/company/pvs-studio/blog/443342/#first_unread"><span
+                            class="new">+6</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[443342]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/deniskin/">deniskin</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/tm/blog/435766/">Hello world! Или англоязычный Хабр, v1.0</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/tm/blog/435766/#comments">593</a>
+                    <a href="https://habr.com/ru/company/tm/blog/435766/#first_unread"><span class="new">+201</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[435766]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/m1rko/">m1rko</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/post/440620/">Безумие дотфайлов</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/post/440620/#comments">339</a>
+                    <a href="https://habr.com/ru/post/440620/#first_unread"><span class="new">+51</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[440620]" type="checkbox"></td>
+            </tr>
+            <tr class="tracker-table__row new">
+                <td class="tracker-table__cell post_author">
+                    <a class="username" href="https://habr.com/ru/users/nickivanov/">nickivanov</a>
+                </td>
+                <td class="tracker-table__cell post_title">
+                    <a href="https://habr.com/ru/company/tuturu/blog/429698/">Как&nbsp;это работать со&nbsp;Студией
+                        Лебедева: опыт Туту.ру</a>
+                </td>
+                <td class="tracker-table__cell comment_count">
+                    <a href="https://habr.com/ru/company/tuturu/blog/429698/#comments">312</a>
+                    <a href="https://habr.com/ru/company/tuturu/blog/429698/#first_unread"><span
+                            class="new">+2</span></a>
+                </td>
+                <td class="tracker-table__cell checkbox"><input name="post[429698]" type="checkbox"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="buttons">
+            <input class="remove_button" disabled="disabled" name="r" type="submit" value="Удалить из трекера">
+            <input class="mark_read_button" disabled="disabled" name="m" type="submit"
+                   value="Пометить как прочитанное ">
+        </div>
+
+    </form>
+
+    <div class="page__footer">
+        <ul class="arrows-pagination">
+            <li class="arrows-pagination__item">
+                <span class="arrows-pagination__item-link">←&nbsp;сюда</span>
+            </li>
+
+
+            <li class="arrows-pagination__item">
+                <a class="arrows-pagination__item-link arrows-pagination__item-link_next" href="/ru/tracker/page2/"
+                   id="next_page" rel=""><span>туда</span>&nbsp;→</a>
+            </li>
+        </ul>
+
+        <ul class="toggle-menu toggle-menu_pagination" id="nav-pagess">
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+                <span class="toggle-menu__item-link toggle-menu__item-link_pagination toggle-menu__item-link_active">1</span>
+            </li>
+
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page2/">2</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page3/">3</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page4/">4</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page5/">5</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page6/">6</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page7/">7</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination" href="/ru/tracker/page8/">8</a>
+
+            </li>
+
+            <li class="toggle-menu__item toggle-menu__item_pagination">
+
+                <a class="toggle-menu__item-link toggle-menu__item-link_pagination toggle-menu__item-link_bordered"
+                   href="/ru/tracker/page12/" rel="" title="Последняя страница">
+              <span class="icon-svg icon-svg_arrow-last"><svg class="icon-svg" height="24" viewBox="0 0 28 24"
+                                                              width="28"><path
+                      d="M8.452 5.455l2.93 3.192c.89.969 1.335 1.361 2.225 1.909h-13.608v2.773h13.634c-.838.5-1.492 1.102-2.252 1.913l-2.93 3.192 2.276 1.964 7.588-8.452-7.588-8.452-2.276 1.961zM24.297 0h3.087v23.891h-3.087v-23.891z"></path></svg>
+</span>
+                </a>
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>

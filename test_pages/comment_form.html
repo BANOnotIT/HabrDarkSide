@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment Form</title>
+</head>
+<body>
+<div class="js-form_placeholder">
+
+    <div class="comment-form" id="comments_form_placeholder">
+        <div class="comment-form__title">
+            <span class="comment-form__title-text">Написать комментарий</span>
+        </div>
+        <div class="comment-form_wrapper" id="comment-form">
+            <div class="comment-form__preview hidden" id="preview_placeholder"></div>
+            <div class="tm-editor tm-editor_comments" data-component="tm-editor">
+                <ul class="tm-editor__toolbar wysiwyg-toolbar wysiwyg-toolbar_comment">
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertTagWithText(this, 'b');" tabindex="0"
+                                title="Жирный"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_bold_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 18 24" width="18">
+                                <path d="M15.39 11.282l-.354-.254c1.076-1.122 1.64-2.532 1.64-4.118 0-2.282-1.018-4.128-2.94-5.336-1.676-1.06-3.922-1.574-6.866-1.574h-6.87v24h7.838c2.854 0 5.202-.536 6.98-1.59 2.082-1.236 3.182-3.24 3.182-5.79 0-2.214-.902-4.06-2.61-5.338zm-11.39-7.282c1.13 0 2.26-.048 3.39-.006 1.308.05 2.714.15 3.88.812.56.318 1.1.81 1.304 1.438.196.606.046 1.302-.322 1.814-.454.634-1.192 1.016-1.952 1.192-.932.216-1.902.15-2.85.15h-3.4499999999999997v-5.4zm8.78 14.98c-.414.264-.89.44-1.364.572-1.17.328-2.366.448-3.578.448h-3.838v-6.6h3.238c1.644 0 3.392-.126 4.932.572.618.28 1.182.718 1.514 1.308.7 1.244.298 2.93-.904 3.7z"></path>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertTagWithText(this, 'i');" tabindex="0"
+                                title="Курсив"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_italic_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 8 24" width="8">
+                                <path d="M3.996 24h-4l4.004-24h4z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertTagWithText(this, 'u');" tabindex="0"
+                                title="Подчеркнутый"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_underline_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 20 24" width="20">
+                                <path d="M10 18c2.81 0 4.88-.596 6.328-1.822l.026-.022.016-.014c1.474-1.254 2.254-3.03 2.254-5.134v-11.008h-4v11.014c0 .42-.058.76-.148 1.04-.136.416-.37.758-.712 1.054-.67.558-2.076.892-3.764.892-2.458 0-3.44-.606-3.754-.87l-.142-.13c-.482-.484-.728-1.152-.728-1.992v-11.008h-4v11.008c0 2.114.788 3.9 2.274 5.164 1.436 1.23 3.512 1.828 6.35 1.828zM0 20h20v4h-20v-4z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertTagWithText(this, 's');" tabindex="0"
+                                title="Зачеркнутый"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_strike_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 24 24" width="24">
+                                <path d="M14.686 14.562c.116.126.232.256.306.386l.118.266c.1.302.19.762.19 1.346v.006c0 .668-.16 1.326-.444 1.814l-.132.208c-.154.22-.342.426-.552.6-.156.132-.33.248-.522.352-.262.136-.574.24-.9.318-.244.058-.496.078-.75.098l-.382.044h-.018000000000000002c-.56-.002-1.086-.058-1.536-.166-.254-.06-.488-.138-.7-.234-.63-.29-1.308-.768-1.86-1.31l-2.804 2.852c.928.914 1.942 1.622 3.014 2.102.38.174.794.318 1.234.434.814.214 1.708.322 2.67.322l.382-.022c.252-.01.506-.02.75-.05 1-.122 1.928-.404 2.77-.854.384-.202.752-.442 1.094-.714.516-.406.964-.878 1.346-1.414.128-.18.248-.366.36-.556l.022-.04c.636-1.116.958-2.39.958-3.784 0-.728-.102-1.384-.252-2.004h-4.362zM5.718 9.284l.182.278h8.018c-.36-.138-.756-.276-1.168-.414l-.17-.06-.58-.202c-.908-.322-1.554-.6-2.018-.874-.378-.226-.648-.468-.782-.696l-.044-.086c-.072-.162-.158-.47-.158-1.01 0-.422.094-.776.292-1.106l.174-.246c.134-.16.298-.296.496-.418l.208-.116c.508-.256 1.184-.334 1.832-.318.264.006.51.028.75.066l.362.058c.188.048.364.106.536.176.266.116.528.264.784.438.232.164.474.36.734.598l2.724-2.93c-.388-.366-.794-.694-1.214-.98-.478-.332-.96-.596-1.462-.808-.234-.098-.478-.186-.73-.262-.538-.166-1.122-.254-1.734-.31-.244-.022-.49-.042-.75-.046l-.244-.016c-1.29 0-2.368.244-3.392.764-.242.122-.472.254-.692.4-.472.312-.88.672-1.236 1.09-.202.238-.388.492-.552.762-.606.974-.886 1.992-.886 3.204 0 1.018.162 1.868.502 2.632.066.15.138.294.218.432zM15.604 11.25h-15.604v2h24v-2z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertTagWithText(this, 'blockquote');"
+                                tabindex="0" title="Цитата"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_blockquote_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 31 24" width="31">
+                                <path d="M7.01.002c-1.032.029-2.069.238-3.038.612-1.322.509-2.503 1.373-3.218 2.506-.638 1.01-1.02 2.501-.528 3.631.461 1.063 1.471 1.999 2.542 2.57.343.182 3.151 1.438 3.05 1.807l-3.494 12.859h3.701l5.808-10.901c.833-1.627 1.428-2.954 1.786-3.984s.535-2.006.535-2.928c0-1.79-.684-3.281-2.054-4.474-1.399-1.219-3.235-1.75-5.088-1.699zM29.146 1.702c-1.399-1.219-3.235-1.75-5.088-1.697-1.032.029-2.069.238-3.038.612-1.322.506-2.503 1.37-3.218 2.503-.641 1.01-1.02 2.503-.53 3.634.463 1.061 1.474 1.997 2.544 2.568.343.182 3.151 1.438 3.05 1.807l-3.492 12.859h3.701l5.808-10.901c.833-1.627 1.428-2.954 1.786-3.984.355-1.03.533-2.006.533-2.928 0-1.79-.684-3.281-2.054-4.474z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertLink(this);" tabindex="0"
+                                title="Ссылка"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_link_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 24 24" width="24">
+                                <path d="M7.274 19.152l-2.426-2.426 4.855-4.853-2.426-2.424-7.277 7.277 7.274 7.274 7.267-7.269-2.424-2.424zM19.152 2.424l-2.426-2.424-7.267 7.269 2.424 2.424 4.843-4.845 2.426 2.426-4.855 4.853 2.426 2.424 7.277-7.277zM8.862 13.94l4.849-4.849 1.212 1.212-4.849 4.849-1.212-1.212z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item has-nested">
+                        <button class="btn btn_wysiwyg" data-toggle="dropdown" tabindex="0" title="Список"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_ul-list_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 27 24" width="27">
+                                <path d="M0 6.171h6.171v-6.171h-6.171zM10.284 4.846h17.143v-3.43h-17.143zM10.284 13.764h17.143v-3.429h-17.143zM10.284 22.618h17.143v-3.43h-17.143zM0 24h6.171v-6.171h-6.171zM0 15.091h6.171v-6.171h-6.171z"></path>
+                            </svg>
+
+                        </button>
+                        <ul class="wysiwyg-toolbar__dropdown">
+                            <li class="wysiwyg-toolbar__dropdown-item">
+                                <button class="btn btn_wysiwyg" onclick="habraWYG2.insertList(this, 'ol');" tabindex="0"
+                                        title="Нумерованный список"
+                                        type="button">
+                                    <svg aria-hidden="true" aria-labelledby="title"
+                                         class="icon-svg icon-svg_ol-list_wysiwyg" height="24" role="img" version="1.1"
+                                         viewBox="0 0 27 24"
+                                         width="27">
+                                        <path d="M10.286 1.418h17.143v3.429h-17.143v-3.429zM10.286 10.335h17.143v3.429h-17.143v-3.429zM10.286 19.188h17.143v3.429h-17.143v-3.429zM2.379 5.662h-1.44v1.195h4.565v-1.195h-1.411v-5.662h-1.519c-.012.183-.058.336-.137.459-.077.122-.201.223-.36.298-.134.065-.303.11-.506.135s-.413.039-.634.039v1.118h1.442v3.612zM3.398 13.551c.278-.214.552-.446.825-.699.441-.408.765-.801.977-1.185s.319-.787.319-1.21c0-.648-.223-1.15-.663-1.502s-1.087-.531-1.932-.531c-.418 0-.838.046-1.253.141-.417.096-.734.185-.946.278v1.497h.144c.264-.178.549-.324.854-.437s.597-.171.874-.171c.37 0 .655.084.852.25s.297.405.297.713c0 .257-.077.516-.231.777-.154.262-.411.567-.777.921-.245.238-.569.521-.977.85-.406.327-.809.638-1.212.929v1.111h5.282v-1.286h-3.021l.59-.444zM5.225 20.772c-.137-.118-.291-.207-.459-.269s-.327-.103-.477-.125v-.062c.37-.079.669-.262.895-.549s.339-.612.339-.979c0-.276-.058-.518-.177-.723s-.297-.381-.538-.525c-.204-.12-.461-.218-.773-.29-.31-.07-.675-.108-1.089-.108-.427 0-.849.048-1.263.135-.417.091-.744.183-.986.281v1.426h.163c.303-.178.617-.317.941-.413.324-.094.624-.142.9-.142l.403.027s.291.051.406.106c.101.048.187.113.255.192.069.081.101.187.101.321 0 .18-.031.317-.098.41-.065.093-.163.168-.291.225-.125.051-.274.087-.449.101-.177.015-.381.022-.61.022h-.372v1.176h.362l.566.007s.377.031.519.077c.144.045.261.12.348.225.087.106.134.254.134.442 0 .199-.031.348-.098.453-.065.106-.151.194-.261.267-.137.094-.307.156-.509.183-.199.029-.384.043-.555.043-.291 0-.612-.055-.965-.168-.353-.111-.655-.242-.907-.398h-.171v1.445c.243.106.562.204.951.286.389.084.857.127 1.402.127.477 0 .881-.048 1.217-.147.334-.098.624-.24.873-.425.254-.19.441-.42.562-.689.122-.267.183-.555.183-.866 0-.274-.043-.492-.129-.658-.084-.173-.199-.319-.345-.442z"></path>
+                                    </svg>
+
+                                </button>
+                            </li>
+                            <li class="wysiwyg-toolbar__dropdown-item">
+                                <button class="btn btn_wysiwyg" onclick="habraWYG2.insertList(this, 'ul');" tabindex="0"
+                                        title="Маркированный список"
+                                        type="button">
+                                    <svg aria-hidden="true" aria-labelledby="title"
+                                         class="icon-svg icon-svg_ul-list_wysiwyg" height="24" role="img" version="1.1"
+                                         viewBox="0 0 27 24"
+                                         width="27">
+                                        <path d="M0 6.171h6.171v-6.171h-6.171zM10.284 4.846h17.143v-3.43h-17.143zM10.284 13.764h17.143v-3.429h-17.143zM10.284 22.618h17.143v-3.43h-17.143zM0 24h6.171v-6.171h-6.171zM0 15.091h6.171v-6.171h-6.171z"></path>
+                                    </svg>
+
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="wysiwyg-toolbar__item has-nested" id="list-languages">
+                        <button class="btn btn_wysiwyg" data-toggle="dropdown" onclick="habraWYG2.insertSource(this);"
+                                tabindex="0"
+                                title="Исходный код" type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_source_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 34 24" width="34">
+                                <path d="M9.698 2.343l-9.698 9.696 9.698 9.698 2.424-2.424-7.274-7.274 7.274-7.272zM13.716 24h3.429l3.429-24h-3.429zM31.913 9.615l-7.274-7.272-2.424 2.424 7.274 7.272-7.274 7.274 2.424 2.424 9.698-9.698z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertImage(this);" tabindex="0"
+                                title="Изображение"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_image_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 31 24" width="31">
+                                <path d="M28.289 0h-25.721c-1.418 0-2.568 1.15-2.568 2.568v18.862c0 1.419 1.15 2.57 2.568 2.57h25.719c1.419 0 2.57-1.15 2.57-2.57v-18.862c0-1.418-1.15-2.568-2.568-2.568zm-24.86 20.571v-.873l6.465-6.465 5.899 4.541.005-.007.002.002 2.654-1.923 7.443 4.725h-22.467zm24-2.941l-9.199-5.835-2.563 1.86-6.079-4.677-6.159 6.159v-11.709h24v14.201zM24.831 7.349c0 .947-.768 1.714-1.714 1.714s-1.714-.768-1.714-1.714c0-.947.768-1.714 1.714-1.714s1.714.768 1.714 1.714z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertTagWithText(this, 'oembed');"
+                                tabindex="0" title="Медиаэлемент"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_embed_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 24 24" width="24">
+                                <path d="M21.437 0h-18.874c-1.416 0-2.563 1.147-2.563 2.563v18.874c0 1.416 1.147 2.563 2.563 2.563h18.874c1.416 0 2.563-1.147 2.563-2.563v-18.874c0-1.416-1.147-2.563-2.563-2.563zm-.866 20.571h-17.143v-17.143h17.143v17.143zM10.392 18h3.429v-4.286h4.286v-3.429h-4.286v-4.286h-3.429v4.286h-4.286v3.429h4.286z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertUser(this);" tabindex="0"
+                                title="Пользователь"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_user_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 24 24" width="24">
+                                <path d="M18.792 17.931c-3.146-1.198-4.152-2.208-4.152-4.371 0-1.299.96-.874 1.383-3.254.175-.987 1.023-.015 1.186-2.268 0-.898-.463-1.121-.463-1.121s.235-1.329.327-2.35c.113-1.275-.706-4.567-5.074-4.567s-5.187 3.291-5.073 4.565c.093 1.022.327 2.35.327 2.35s-.463.223-.463 1.121c.163 2.253 1.011 1.282 1.185 2.268.423 2.378 1.383 1.954 1.383 3.254 0 2.163-1.006 3.173-4.152 4.371-3.156 1.202-5.208 2.426-5.208 3.262v2.808h24v-2.808c0-.835-2.05-2.061-5.208-3.261z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                    <li class="wysiwyg-toolbar__item">
+                        <button class="btn btn_wysiwyg" onclick="habraWYG2.insertSpoiler(this);" tabindex="0"
+                                title="Спойлер"
+                                type="button">
+                            <svg aria-hidden="true" aria-labelledby="title" class="icon-svg icon-svg_spoiler_wysiwyg"
+                                 height="24" role="img" version="1.1" viewBox="0 0 24 24" width="24">
+                                <path d="M24 10.286h-7.862l5.559-5.559-2.424-2.424-5.559 5.559v-7.862h-3.429v7.862l-5.559-5.559-2.424 2.424 5.559 5.559h-7.862v3.429h7.862l-5.559 5.559 2.424 2.424 5.559-5.559v7.862h3.429v-7.862l5.559 5.559 2.424-2.424-5.559-5.559h7.862z"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+                </ul>
+
+                <form action="/json/comment/" class="form form_comment-message" data-post-type="publish_ugc"
+                      id="comments_form"
+                      method="post">
+                    <input name="ts" type="hidden" value="1555856313">
+                    <input name="tt" type="hidden" value="2">
+                    <input name="ti" type="hidden" value="448858">
+                    <input name="comment_id" type="hidden" value="0">
+                    <input name="parent_id" type="hidden" value="0">
+
+                    <div class="tm-editor__textarea-wrap">
+                        <textarea class="tm-editor__textarea tm-editor__textarea_comment" cols="30" id="comment_text"
+                                  name="text" rows="5"></textarea>
+                    </div>
+
+                    <div class="form__buttons form__buttons_comment js-form-buttons">
+                        <button class="btn btn_x-large btn_outline_blue js-btn_preview" disabled="" name="preview"
+                                onclick="comment_preview(this.form, this)" type="button">Предпросмотр
+                        </button>
+                        <button class="btn btn_x-large btn_blue" disabled="" name="send"
+                                onclick="comment_send(this.form, this, event)" type="button">Отправить
+                        </button>
+                        <button class="btn btn_x-large btn_outline_blue hidden" disabled="" name="save"
+                                onclick="comment_update(this.form, this)" type="button">Сохранить
+                        </button>
+
+
+                        <label class="checkbox checkbox_custom checkbox_md-comments">
+                            <input id="comment_markdown" name="comment_markdown" type="checkbox">
+                            <span class="checkbox__label checkbox__label_md">
+                            Markdown
+                            (<a class="checkbox__label-help" href="/info/help/markdown/" rel=" noopener"
+                                target="_blank">?</a>)
+                          </span>
+                        </label>
+                    </div>
+
+                    <span class="time_left" title="Оставшееся время редактирования комментария"></span>
+                </form>
+            </div>
+            <div class="error" id="error_text"></div>
+        </div>
+    </div>
+
+    <form class="h-message h-message_warning js-h-message hidden" id="moderated_placeholder">
+        <div class="h-message__content">
+            <h3 class="h-message__title">Ваш комментарий на модерации</h3>
+            <p class="h-message__text">Он станет виден другим пользователям, если его одобрит автор поста или один из
+                модераторов. Дальше вы сможете комментировать этот пост без ограничений.</p>
+        </div>
+        <div class="h-message__controls">
+            <button class="btn btn_x-large btn_outline_blue h-message__submit js-h-message__submit">Продолжить</button>
+            <span class="h-message__close js-h-message__submit">
+      <svg aria-hidden="true" class="icon-svg icon-svg_navbar-close-search" height="32" role="img" version="1.1"
+           viewBox="0 0 31 32" width="31"><path
+              d="M26.67 0L15.217 11.448 3.77 0 0 3.77l11.447 11.45L0 26.666l3.77 3.77L15.218 18.99l11.45 11.448 3.772-3.77-11.448-11.45L30.44 3.772z"></path></svg>
+
+    </span>
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>

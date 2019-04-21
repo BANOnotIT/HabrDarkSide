@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post create form</title>
+</head>
+<body>
+<div class="layout__row layout__row_body">
+    <div class="layout__cell layout__cell_body">
+
+        <div class="column-wrapper column-wrapper_content column-wrapper_lists">
+            <div class="content_left">
+                <div class="page-header page-header_110">
+                    <h1 class="page-header__title page-header__title_inline">
+                        Хочу разместить
+                    </h1>
+                    <div class="page-header__form-selector">
+                        <div class="post-type-selector_wrap" style="width: 163px;">
+                            <ul class="post-type-selector">
+                                <li class="post-type-selector__item active">
+                                    <a class="post-type-selector__link"
+                                       href="https://habr.com/ru/topic/add/">публикацию</a>
+                                </li>
+                                <li class="post-type-selector__item ">
+                                    <a class="post-type-selector__link"
+                                       href="https://habr.com/ru/topic/add/translation/">перевод</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="topic_add topic-form">
+                    <div class="hidden" id="preview_placeholder"></div>
+
+                    <form action="#" data-form-type="post" id="post_form" method="post" name="post_form">
+
+
+                        <input name="id" type="hidden" value="">
+
+                        <input name="post_type" type="hidden" value="simple">
+
+                        <div class="item lang required">
+                            <label for="lang">
+                                Язык публикации<sup class="required_field">*</sup>
+                            </label>
+                            <div class="select_wrap">
+                                <select data-cip-id="jQuery342845642" name="lang">
+                                    <option selected="selected" value="ru">Русский</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                            <div class="error">
+
+
+                            </div>
+                            <div class="description"></div>
+                        </div>
+
+                        <div class="item hubs required">
+                            <label for="hubs">
+                                Хабы<sup class="required_field">*</sup>
+                            </label>
+
+                            <select class="select_chosen" data-placeholder="Выберите название хаба"
+                                    data-publication-type="topic" data-selected-values="" id="hubs" multiple=""
+                                    name="hubs[]" size="1"
+                                    style="width: 100%; height: 34px; overflow: auto; background: rgb(255, 255, 255); -webkit-appearance: none; font-size: 12px; padding-left: 10px; font-family: Verdana, Geneva, sans-serif; border: 1px solid rgb(217, 217, 217); display: none;">
+                                <optgroup label="Тематические">
+                                    <option data-optgroup="collective_hubs" data-subscribers="105129" data-type=""
+                                            value="7289">*nix*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95091" data-type=""
+                                            value="546">.NET*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="67703" data-type=""
+                                            value="17703">1С-Битрикс
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="58714" data-type=""
+                                            value="21964">3D-принтеры*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="80990" data-type=""
+                                            value="17690">API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93147" data-type=""
+                                            value="21940">AR и VR
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82876" data-type=""
+                                            value="7149">ASP*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="63817" data-type=""
+                                            value="17871">Accessibility*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="66720" data-type=""
+                                            value="17705">Action Script*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81769" data-type=""
+                                            value="6258">Adobe Flash*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="11091" data-type=""
+                                            value="20692">Agile*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93395" data-type=""
+                                            value="13">Ajax*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="75187" data-type=""
+                                            value="17682">Amazon Web Services*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="49991" data-type=""
+                                            value="18109">Angular*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83498" data-type=""
+                                            value="17697">Apache*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="65605" data-type=""
+                                            value="17706">Apache Flex*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="86558" data-type=""
+                                            value="595">Assembler*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="73156" data-type=""
+                                            value="17707">Asterisk*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="21231" data-type=""
+                                            value="21116">Atlassian*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="73231" data-type=""
+                                            value="17795">Big Data*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78658" data-type=""
+                                            value="17397">Brainfuck*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="86856" data-type=""
+                                            value="17717">C*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="92088" data-type=""
+                                            value="17718">C#*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105411" data-type=""
+                                            value="559">C++*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="75348" data-type=""
+                                            value="17698">CAD/CAM*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3219" data-type=""
+                                            value="19800">CGI (графика)*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83694" data-type=""
+                                            value="21">CMS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71527" data-type=""
+                                            value="17739">CRM-системы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106451" data-type=""
+                                            value="307">CSS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="1689" data-type=""
+                                            value="20810">CTF*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71181" data-type=""
+                                            value="412">CakePHP*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81402" data-type=""
+                                            value="17187">Canvas*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="86257" data-type=""
+                                            value="6900">Cisco*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="500" data-type=""
+                                            value="21366">Clojure*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="70199" data-type=""
+                                            value="17710">Cobol*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72868" data-type=""
+                                            value="17711">Cocoa*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72421" data-type=""
+                                            value="564">CodeIgniter*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="525" data-type=""
+                                            value="21362">CoffeeScript*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82474" data-type=""
+                                            value="16995">Creative Commons*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72215" data-type=""
+                                            value="17222">Cubrid*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="33340" data-type=""
+                                            value="18298">D*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="422697" data-type=""
+                                            value="21976">DIY или Сделай сам*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78650" data-type=""
+                                            value="17708">DNS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72650" data-type=""
+                                            value="17712">Dart*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88700" data-type=""
+                                            value="7152">Data Mining*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81630" data-type=""
+                                            value="604">Delphi*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="33744" data-type=""
+                                            value="18282">Derby.js*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6240" data-type=""
+                                            value="20788">DevOps*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="79464" data-type=""
+                                            value="403">Django*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="75294" data-type=""
+                                            value="9699">Doctrine ORM*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="75694" data-type=""
+                                            value="314">Drupal*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="36224" data-type=""
+                                            value="18278">ECM/СЭД*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="80410" data-type=""
+                                            value="17699">ERP-системы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="76585" data-type=""
+                                            value="427">Eclipse*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="1478" data-type=""
+                                            value="20906">Elixir/Phoenix*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="471" data-type=""
+                                            value="21348">Elm*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="56881" data-type=""
+                                            value="17869">Emacs*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81371" data-type=""
+                                            value="8238">Erlang/OTP*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="603" data-type=""
+                                            value="21364">F#*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="13894" data-type=""
+                                            value="19733">FPGA*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="73408" data-type=""
+                                            value="17691">Facebook API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78164" data-type=""
+                                            value="9291">Fidonet*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="33766" data-type=""
+                                            value="18574">Firebird/Interbase*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="103583" data-type=""
+                                            value="49">Firefox
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="65" data-type=""
+                                            value="22224">Flask*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="262" data-type=""
+                                            value="22176">Flutter*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="16203" data-type=""
+                                            value="19069">Forth*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71014" data-type=""
+                                            value="17713">Fortran*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93206" data-type=""
+                                            value="9233">GPGPU*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="28544" data-type=""
+                                            value="20690">GTD*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="67993" data-type=""
+                                            value="17451">GTK+*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105539" data-type=""
+                                            value="7151">Git*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="42102" data-type=""
+                                            value="18790">GitHub
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="73485" data-type=""
+                                            value="17748">Go*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="80038" data-type=""
+                                            value="17692">Google API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83764" data-type=""
+                                            value="9659">Google App Engine*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="232547" data-type=""
+                                            value="6103">Google Chrome
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="1982" data-type=""
+                                            value="20922">Google Cloud Platform*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="489" data-type=""
+                                            value="21414">Google Cloud Vision API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="85460" data-type=""
+                                            value="467">Google Web Toolkit*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="795" data-type=""
+                                            value="21372">Gradle*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72733" data-type=""
+                                            value="5996">GreaseMonkey*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71393" data-type=""
+                                            value="5688">Groovy &amp; Grails*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3647" data-type=""
+                                            value="20700">Growth Hacking*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106516" data-type=""
+                                            value="17103">HTML*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="102080" data-type=""
+                                            value="161">Habr
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72665" data-type=""
+                                            value="17695">Habr API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="788" data-type=""
+                                            value="21376">Hadoop*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81995" data-type=""
+                                            value="8424">Haskell*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="76957" data-type=""
+                                            value="17702">Help Desk Software*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="39050" data-type=""
+                                            value="18288">I2P*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="76704" data-type=""
+                                            value="17701">IIS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="74691" data-type=""
+                                            value="5906">INFOLUST*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="146" data-type=""
+                                            value="22131">IPFS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83708" data-type=""
+                                            value="8711">IPTV*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="36477" data-type=""
+                                            value="18754">IPv6*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="97258" data-type=""
+                                            value="6398">IT-инфраструктура*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="441339" data-type=""
+                                            value="22026">IT-компании
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106540" data-type=""
+                                            value="17189">IT-стандарты*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="7265" data-type=""
+                                            value="20734">IT-эмиграция
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="90690" data-type=""
+                                            value="598">Internet Explorer
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="108492" data-type=""
+                                            value="375">Java*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="114688" data-type=""
+                                            value="357">JavaScript*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="70299" data-type=""
+                                            value="17704">Joomla*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="24274" data-type=""
+                                            value="18840">Julia*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71835" data-type=""
+                                            value="7080">Kohana*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="7355" data-type=""
+                                            value="19441">Kotlin*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="449" data-type=""
+                                            value="22196">Kubernetes*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="74857" data-type=""
+                                            value="7589">LaTeX*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="77633" data-type=""
+                                            value="17418">LabVIEW*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="29449" data-type=""
+                                            value="18812">Laravel*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="80799" data-type=""
+                                            value="642">Lisp*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71850" data-type=""
+                                            value="6346">LiveStreet
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="74710" data-type=""
+                                            value="17720">Lua*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="73029" data-type=""
+                                            value="361">MODX*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="1118" data-type=""
+                                            value="21046">Magento*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="77148" data-type=""
+                                            value="17419">Maps API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="685" data-type=""
+                                            value="21360">Matlab*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="74128" data-type=""
+                                            value="17721">Mercurial*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="39842" data-type=""
+                                            value="18290">Mesh-сети*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="30879" data-type=""
+                                            value="18732">Meteor.JS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="69043" data-type=""
+                                            value="17680">Microsoft Access*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="56012" data-type=""
+                                            value="17851">Microsoft Azure
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4040" data-type=""
+                                            value="19581">Microsoft Edge
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81233" data-type=""
+                                            value="17378">Microsoft SQL Server*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84808" data-type=""
+                                            value="17192">MongoDB*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="81471" data-type=""
+                                            value="11272">Mono и Moonlight*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71627" data-type=""
+                                            value="6341">MooTools*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="100014" data-type=""
+                                            value="306">MySQL*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="453" data-type=""
+                                            value="22125">Natural Language Processing*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="94896" data-type=""
+                                            value="6659">Nginx*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88358" data-type=""
+                                            value="16848">NoSQL*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="34046" data-type=""
+                                            value="17110">Node.JS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78655" data-type=""
+                                            value="17714">Objective C*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="107381" data-type=""
+                                            value="144">Open source*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84048" data-type=""
+                                            value="17153">OpenStreetMap*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="61" data-type=""
+                                            value="22212">Openshift*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="94954" data-type=""
+                                            value="93">Opera
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82114" data-type=""
+                                            value="312">Oracle*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78895" data-type=""
+                                            value="17471">PDF
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="108431" data-type=""
+                                            value="260">PHP*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82326" data-type=""
+                                            value="12">Perl*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="587" data-type=""
+                                            value="21286">Phalcon*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88554" data-type=""
+                                            value="358">PostgreSQL*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84589" data-type=""
+                                            value="6065">PowerShell*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105" data-type=""
+                                            value="22146">Processing*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72823" data-type=""
+                                            value="17461">Prolog*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="459" data-type=""
+                                            value="21368">Puppet*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="110196" data-type=""
+                                            value="340">Python*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="79864" data-type=""
+                                            value="7330">Qt*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="54633" data-type=""
+                                            value="17939">R*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="16856" data-type=""
+                                            value="19327">ReactJS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="87842" data-type=""
+                                            value="224">Ruby*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="77621" data-type=""
+                                            value="8279">Ruby on Rails*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="22542" data-type=""
+                                            value="18961">Rust*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="24741" data-type=""
+                                            value="18937">SAN*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="25432" data-type=""
+                                            value="18818">SCADA*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="97934" data-type=""
+                                            value="594">SQL*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="40677" data-type=""
+                                            value="18554">SQLite*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83386" data-type=""
+                                            value="12365">SaaS / S+S*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="90492" data-type=""
+                                            value="376">Safari
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82080" data-type=""
+                                            value="16263">Scala*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="9548" data-type=""
+                                            value="19369">Service Desk*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="80147" data-type=""
+                                            value="486">SharePoint
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="80665" data-type=""
+                                            value="533">Silverlight
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="77568" data-type=""
+                                            value="7233">Small Basic*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="22644" data-type=""
+                                            value="18869">Smalltalk*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="882" data-type=""
+                                            value="21234">Solidity*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82262" data-type=""
+                                            value="7929">Sphinx*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="22702" data-type=""
+                                            value="19039">Swift*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="74867" data-type=""
+                                            value="477">Symfony*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88579" data-type=""
+                                            value="7606">TDD*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="71429" data-type=""
+                                            value="8738">Twisted*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="72102" data-type=""
+                                            value="17694">Twitter API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="1688" data-type=""
+                                            value="21370">TypeScript*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="234" data-type=""
+                                            value="22109">UEFI*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="77372" data-type=""
+                                            value="17715">UML Design*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="67177" data-type=""
+                                            value="17831">Unity*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="10096" data-type=""
+                                            value="19367">Unreal Engine*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="99739" data-type=""
+                                            value="17463">Usability*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88162" data-type=""
+                                            value="609">VIM*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93297" data-type=""
+                                            value="11606">Visual Studio*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="2518" data-type=""
+                                            value="21296">VueJS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="482" data-type=""
+                                            value="22083">WebAssembly*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="32414" data-type=""
+                                            value="18768">WebGL*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="86481" data-type=""
+                                            value="73">WordPress*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84899" data-type=""
+                                            value="7026">XML*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="76234" data-type=""
+                                            value="7860">XSLT*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="616" data-type=""
+                                            value="21374">Xamarin*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="30138" data-type=""
+                                            value="18794">Xcode*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="77524" data-type=""
+                                            value="9554">Yii*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="74865" data-type=""
+                                            value="603">Zend Framework*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95345" data-type=""
+                                            value="538">jQuery*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="5659" data-type=""
+                                            value="21994">Автомобильные гаджеты
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84912" data-type=""
+                                            value="17681">Администрирование баз данных*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88464" data-type=""
+                                            value="183">Администрирование доменных имен*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="243161" data-type=""
+                                            value="8000">Алгоритмы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="91677" data-type=""
+                                            value="397">Анализ и проектирование систем*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3967" data-type=""
+                                            value="20724">Аналитика мобильных приложений*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="102664" data-type=""
+                                            value="332">Антивирусная защита*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4348" data-type=""
+                                            value="22022">Астрономия*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="98156" data-type=""
+                                            value="17201">Беспроводные технологии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="75917" data-type=""
+                                            value="602">Библиотека ExtJS/Sencha*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="10554" data-type=""
+                                            value="20752">Бизнес-модели
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3067" data-type=""
+                                            value="19794">Биллинговые системы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="92301" data-type=""
+                                            value="21938">Биографии гиков
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95162" data-type=""
+                                            value="21912">Биотехнологии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="113604" data-type=""
+                                            value="19257">Браузеры
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4022" data-type=""
+                                            value="20750">Брендинг
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6386" data-type=""
+                                            value="22014">Будущее здесь
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6034" data-type=""
+                                            value="20698">Веб-аналитика*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="241056" data-type=""
+                                            value="47">Веб-дизайн*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6115" data-type=""
+                                            value="20702">Венчурные инвестиции
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="15684" data-type=""
+                                            value="19261">Верстка писем*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95998" data-type=""
+                                            value="21944">Видеокарты
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84328" data-type=""
+                                            value="21946">Видеотехника
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="52373" data-type=""
+                                            value="18202">Визуализация данных*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95198" data-type=""
+                                            value="7312">Виртуализация*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78341" data-type=""
+                                            value="17693">Вконтакте API*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95311" data-type=""
+                                            value="17351">Восстановление данных*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105444" data-type=""
+                                            value="4">Высокая производительность*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="434923" data-type=""
+                                            value="21894">Гаджеты
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="66961" data-type=""
+                                            value="17783">Геоинформационные сервисы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="89529" data-type=""
+                                            value="350">Глобальные системы позиционирования*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95321" data-type=""
+                                            value="640">Графические оболочки*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6498" data-type=""
+                                            value="19802">Графический дизайн*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83357" data-type=""
+                                            value="21920">Демосцена
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="90258" data-type=""
+                                            value="33">Децентрализованные сети
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="156913" data-type=""
+                                            value="21892">Дизайн
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4283" data-type=""
+                                            value="20800">Дизайн игр*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="10035" data-type=""
+                                            value="19465">Дизайн мобильных приложений*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="104427" data-type=""
+                                            value="20738">Законодательство в IT
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105072" data-type=""
+                                            value="287">Занимательные задачки
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="96598" data-type=""
+                                            value="21988">Звук
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="9722" data-type=""
+                                            value="21996">Здоровье гика
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105045" data-type=""
+                                            value="21980">Игры и игровые приставки
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6645" data-type=""
+                                            value="22006">Изучение языков
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="502" data-type=""
+                                            value="22113">Инженерные системы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="2171" data-type=""
+                                            value="22020">Интервью
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="25137" data-type=""
+                                            value="21970">Интернет вещей
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6185" data-type=""
+                                            value="20710">Интернет-маркетинг*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="241846" data-type=""
+                                            value="9188">Интерфейсы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="97536" data-type=""
+                                            value="21926">Инфографика
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="506473" data-type=""
+                                            value="50">Информационная безопасность*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106922" data-type=""
+                                            value="21922">Искусственный интеллект*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="8486" data-type=""
+                                            value="20688">Исследования и прогнозы в IT
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="97085" data-type=""
+                                            value="21906">История IT
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="30526" data-type=""
+                                            value="20740">Карьера в IT-индустрии
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3045" data-type=""
+                                            value="22018">Квантовые технологии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93930" data-type=""
+                                            value="21900">Киберпанк
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3929" data-type=""
+                                            value="22002">Киберспорт
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95668" data-type=""
+                                            value="530">Клиентская оптимизация*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="92778" data-type=""
+                                            value="617">Кодобред
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="92514" data-type=""
+                                            value="17188">Компиляторы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3899" data-type=""
+                                            value="19798">Компьютерная анимация*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="428706" data-type=""
+                                            value="21898">Компьютерное железо
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4323" data-type=""
+                                            value="20714">Контекстная реклама
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4475" data-type=""
+                                            value="20720">Контент-маркетинг
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4003" data-type=""
+                                            value="20754">Конференции
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="88677" data-type=""
+                                            value="21896">Копирайт*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="75335" data-type=""
+                                            value="21962">Космонавтика*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="121672" data-type=""
+                                            value="21916">Краудсорсинг
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="34615" data-type=""
+                                            value="21986">Криптовалюты
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106190" data-type=""
+                                            value="118">Криптография*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="5884" data-type=""
+                                            value="21992">Лазеры*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="13672" data-type=""
+                                            value="21982">Лайфхаки для гиков
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="5628" data-type=""
+                                            value="22000">Логические игры
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="10449" data-type=""
+                                            value="19341">Локализация продуктов*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="83536" data-type=""
+                                            value="17812">Математика*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="20408" data-type=""
+                                            value="19439">Машинное обучение*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="7952" data-type=""
+                                            value="21978">Медгаджеты
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3469" data-type=""
+                                            value="20712">Медийная реклама
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="984" data-type=""
+                                            value="22115">Микросервисы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="78257" data-type=""
+                                            value="19">Микроформаты*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="10709" data-type=""
+                                            value="21990">Мозг*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4686" data-type=""
+                                            value="20684">Монетизация IT-систем*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="5299" data-type=""
+                                            value="20704">Монетизация веб-сервисов*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3947" data-type=""
+                                            value="20708">Монетизация игр*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4374" data-type=""
+                                            value="20706">Монетизация мобильных приложений*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="94981" data-type=""
+                                            value="21948">Мониторы и ТВ
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="16777" data-type=""
+                                            value="21974">Мультикоптеры
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="99114" data-type=""
+                                            value="21942">Накопители
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="84079" data-type=""
+                                            value="21960">Нанотехнологии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="90613" data-type=""
+                                            value="21950">Настольные компьютеры
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="500715" data-type=""
+                                            value="36">Настройка Linux*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="9972" data-type=""
+                                            value="21984">Научная фантастика
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="107414" data-type=""
+                                            value="21910">Научно-популярное
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="103655" data-type=""
+                                            value="84">Ненормальное программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="26752" data-type=""
+                                            value="21972">Носимая электроника
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106489" data-type=""
+                                            value="21952">Ноутбуки
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="103915" data-type=""
+                                            value="17719">ООП*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93451" data-type=""
+                                            value="16120">Облачные вычисления*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="100646" data-type=""
+                                            value="21470">Облачные сервисы
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93940" data-type=""
+                                            value="7875">Оболочки*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="99643" data-type=""
+                                            value="17175">Обработка изображений*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4749" data-type=""
+                                            value="20732">Образование за рубежом
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="53997" data-type=""
+                                            value="18081">Открытые данные*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="85352" data-type=""
+                                            value="17716">Отладка*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="87987" data-type=""
+                                            value="21904">Офисы IT-компаний
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="73587" data-type=""
+                                            value="17822">Параллельное программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="101881" data-type=""
+                                            value="20746">Патентование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="87189" data-type=""
+                                            value="21954">Периферия
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="142387" data-type=""
+                                            value="21934">Планшеты
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106461" data-type=""
+                                            value="233">Платежные системы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4743" data-type=""
+                                            value="20718">Повышение конверсии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4839" data-type=""
+                                            value="20748">Поисковая оптимизация
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="94442" data-type=""
+                                            value="126">Поисковые технологии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="91250" data-type=""
+                                            value="21936">Презентации
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="250606" data-type=""
+                                            value="359">Программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="94171" data-type=""
+                                            value="19737">Программирование микроконтроллеров*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="2497" data-type=""
+                                            value="20844">Продвижение игр*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="102637" data-type=""
+                                            value="7504">Проектирование и рефакторинг*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3807" data-type=""
+                                            value="21484">Производство и разработка электроники*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="32698" data-type=""
+                                            value="18816">Промышленное программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="5447" data-type=""
+                                            value="19796">Прототипирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="24763" data-type=""
+                                            value="19309">Профессиональная литература
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="102171" data-type=""
+                                            value="21956">Процессоры
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="101659" data-type=""
+                                            value="643">Работа с 3D-графикой*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="98095" data-type=""
+                                            value="449">Работа с векторной графикой*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="115793" data-type=""
+                                            value="262">Работа с видео*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="97236" data-type=""
+                                            value="302">Работа с иконками*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="13005" data-type=""
+                                            value="20722">Развитие стартапа
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="515926" data-type=""
+                                            value="91">Разработка веб-сайтов*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="2666" data-type=""
+                                            value="19681">Разработка для Office 365*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="28381" data-type=""
+                                            value="19739">Разработка для интернета вещей*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106508" data-type=""
+                                            value="7773">Разработка игр*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="125207" data-type=""
+                                            value="6345">Разработка мобильных приложений*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="33065" data-type=""
+                                            value="21476">Разработка на Raspberry Pi*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="2155" data-type=""
+                                            value="20904">Разработка под AR и VR*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="445822" data-type=""
+                                            value="17107">Разработка под Android*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="102313" data-type=""
+                                            value="21474">Разработка под Arduino*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="65895" data-type=""
+                                            value="17747">Разработка под Bada*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="82578" data-type=""
+                                            value="6801">Разработка под Java ME*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="7191" data-type=""
+                                            value="19727">Разработка под Linux*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="101292" data-type=""
+                                            value="19253">Разработка под MacOS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="687" data-type=""
+                                            value="21158">Разработка под Sailfish OS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="39170" data-type=""
+                                            value="18180">Разработка под Tizen*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="114256" data-type=""
+                                            value="21456">Разработка под Windows*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106092" data-type=""
+                                            value="17468">Разработка под Windows Phone*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="29166" data-type=""
+                                            value="18810">Разработка под e-commerce*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="102112" data-type=""
+                                            value="548">Разработка под iOS*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="10842" data-type=""
+                                            value="19735">Разработка робототехники*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="90402" data-type=""
+                                            value="19395">Разработка систем связи*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="1159" data-type=""
+                                            value="21482">Распределённые системы*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="30096" data-type=""
+                                            value="18921">Расширения для браузеров
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="27478" data-type=""
+                                            value="19011">Реверс-инжиниринг*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="99634" data-type=""
+                                            value="9457">Регулярные выражения*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="38433" data-type=""
+                                            value="18792">Резервное копирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="423640" data-type=""
+                                            value="21902">Робототехника
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="89817" data-type=""
+                                            value="345">Семантика*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95031" data-type=""
+                                            value="8880">Серверная оптимизация*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="96579" data-type=""
+                                            value="17350">Серверное администрирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="90044" data-type=""
+                                            value="21958">Сетевое оборудование
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105122" data-type=""
+                                            value="17123">Сетевые технологии*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="18866" data-type=""
+                                            value="19203">Сжатие данных*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="106310" data-type=""
+                                            value="221">Системное администрирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="98775" data-type=""
+                                            value="5767">Системное программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="95340" data-type=""
+                                            value="92">Системы обмена сообщениями*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4466" data-type=""
+                                            value="19816">Системы сборки*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="99313" data-type=""
+                                            value="7414">Системы управления версиями*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="434880" data-type=""
+                                            value="21908">Смартфоны
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="236214" data-type=""
+                                            value="524">Совершенный код*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3084" data-type=""
+                                            value="22008">Сотовая связь
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="163306" data-type=""
+                                            value="21918">Софт
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="168646" data-type=""
+                                            value="21924">Социальные сети и сообщества
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="94540" data-type=""
+                                            value="28">Спам и антиспам
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="92041" data-type=""
+                                            value="89">Спортивное программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93906" data-type=""
+                                            value="19429">Стандарты связи
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="100682" data-type=""
+                                            value="21930">Старое железо
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="92127" data-type=""
+                                            value="21890">Статистика в IT
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="5527" data-type=""
+                                            value="21998">Суперкомпьютеры*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4493" data-type=""
+                                            value="21472">Схемотехника*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="809" data-type=""
+                                            value="22028">Телемедицина*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="30875" data-type=""
+                                            value="19019">Терминология IT*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="101292" data-type=""
+                                            value="210">Тестирование IT-систем*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="20720" data-type=""
+                                            value="19279">Тестирование веб-сервисов*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="13879" data-type=""
+                                            value="19289">Тестирование игр*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="17324" data-type=""
+                                            value="19281">Тестирование мобильных приложений*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="101190" data-type=""
+                                            value="348">Типографика*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6724" data-type=""
+                                            value="22004">Транспорт*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="39273" data-type=""
+                                            value="21966">Умный дом*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="9436" data-type=""
+                                            value="20716">Управление e-commerce*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="121425" data-type=""
+                                            value="20744">Управление медиа*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="14864" data-type=""
+                                            value="20736">Управление персоналом*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="9041" data-type=""
+                                            value="20728">Управление продажами*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="11976" data-type=""
+                                            value="20726">Управление продуктом*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="31548" data-type=""
+                                            value="20682">Управление проектами*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="14577" data-type=""
+                                            value="19583">Управление разработкой*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="6727" data-type=""
+                                            value="20686">Управление сообществом*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="2667" data-type=""
+                                            value="22024">Урбанизм*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="9850" data-type=""
+                                            value="20696">Учебный процесс в IT
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="33831" data-type=""
+                                            value="21968">Физика*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="89729" data-type=""
+                                            value="21928">Финансы в IT
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="100076" data-type=""
+                                            value="21932">Фототехника
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="22570" data-type=""
+                                            value="20694">Фриланс
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="70978" data-type=""
+                                            value="17853">Функциональное программирование*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="15971" data-type=""
+                                            value="19275">Хакатоны
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3303" data-type=""
+                                            value="22010">Химия*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="93053" data-type=""
+                                            value="20">Хостинг
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="26480" data-type=""
+                                            value="19197">Хранение данных*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="4990" data-type=""
+                                            value="20116">Хранилища данных*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="8213" data-type=""
+                                            value="20742">Читальный зал
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="3058" data-type=""
+                                            value="22012">Экология*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="105676" data-type=""
+                                            value="22016">Электроника для начинающих*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="103255" data-type=""
+                                            value="21914">Энергия и элементы питания*
+                                    </option>
+                                    <option data-optgroup="collective_hubs" data-subscribers="76162" data-type=""
+                                            value="17696">Яндекс API*
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Оффтопики">
+                                    <option data-optgroup="offtopic_hubs" data-subscribers="147508" data-type=""
+                                            value="19259">Чулан
+                                    </option>
+                                    <option data-optgroup="offtopic_hubs" data-subscribers="120180"
+                                            data-type="singleton" value="465">Я пиарюсь
+                                    </option>
+                                </optgroup>
+                            </select>
+                            <div class="chosen-container chosen-container-multi" id="hubs_chosen" style="width: 100%;"
+                                 title="">
+                                <ul class="chosen-choices">
+                                    <li class="search-field"><input autocomplete="off" class="default"
+                                                                    data-cip-id="jQuery342845639" style="width: 188px;"
+                                                                    type="text" value="Выберите название хаба"></li>
+                                </ul>
+                                <div class="chosen-drop">
+                                    <ul class="chosen-results"></ul>
+                                </div>
+                            </div>
+
+                            <div class="error"></div>
+
+                            <div class="description">Выберите от&nbsp;1&nbsp;до&nbsp;5&nbsp;хабов; чем больше хабов
+                                будет указано, тем больше пользователей увидят публикацию
+                            </div>
+                        </div>
+
+                        <div class="is_offtopic hidden">
+                            Публикации из хабов-оффтопиков не участвуют в рейтинге и имеют <a
+                                href="https://habr.com/info/help/hubs/#offtopic" rel=" noopener" target="_blank">ещё ряд
+                            ограничений</a>
+                        </div>
+
+                        <div class="select_tree_hubs hidden">
+                            Чтобы увеличить аудиторию публикации, выберите несколько дополнительных тематических хабов
+                        </div>
+
+
+                        <div class="item title required">
+
+                            <label for="title">
+                                Заголовок<sup class="required_field">*</sup>
+                            </label>
+                            <input data-cip-id="jQuery342845640" maxlength="120" name="title" type="text" value="">
+
+                            <div class="error">
+
+
+                            </div>
+
+                            <div class="description">Заголовок должен кратко и ёмко отражать суть публикации</div>
+
+                            <div class="count" title="Доступное количество символов для ввода">120</div>
+                        </div>
+
+                        <div class="item text">
+                            <label>Текст</label>
+                            <div class="tm-editor" data-component="tm-editor">
+                                <ul class="tm-editor__tabs tabs-menu" id="editor-tabs">
+                                    <li class="tabs-menu__item tabs-menu__item_devided active js-editor-tab"
+                                        data-pane="editor-tab" onclick="showEditor();">
+                                        <span class="tabs-menu__item-text tabs-menu__item-text_small">Редактор</span>
+                                    </li>
+                                    <li class=" tabs-menu__item tabs-menu__item_devided js-editor-tab"
+                                        data-pane="preview-tab" onclick="getPreview();">
+                                        <span class="tabs-menu__item-text tabs-menu__item-text_small">Просмотр</span>
+                                    </li>
+                                    <li class="tabs-menu__item tabs-menu__item_right">
+                                        <label class="switch-light" id="toggle-switch">
+                                            <input id="mdCheck" name="markdown" tabindex="0" type="checkbox">
+                                            <div class="switch-light__buttons">
+                                                <div class="switch-light__button switch-light__button_left">
+                                                    <span>Html</span></div>
+                                                <div class="switch-light__button switch-light__button_right"><span>Markdown</span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+
+                                <div class="tm-editor__pane tm-editor__pane_content tm-editor__pane_active"
+                                     id="editor-tab">
+                                    <ul class="tm-editor__toolbar tm-editor__toolbar_tabbed wysiwyg-toolbar">
+                                        <li class="wysiwyg-toolbar__item has-nested">
+                                            <button aria-expanded="false" class="btn btn_wysiwyg" data-toggle="dropdown"
+                                                    tabindex="0" title="Заголовок" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_header_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 20 24" width="20">
+                                                    <path d="M16 0v10h-12v-10h-4v24h4v-10h12v10h4v-24z"></path>
+                                                </svg>
+                                            </button>
+                                            <ul class="wysiwyg-toolbar__dropdown">
+                                                <li class="wysiwyg-toolbar__dropdown-item">
+                                                    <button class="btn btn_wysiwyg"
+                                                            onclick="habraWYG2.insertTagWithText(this, 'h2');"
+                                                            tabindex="0" title="Заголовок первого уровня" type="button">
+                                                        <svg aria-hidden="true" aria-labelledby="title"
+                                                             class="icon-svg icon-svg_header1_wysiwyg" height="32"
+                                                             role="img" version="1.1" viewBox="0 0 27 32" width="27">
+                                                            <path d="M22.857 0v13.714h-18.286v-13.714h-4.571v32h4.571v-13.714h18.286v13.714h4.571v-32z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="wysiwyg-toolbar__dropdown-item">
+                                                    <button class="btn btn_wysiwyg"
+                                                            onclick="habraWYG2.insertTagWithText(this, 'h3');"
+                                                            tabindex="0" title="Заголовок второго уровня" type="button">
+                                                        <svg aria-hidden="true" aria-labelledby="title"
+                                                             class="icon-svg icon-svg_header2_wysiwyg" height="32"
+                                                             role="img" version="1.1" viewBox="0 0 27 32" width="27">
+                                                            <path d="M21.333 0v14.011h-16v-14.011h-5.333v32h5.333v-12.656h16v12.656h5.333v-32z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="wysiwyg-toolbar__dropdown-item">
+                                                    <button class="btn btn_wysiwyg"
+                                                            onclick="habraWYG2.insertTagWithText(this, 'h4');"
+                                                            tabindex="0" title="Заголовок третьего уровня"
+                                                            type="button">
+                                                        <svg aria-hidden="true" aria-labelledby="title"
+                                                             class="icon-svg icon-svg_header3_wysiwyg" height="32"
+                                                             role="img" version="1.1" viewBox="0 0 26 32" width="26">
+                                                            <path d="M19.2 0v12.8h-12.8v-12.8h-6.4v32h6.4v-12.8h12.8v12.8h6.4v-32z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg"
+                                                    onclick="habraWYG2.insertTagWithText(this, 'b');" tabindex="0"
+                                                    title="Жирный" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_bold_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 18 24" width="18">
+                                                    <path d="M15.39 11.282l-.354-.254c1.076-1.122 1.64-2.532 1.64-4.118 0-2.282-1.018-4.128-2.94-5.336-1.676-1.06-3.922-1.574-6.866-1.574h-6.87v24h7.838c2.854 0 5.202-.536 6.98-1.59 2.082-1.236 3.182-3.24 3.182-5.79 0-2.214-.902-4.06-2.61-5.338zm-11.39-7.282c1.13 0 2.26-.048 3.39-.006 1.308.05 2.714.15 3.88.812.56.318 1.1.81 1.304 1.438.196.606.046 1.302-.322 1.814-.454.634-1.192 1.016-1.952 1.192-.932.216-1.902.15-2.85.15h-3.4499999999999997v-5.4zm8.78 14.98c-.414.264-.89.44-1.364.572-1.17.328-2.366.448-3.578.448h-3.838v-6.6h3.238c1.644 0 3.392-.126 4.932.572.618.28 1.182.718 1.514 1.308.7 1.244.298 2.93-.904 3.7z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg"
+                                                    onclick="habraWYG2.insertTagWithText(this, 'i');" tabindex="0"
+                                                    title="Курсив" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_italic_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 8 24" width="8">
+                                                    <path d="M3.996 24h-4l4.004-24h4z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg"
+                                                    onclick="habraWYG2.insertTagWithText(this, 'u');" tabindex="0"
+                                                    title="Подчеркнутый" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_underline_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 20 24" width="20">
+                                                    <path d="M10 18c2.81 0 4.88-.596 6.328-1.822l.026-.022.016-.014c1.474-1.254 2.254-3.03 2.254-5.134v-11.008h-4v11.014c0 .42-.058.76-.148 1.04-.136.416-.37.758-.712 1.054-.67.558-2.076.892-3.764.892-2.458 0-3.44-.606-3.754-.87l-.142-.13c-.482-.484-.728-1.152-.728-1.992v-11.008h-4v11.008c0 2.114.788 3.9 2.274 5.164 1.436 1.23 3.512 1.828 6.35 1.828zM0 20h20v4h-20v-4z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg"
+                                                    onclick="habraWYG2.insertTagWithText(this, 's');" tabindex="0"
+                                                    title="Зачеркнутый" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_strike_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 24 24" width="24">
+                                                    <path d="M14.686 14.562c.116.126.232.256.306.386l.118.266c.1.302.19.762.19 1.346v.006c0 .668-.16 1.326-.444 1.814l-.132.208c-.154.22-.342.426-.552.6-.156.132-.33.248-.522.352-.262.136-.574.24-.9.318-.244.058-.496.078-.75.098l-.382.044h-.018000000000000002c-.56-.002-1.086-.058-1.536-.166-.254-.06-.488-.138-.7-.234-.63-.29-1.308-.768-1.86-1.31l-2.804 2.852c.928.914 1.942 1.622 3.014 2.102.38.174.794.318 1.234.434.814.214 1.708.322 2.67.322l.382-.022c.252-.01.506-.02.75-.05 1-.122 1.928-.404 2.77-.854.384-.202.752-.442 1.094-.714.516-.406.964-.878 1.346-1.414.128-.18.248-.366.36-.556l.022-.04c.636-1.116.958-2.39.958-3.784 0-.728-.102-1.384-.252-2.004h-4.362zM5.718 9.284l.182.278h8.018c-.36-.138-.756-.276-1.168-.414l-.17-.06-.58-.202c-.908-.322-1.554-.6-2.018-.874-.378-.226-.648-.468-.782-.696l-.044-.086c-.072-.162-.158-.47-.158-1.01 0-.422.094-.776.292-1.106l.174-.246c.134-.16.298-.296.496-.418l.208-.116c.508-.256 1.184-.334 1.832-.318.264.006.51.028.75.066l.362.058c.188.048.364.106.536.176.266.116.528.264.784.438.232.164.474.36.734.598l2.724-2.93c-.388-.366-.794-.694-1.214-.98-.478-.332-.96-.596-1.462-.808-.234-.098-.478-.186-.73-.262-.538-.166-1.122-.254-1.734-.31-.244-.022-.49-.042-.75-.046l-.244-.016c-1.29 0-2.368.244-3.392.764-.242.122-.472.254-.692.4-.472.312-.88.672-1.236 1.09-.202.238-.388.492-.552.762-.606.974-.886 1.992-.886 3.204 0 1.018.162 1.868.502 2.632.066.15.138.294.218.432zM15.604 11.25h-15.604v2h24v-2z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg"
+                                                    onclick="habraWYG2.insertTagWithText(this, 'blockquote');"
+                                                    tabindex="0" title="Цитата" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_blockquote_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 31 24" width="31">
+                                                    <path d="M7.01.002c-1.032.029-2.069.238-3.038.612-1.322.509-2.503 1.373-3.218 2.506-.638 1.01-1.02 2.501-.528 3.631.461 1.063 1.471 1.999 2.542 2.57.343.182 3.151 1.438 3.05 1.807l-3.494 12.859h3.701l5.808-10.901c.833-1.627 1.428-2.954 1.786-3.984s.535-2.006.535-2.928c0-1.79-.684-3.281-2.054-4.474-1.399-1.219-3.235-1.75-5.088-1.699zM29.146 1.702c-1.399-1.219-3.235-1.75-5.088-1.697-1.032.029-2.069.238-3.038.612-1.322.506-2.503 1.37-3.218 2.503-.641 1.01-1.02 2.503-.53 3.634.463 1.061 1.474 1.997 2.544 2.568.343.182 3.151 1.438 3.05 1.807l-3.492 12.859h3.701l5.808-10.901c.833-1.627 1.428-2.954 1.786-3.984.355-1.03.533-2.006.533-2.928 0-1.79-.684-3.281-2.054-4.474z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg" onclick="habraWYG2.insertLink(this);"
+                                                    tabindex="0" title="Ссылка" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_link_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 24 24" width="24">
+                                                    <path d="M7.274 19.152l-2.426-2.426 4.855-4.853-2.426-2.424-7.277 7.277 7.274 7.274 7.267-7.269-2.424-2.424zM19.152 2.424l-2.426-2.424-7.267 7.269 2.424 2.424 4.843-4.845 2.426 2.426-4.855 4.853 2.426 2.424 7.277-7.277zM8.862 13.94l4.849-4.849 1.212 1.212-4.849 4.849-1.212-1.212z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item has-nested">
+                                            <button aria-expanded="true" class="btn btn_wysiwyg" data-toggle="dropdown"
+                                                    tabindex="0" title="Список" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_ul-list_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 27 24" width="27">
+                                                    <path d="M0 6.171h6.171v-6.171h-6.171zM10.284 4.846h17.143v-3.43h-17.143zM10.284 13.764h17.143v-3.429h-17.143zM10.284 22.618h17.143v-3.43h-17.143zM0 24h6.171v-6.171h-6.171zM0 15.091h6.171v-6.171h-6.171z"></path>
+                                                </svg>
+                                            </button>
+                                            <ul class="wysiwyg-toolbar__dropdown">
+                                                <li class="wysiwyg-toolbar__dropdown-item">
+                                                    <button class="btn btn_wysiwyg"
+                                                            onclick="habraWYG2.insertList(this, 'ol');" tabindex="0"
+                                                            title="Нумерованный список" type="button">
+                                                        <svg aria-hidden="true" aria-labelledby="title"
+                                                             class="icon-svg icon-svg_ol-list_wysiwyg" height="24"
+                                                             role="img" version="1.1" viewBox="0 0 27 24" width="27">
+                                                            <path d="M10.286 1.418h17.143v3.429h-17.143v-3.429zM10.286 10.335h17.143v3.429h-17.143v-3.429zM10.286 19.188h17.143v3.429h-17.143v-3.429zM2.379 5.662h-1.44v1.195h4.565v-1.195h-1.411v-5.662h-1.519c-.012.183-.058.336-.137.459-.077.122-.201.223-.36.298-.134.065-.303.11-.506.135s-.413.039-.634.039v1.118h1.442v3.612zM3.398 13.551c.278-.214.552-.446.825-.699.441-.408.765-.801.977-1.185s.319-.787.319-1.21c0-.648-.223-1.15-.663-1.502s-1.087-.531-1.932-.531c-.418 0-.838.046-1.253.141-.417.096-.734.185-.946.278v1.497h.144c.264-.178.549-.324.854-.437s.597-.171.874-.171c.37 0 .655.084.852.25s.297.405.297.713c0 .257-.077.516-.231.777-.154.262-.411.567-.777.921-.245.238-.569.521-.977.85-.406.327-.809.638-1.212.929v1.111h5.282v-1.286h-3.021l.59-.444zM5.225 20.772c-.137-.118-.291-.207-.459-.269s-.327-.103-.477-.125v-.062c.37-.079.669-.262.895-.549s.339-.612.339-.979c0-.276-.058-.518-.177-.723s-.297-.381-.538-.525c-.204-.12-.461-.218-.773-.29-.31-.07-.675-.108-1.089-.108-.427 0-.849.048-1.263.135-.417.091-.744.183-.986.281v1.426h.163c.303-.178.617-.317.941-.413.324-.094.624-.142.9-.142l.403.027s.291.051.406.106c.101.048.187.113.255.192.069.081.101.187.101.321 0 .18-.031.317-.098.41-.065.093-.163.168-.291.225-.125.051-.274.087-.449.101-.177.015-.381.022-.61.022h-.372v1.176h.362l.566.007s.377.031.519.077c.144.045.261.12.348.225.087.106.134.254.134.442 0 .199-.031.348-.098.453-.065.106-.151.194-.261.267-.137.094-.307.156-.509.183-.199.029-.384.043-.555.043-.291 0-.612-.055-.965-.168-.353-.111-.655-.242-.907-.398h-.171v1.445c.243.106.562.204.951.286.389.084.857.127 1.402.127.477 0 .881-.048 1.217-.147.334-.098.624-.24.873-.425.254-.19.441-.42.562-.689.122-.267.183-.555.183-.866 0-.274-.043-.492-.129-.658-.084-.173-.199-.319-.345-.442z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li class="wysiwyg-toolbar__dropdown-item">
+                                                    <button class="btn btn_wysiwyg"
+                                                            onclick="habraWYG2.insertList(this, 'ul');" tabindex="0"
+                                                            title="Маркированный список" type="button">
+                                                        <svg aria-hidden="true" aria-labelledby="title"
+                                                             class="icon-svg icon-svg_ul-list_wysiwyg" height="24"
+                                                             role="img" version="1.1" viewBox="0 0 27 24" width="27">
+                                                            <path d="M0 6.171h6.171v-6.171h-6.171zM10.284 4.846h17.143v-3.43h-17.143zM10.284 13.764h17.143v-3.429h-17.143zM10.284 22.618h17.143v-3.43h-17.143zM0 24h6.171v-6.171h-6.171zM0 15.091h6.171v-6.171h-6.171z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item has-nested" id="list-languages">
+                                            <button aria-expanded="false" class="btn btn_wysiwyg" data-toggle="dropdown"
+                                                    onclick="habraWYG2.insertSource(this);" tabindex="0"
+                                                    title="Исходный код" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_source_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 34 24" width="34">
+                                                    <path d="M9.698 2.343l-9.698 9.696 9.698 9.698 2.424-2.424-7.274-7.274 7.274-7.272zM13.716 24h3.429l3.429-24h-3.429zM31.913 9.615l-7.274-7.272-2.424 2.424 7.274 7.272-7.274 7.274 2.424 2.424 9.698-9.698z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <!-- TODO: HABR-2356
+                                        <li class="wysiwyg-toolbar__item">
+                                          <button type="button" class="btn btn_wysiwyg" tabindex="0" title="Локальное изображение" onclick="habraWYG2.insertHstorImage(this);">
+                                            <svg class="icon-svg icon-svg_image_wysiwyg" aria-hidden="true" aria-labelledby="title" version="1.1" role="img" width="31" height="24" viewBox="0 0 31 24"><path d="M28.289 0h-25.721c-1.418 0-2.568 1.15-2.568 2.568v18.862c0 1.419 1.15 2.57 2.568 2.57h25.719c1.419 0 2.57-1.15 2.57-2.57v-18.862c0-1.418-1.15-2.568-2.568-2.568zm-24.86 20.571v-.873l6.465-6.465 5.899 4.541.005-.007.002.002 2.654-1.923 7.443 4.725h-22.467zm24-2.941l-9.199-5.835-2.563 1.86-6.079-4.677-6.159 6.159v-11.709h24v14.201zM24.831 7.349c0 .947-.768 1.714-1.714 1.714s-1.714-.768-1.714-1.714c0-.947.768-1.714 1.714-1.714s1.714.768 1.714 1.714z"></path></svg>
+                                          </button>
+                                        </li>
+                                        -->
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg" onclick="habraWYG2.insertImage(this);"
+                                                    tabindex="0" title="Изображение" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_image_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 31 24" width="31">
+                                                    <path d="M28.289 0h-25.721c-1.418 0-2.568 1.15-2.568 2.568v18.862c0 1.419 1.15 2.57 2.568 2.57h25.719c1.419 0 2.57-1.15 2.57-2.57v-18.862c0-1.418-1.15-2.568-2.568-2.568zm-24.86 20.571v-.873l6.465-6.465 5.899 4.541.005-.007.002.002 2.654-1.923 7.443 4.725h-22.467zm24-2.941l-9.199-5.835-2.563 1.86-6.079-4.677-6.159 6.159v-11.709h24v14.201zM24.831 7.349c0 .947-.768 1.714-1.714 1.714s-1.714-.768-1.714-1.714c0-.947.768-1.714 1.714-1.714s1.714.768 1.714 1.714z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg"
+                                                    onclick="habraWYG2.insertTagWithText(this, 'oembed');" tabindex="0"
+                                                    title="Медиаэлемент" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_embed_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 24 24" width="24">
+                                                    <path d="M21.437 0h-18.874c-1.416 0-2.563 1.147-2.563 2.563v18.874c0 1.416 1.147 2.563 2.563 2.563h18.874c1.416 0 2.563-1.147 2.563-2.563v-18.874c0-1.416-1.147-2.563-2.563-2.563zm-.866 20.571h-17.143v-17.143h17.143v17.143zM10.392 18h3.429v-4.286h4.286v-3.429h-4.286v-4.286h-3.429v4.286h-4.286v3.429h4.286z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg" onclick="habraWYG2.insertUser(this);"
+                                                    tabindex="0" title="Пользователь" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_user_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 24 24" width="24">
+                                                    <path d="M18.792 17.931c-3.146-1.198-4.152-2.208-4.152-4.371 0-1.299.96-.874 1.383-3.254.175-.987 1.023-.015 1.186-2.268 0-.898-.463-1.121-.463-1.121s.235-1.329.327-2.35c.113-1.275-.706-4.567-5.074-4.567s-5.187 3.291-5.073 4.565c.093 1.022.327 2.35.327 2.35s-.463.223-.463 1.121c.163 2.253 1.011 1.282 1.185 2.268.423 2.378 1.383 1.954 1.383 3.254 0 2.163-1.006 3.173-4.152 4.371-3.156 1.202-5.208 2.426-5.208 3.262v2.808h24v-2.808c0-.835-2.05-2.061-5.208-3.261z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg" onclick="habraWYG2.insertSpoiler(this);"
+                                                    tabindex="0" title="Спойлер" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_spoiler_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 24 24" width="24">
+                                                    <path d="M24 10.286h-7.862l5.559-5.559-2.424-2.424-5.559 5.559v-7.862h-3.429v7.862l-5.559-5.559-2.424 2.424 5.559 5.559h-7.862v3.429h7.862l-5.559 5.559 2.424 2.424 5.559-5.559v7.862h3.429v-7.862l5.559 5.559 2.424-2.424-5.559-5.559h7.862z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item">
+                                            <button class="btn btn_wysiwyg" onclick="habraWYG2.insertHabracut(this);"
+                                                    tabindex="0" title="Кат" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_cut_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 29 24" width="29">
+                                                    <path d="M29.141 7.865l-1.627-3.017-10.449 5.633-6.912-4.262c.159-.739.171-1.505-.009-2.263-.317-1.335-1.135-2.469-2.304-3.19-2.415-1.488-5.59-.735-7.077 1.678-1.488 2.414-.735 5.589 1.678 7.077.838.516 1.769.765 2.69.765 1.161 0 2.285-.423 3.204-1.157l5.244 3.233-4.997 2.695c-.561-.507-1.217-.902-1.963-1.125-1.318-.393-2.707-.252-3.915.401-1.21.651-2.091 1.737-2.486 3.051-.394 1.318-.252 2.707.399 3.915s1.737 2.093 3.053 2.486c.487.146.984.218 1.479.218.84 0 1.675-.207 2.434-.619 1.21-.651 2.091-1.737 2.486-3.051.223-.746.255-1.512.139-2.258l6.741-3.636 10.385 6.403 1.8-2.918-8.7-5.364 8.705-4.695zm-22.538-1.822h-.003c-.497.802-1.555 1.054-2.359.559-.195-.12-.36-.274-.49-.454l-.043-.096c-.099-.159-.189-.326-.235-.514l-.002-.033c-.094-.435-.026-.883.211-1.262.243-.394.621-.655 1.037-.761.137-.034.281-.053.425-.053.307 0 .617.082.897.254.391.242.663.621.77 1.066.105.446.033.905-.207 1.294zm.186 13.306c-.13.439-.425.801-.828 1.018-.202.108-.418.175-.639.197s-.447.002-.667-.063c-.439-.132-.801-.425-1.018-.828-.216-.403-.264-.867-.134-1.306s.427-.801.828-1.018c.255-.135.533-.206.813-.206.165 0 .331.024.494.074.439.13.799.425 1.017.828.086.158.122.331.156.501.05.267.058.538-.021.804z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="wysiwyg-toolbar__item has-nested">
+                                            <button aria-expanded="false" class="btn btn_wysiwyg" id="latexModalOpen"
+                                                    onclick="cmEditor.latexModalPreview.Update()" rel="#latexModal"
+                                                    tabindex="0" title="Формула" type="button">
+                                                <svg aria-hidden="true" aria-labelledby="title"
+                                                     class="icon-svg icon-svg_formula_wysiwyg" height="24" role="img"
+                                                     version="1.1" viewBox="0 0 21 24" width="21">
+                                                    <path d="M17.143 0h-17.143v3.429l8.571 8.571-8.571 8.571v3.429h20.571v-6.879h-3.429v3.451h-12.295l8.575-8.575-2.427-2.421-6.147-6.147h12.295v3.429h3.429v-6.857z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tm-editor__textarea-wrap js-scrollable" tabindex="0">
+                                        <textarea class="tm-editor__textarea tm-editor__textarea_huge" cols="30"
+                                                  id="text_textarea" name="text" rows="7"></textarea>
+                                    </div>
+                                    <div class="tm-editor__footer">
+                                        <label class="сm-editor__footer-checkbox">
+                                            <input id="userformat" name="userformat" type="checkbox">
+                                            <span>Отключить автоматические переносы строк и создание ссылок</span>
+                                        </label>
+                                        <span class="tm-editor__footer-help"><a href="/info/help/posts/#allowed_tags"
+                                                                                id="cmEditorHelp" rel=" noopener"
+                                                                                target="_blank">Справка</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="tm-editor__pane tm-editor__pane_preview" id="preview-tab">
+
+                                    <div class="tm-editor__loader hidden" id="cm-loader">
+                                        <svg height="30px" id="Layer_1" style="enable-background:new 0 0 50 50;"
+                                             version="1.1"
+                                             viewBox="0 0 24 30" width="24px" x="0px" xml:space="preserve"
+                                             xmlns="http://www.w3.org/2000/svg" y="0px">
+          <rect fill="#333" height="8.52085" width="4" x="0" y="11.2396">
+            <animate attributeName="height" attributeType="XML" begin="0s" dur="0.6s" repeatCount="indefinite"
+                     values="5;21;5"></animate>
+              <animate attributeName="y" attributeType="XML" begin="0s" dur="0.6s" repeatCount="indefinite"
+                       values="13; 5; 13"></animate>
+          </rect>
+                                            <rect fill="#333" height="9.47915" width="4" x="10" y="10.7604">
+            <animate attributeName="height" attributeType="XML" begin="0.15s" dur="0.6s" repeatCount="indefinite"
+                     values="5;21;5"></animate>
+                                                <animate attributeName="y" attributeType="XML" begin="0.15s" dur="0.6s"
+                                                         repeatCount="indefinite" values="13; 5; 13"></animate>
+          </rect>
+                                            <rect fill="#333" height="17.4791" width="4" x="20" y="6.76043">
+            <animate attributeName="height" attributeType="XML" begin="0.3s" dur="0.6s" repeatCount="indefinite"
+                     values="5;21;5"></animate>
+                                                <animate attributeName="y" attributeType="XML" begin="0.3s" dur="0.6s"
+                                                         repeatCount="indefinite" values="13; 5; 13"></animate>
+          </rect>
+        </svg>
+                                    </div>
+
+                                    <div class="tm-editor__post-area" id="preview-area"></div>
+                                    <div class="tm-editor__footer"><a href="#" onclick="getFullPostPreview()">Открыть
+                                        полную версию</a></div>
+                                </div>
+                            </div>
+
+                            <div class="error">
+
+                            </div>
+                            <div class="description"></div>
+                        </div>
+
+
+                        <div class="item is_tutorial">
+                            <div class="checkbox_single">
+                                <label class="form-label" for="is_tutorial">
+                                    <input class="form-checkbox" id="is_tutorial" name="is_tutorial" type="checkbox">
+                                    Tutorial
+                                </label>
+                            </div>
+                            <div class="error"></div>
+                            <div class="description"></div>
+                        </div>
+
+
+                        <div class="item tags_string required">
+
+                            <label for="tags_string">
+                                Метки<sup class="required_field">*</sup>
+                            </label>
+                            <input autocomplete="off" data-cip-id="jQuery342845641" name="tags_string" type="text"
+                                   value="">
+
+                            <div class="error">
+
+
+                            </div>
+
+                            <div class="description">Метки необходимо разделять запятой</div>
+
+                        </div>
+
+                        <div class="polls" id="pollsList"></div>
+
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                            })
+                        </script>
+
+                        <div class="add_poll"><a class="dotted" href="#addPoll" id="addPoll">Добавить опрос</a></div>
+
+                        <div class="hidden" id="pollTpl">
+                            <div class="poll" id="poll_POLL_ID">
+                                <input name="polling[POLL_ID][question_id]" type="hidden" value="ORIGINAL_POLLID">
+                                <div class="item poll_POLL_ID_title required">
+                                    <label for="poll_POLL_ID_title">
+                                        Опрос <sup class="required_field">*</sup> (<a class="dotted delete_poll"
+                                                                                      href="#delete">удалить опрос</a>)
+                                    </label>
+                                    <input class="poll_title" id="poll_POLL_ID_title" name="polling[POLL_ID][text]"
+                                           type="text" value="POLL_TITLE">
+                                    <div class="error"></div>
+                                    <div class="description">Укажите тему опроса</div>
+                                </div>
+
+                                <div class="item poll_POLL_ID_type ">
+                                    <div class="checkbox_in_label">
+                                        <label class="label">Пользователи могут выбрать:</label>
+                                        <label for="poll_POLL_ID_type_radio">
+                                            <input class="answers_type" id="poll_POLL_ID_type_radio"
+                                                   name="polling[POLL_ID][answers_type]" type="radio" value="radio">
+                                            один вариант ответа </label>
+                                        <label for="poll_POLL_ID_type_checkbox">
+                                            <input class="answers_type" id="poll_POLL_ID_type_checkbox"
+                                                   name="polling[POLL_ID][answers_type]" type="radio" value="checkbox">
+                                            несколько вариантов ответа</label>
+                                    </div>
+                                    <div class="poll_variants"></div>
+                                    <div class="poll_POLL_ID_variants">
+                                        <div class="error"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="polling_POLL_ID_time_elapsed">
+                                    <label class="set_time_elapsed" for="polling_POLL_ID_set_time_elapsed"><input
+                                            id="polling_POLL_ID_set_time_elapsed"
+                                            name="polling[POLL_ID][set_time_elapsed]" type="checkbox"> опрос имеет срок
+                                        действия </label>
+                                    <div class="time_elapsed hidden">
+
+                                        <div class="item polling[POLL_ID][time_elapsed]">
+                                            <label for="polling[POLL_ID][time_elapsed]"><b> Актуален до </b></label>
+
+                                            <select name="polling[POLL_ID][time_elapsed][day]">
+                                                <option value="0">Число</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select>
+
+                                            <select name="polling[POLL_ID][time_elapsed][month]">
+                                                <option value="0">Месяц</option>
+                                                <option value="1">январь</option>
+                                                <option value="2">февраль</option>
+                                                <option value="3">март</option>
+                                                <option value="4">апрель</option>
+                                                <option value="5">май</option>
+                                                <option value="6">июнь</option>
+                                                <option value="7">июль</option>
+                                                <option value="8">август</option>
+                                                <option value="9">сентябрь</option>
+                                                <option value="10">октябрь</option>
+                                                <option value="11">ноябрь</option>
+                                                <option value="12">декабрь</option>
+                                            </select>
+
+                                            <select name="polling[POLL_ID][time_elapsed][year]">
+                                                <option value="0">Год</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                            </select>
+
+
+                                            &nbsp;&nbsp;
+
+                                            <select name="polling[POLL_ID][time_elapsed][hour]">
+                                                <option value="-1">Час</option>
+                                                <option value="0">00</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                            </select>
+                                            :
+                                            <select name="polling[POLL_ID][time_elapsed][minute]">
+                                                <option value="-1">Минута</option>
+                                                <option value="0">00</option>
+                                                <option value="5">05</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                                <option value="25">25</option>
+                                                <option value="30">30</option>
+                                                <option value="35">35</option>
+                                                <option value="40">40</option>
+                                                <option value="45">45</option>
+                                                <option value="50">50</option>
+                                                <option value="55">55</option>
+                                            </select>
+
+
+                                            <div class="error"></div>
+                                            <div class="description">Если опрос не имеет срока окончания, просто не
+                                                заполняйте это поле
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden" id="pollVariantsTpl">
+                            <div class="variant poll_POLL_ID_variant_VARIANT_ID" id="poll_POLL_ID_variant_VARIANT_ID">
+                                <input name="polling[POLL_ID][variants][VARIANT_ID][variant_id]" type="hidden"
+                                       value="ORIGINAL_VARIANTID">
+                                <input disabled="disabled" type="radio">
+                                <input disabled="disabled" type="checkbox">
+                                <input class="variant_text" name="polling[POLL_ID][variants][VARIANT_ID][text]"
+                                       type="text" value="VARIANT_TEXT">
+                                <div class="error"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="buttons blue_buttons_panel">
+                            <input class="big green" name="submit" type="submit" value="Опубликовать">
+                            <input class="big green hidden" name="delayed_draft" type="button"
+                                   value="Опубликовать позже">
+                            <input onclick="getFullPostPreview(this)" type="button" value="Предпросмотр">
+                            <input name="draft" type="button" value="В черновики">
+                        </div>
+
+                        <div class="description_with_icon">
+                            Если нажать кнопку «В черновики», текст публикации будет виден только вам,
+                            а рядом с заголовком будет отображаться флаг «черновик». Чтобы публикация была видна всем,
+                            нажмите «Опубликовать».
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="sidebar_right">
+                <div class="default-block default-block_sidebar">
+                    <div class="default-block__header">
+                        <span class="default-block__header-title">Рекомендации</span>
+                    </div>
+                    <div class="default-block__content sidebar-block">
+                        <div class="sidebar-block__paragraph">
+                            Ознакомьтесь с нашими советами по <a href="/info/topics/madskillz/" rel=" noopener"
+                                                                 target="_blank">оформлению публикации</a> и справкой по
+                            <a href="/info/help/markdown/" rel=" noopener" target="_blank">Markdown-разметке</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="default-block default-block_sidebar">
+                    <div class="default-block__header">
+                        <span class="default-block__header-title">Памятка автору</span>
+                    </div>
+                    <div class="default-block__content">
+                        <ul class="content-list">
+                            <li class="content-list__item content-list__item_columns content-list__item_devided">
+                                <span class="icon-svg_check-topic"><svg aria-hidden="true" aria-labelledby="title"
+                                                                        class="icon-svg" height="32" role="img"
+                                                                        version="1.1" viewBox="0 0 32 32" width="32"><path
+                                        d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zm-2.262 21.94h-.002l-5.657-5.657 1.697-1.697 3.961 3.961 8.487-8.487 1.697 1.697-10.183 10.183z"></path></svg></span>
+                                <div class="sidebar-block__paragraph">Публикация не должна нарушать <a
+                                        href="/info/help/rules/" rel=" noopener" target="_blank">правила сайта</a>.
+                                </div>
+                            </li>
+                            <li class="content-list__item content-list__item_columns content-list__item_devided">
+                                <span class="icon-svg_publication-topic"><svg aria-hidden="true" aria-labelledby="title"
+                                                                              class="icon-svg" height="32" role="img"
+                                                                              version="1.1" viewBox="0 0 27 32"
+                                                                              width="27"><path
+                                        d="M24.889 0h-23.111c-.978 0-1.778.8-1.778 1.778v28.444c0 .978.8 1.778 1.778 1.778h23.111c.978 0 1.778-.8 1.778-1.778v-28.444c0-.978-.8-1.778-1.778-1.778zm-1.778 27.556h-19.556v-.889h19.556v.889zm0-3.556h-19.556v-.889h19.556v.889zm0-3.556h-19.556v-.889h19.556v.889zm0-3.555h-19.556v-.889h19.556v.889zm0-4.445h-19.556v-8.889h19.556v8.889z"></path></svg></span>
+                                <div class="sidebar-block__paragraph">
+                                    Старайтесь оформлять публикации так, чтобы их было удобно читать.
+                                </div>
+                            </li>
+                            <li class="content-list__item content-list__item_columns content-list__item_devided">
+                                <span class="icon-svg_promo-topic"><svg aria-hidden="true" aria-labelledby="title"
+                                                                        class="icon-svg" height="32" role="img"
+                                                                        version="1.1" viewBox="0 0 32 32" width="32"><path
+                                        d="M29.867 0h-27.733c-1.173 0-2.133.96-2.133 2.133v27.733c0 1.173.96 2.133 2.133 2.133h27.733c1.173 0 2.133-.96 2.133-2.133v-27.733c0-1.173-.96-2.133-2.133-2.133zm-20.267 24.533h-2.133v-17.067h2.133v17.067zm14.933-6.4h-12.8v-10.667h12.8l-2.139 5.333 2.139 5.333z"></path></svg></span>
+                                <div class="sidebar-block__paragraph">Для рекламных публикаций используйте хаб
+                                    <nobr>«<a href="/hub/i_am_advertising/" rel=" noopener" target="_blank">Я
+                                        пиарюсь</a>».
+                                    </nobr>
+                                </div>
+                            </li>
+                            <li class="content-list__item content-list__item_columns content-list__item_devided">
+                                <span class="icon-svg_image-topic"><svg aria-hidden="true" aria-labelledby="title"
+                                                                        class="icon-svg" height="32" role="img"
+                                                                        version="1.1" viewBox="0 0 32 32" width="32"><path
+                                        d="M29.867 0h-27.733c-1.173 0-2.133.96-2.133 2.133v27.733c0 1.173.96 2.133 2.133 2.133h27.733c1.173 0 2.133-.96 2.133-2.133v-27.733c0-1.173-.96-2.133-2.133-2.133zm-1.389 24.925l-5.555-5.101-5.145 3.397-7.037-6.393-7.219 4.505v-16.889c0-.489.393-.889.88-.889h23.193c.091 0 .882.021.882.713v20.656zM24.887 10.667c0 1.963-1.592 3.555-3.555 3.555s-3.555-1.592-3.555-3.555 1.592-3.555 3.555-3.555 3.555 1.592 3.555 3.555z"></path></svg></span>
+                                <div class="sidebar-block__paragraph">Загружайте изображения на <a
+                                        href="https://habrastorage.org/" rel=" noopener" target="_blank">habrastorage.org</a>.
+                                </div>
+                            </li>
+                            <li class="content-list__item content-list__item_columns content-list__item_devided">
+                                <span class="icon-svg_cut-topic"><svg aria-hidden="true" aria-labelledby="title"
+                                                                      class="icon-svg" height="32" role="img"
+                                                                      version="1.1" viewBox="0 0 27 32" width="27"><path
+                                        d="M24.889 18.889h-23.111c-.982 0-1.778.723-1.778 1.613v9.884c0 .892.796 1.614 1.778 1.614h23.111c.982 0 1.778-.723 1.778-1.613v-9.884c0-.891-.796-1.613-1.778-1.613zM25.333 0h-24c-.735 0-1.333.61-1.333 1.359v8.836c0 .75.598 1.36 1.333 1.36h24c.735 0 1.333-.61 1.333-1.359v-8.837c0-.749-.598-1.359-1.333-1.359zm-2.316 1.359l-9.773 3.582-10.551-3.582h20.324zm-21.684.947l9.916 3.366-9.916 3.634v-7zm1.447 7.89l10.48-3.841 11.314 3.841h-21.794zm22.552-1.151l-10.077-3.421 10.079-3.693-.002 7.115zM0 14.111h3.556v1.778h-3.556v-1.778zM5.779 14.111h3.556v1.778h-3.556v-1.778zM11.556 14.111h3.556v1.778h-3.556v-1.778zM17.334 14.111h3.556v1.778h-3.556v-1.778zM23.111 14.111h3.556v1.778h-3.556v-1.778z"></path></svg></span>
+                                <div class="sidebar-block__paragraph">Не вставляйте большие (&gt;1Мб) изображения до
+                                    ката.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="n-modal__wrapper" style="display: none; z-index: 0;">
+            <div class="n-modal" id="latexModal">
+                <div class="n-modal__head n-modal__head_bordered">
+                    <span class="n-modal__title">Добавление формулы</span>
+                    <button class="n-modal__close" id="latexModalClose" type="button">
+                        <svg aria-hidden="true" class="icon-svg icon-svg_navbar-close-search" height="32" role="img"
+                             version="1.1" viewBox="0 0 31 32" width="31">
+                            <path d="M26.67 0L15.217 11.448 3.77 0 0 3.77l11.447 11.45L0 26.666l3.77 3.77L15.218 18.99l11.45 11.448 3.772-3.77-11.448-11.45L30.44 3.772z"></path>
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="n-modal__body">
+                    <p class="n-modal__desc">Для вставки формулы в абзац используйте строчную формулу.<br>Если формула
+                        должна быть с новой строки – используйте блочный тип формулы.</p>
+
+                    <label class="switch-light switch-light_latex-modal">
+                        <input id="math-toggle" name="mathToggler" onchange="cmEditor.latexModalPreview.Update()"
+                               tabindex="0" type="checkbox">
+                        <div class="switch-light__buttons">
+                            <div class="switch-light__button switch-light__button_left"><span>Блочная</span></div>
+                            <div class="switch-light__button switch-light__button_right"><span>Строчная</span></div>
+                        </div>
+                    </label>
+
+                    <div class="form-field form-field_latex-texarea">
+                        <label class="form-field__label">Напишите формулу:</label><br>
+                        <textarea class="form-field__control form-field__control_textarea" id="MathInput"
+                                  onkeyup="cmEditor.latexModalPreview.Update()"></textarea>
+                    </div>
+
+                    <div class="latex-preview">
+                        <label class="latex-preview__label">Предпросмотр формулы:</label><br>
+                        <div class="latex-preview__area" id="MathPreview"></div>
+                        <div class="latex-preview__area" id="MathBuffer"
+                             style="visibility:hidden;position:absolute;top:0;left:0"></div>
+                    </div>
+                </div>
+
+                <div class="n-modal__footer">
+                    <button class="btn btn_blue btn_large" onclick="cmEditor.latexModalPreview.submitModal()"
+                            type="button">Добавить формулу
+                    </button>
+                    <a class="n-modal__help-link" href="/info/help/posts/#formula" rel=" noopener" target="_blank">Помощь</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
