@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "stylelint-tizo-unused"
+  ],
+  "rules": {
+    "tizo/unused": {
+      "pages": [
+        "https://habr.com/",
+        "https://habr.com/ru/post/438402/"
+      ]
+    }
+  }
+}
