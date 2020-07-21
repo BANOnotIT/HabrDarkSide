@@ -17,10 +17,13 @@
   "license": "MIT",
   "dependencies": {
     "css": "^2.2.4",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.12.3"
   },
   "devDependencies": {
     "chokidar": "^1.7.0",
     "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "^12.0.0"
   }
 }
