@@ -1309,53 +1309,7 @@ input[type="text"], textarea
   padding-left: 10px
   padding-right: 10px
 
-// сворачивание верхней панели с проектами компании
-//
-  #TMpanel
-    overflow: hidden
-    height: 10px
-    border: none
-    transition: height .3s ease
 
-  #TMpanel:hover
-    height: 28px
-    transition: height .3s ease
-
-  #TMpanel > div
-    opacity: 0
-    transition: opacity .3s ease
-
-  #TMpanel:hover > div
-    opacity: 1
-    transition: opacity .3s ease
-
+// Рекламные блоки
 .xyz_wrapper_inner
   background: $dark-main
-
-//.xyz_wrapper.is_visible
-  opacity: 0 !important
-  display: none !important
-  visibility: hidden !important
-
-//body > div.layout > div.layout__base > div
-  &.column-wrapper.js-sticky-wrapper > div.sidebar_right.js-sidebar_right > div
-    &.xyz_wrapper.is_visible, &.wrapper-sticky
-      opacity: 0 !important
-      display: none !important
-      visibility: hidden !important
-
-  &:nth-child(2) > div.sidebar_right > div.xyz_wrapper.is_visible
-    opacity: 0 !important
-    display: none !important
-    visibility: hidden !important
-
-  &.content_wrapper.column-wrapper_content > div
-    &.column-wrapper.js-sticky-wrapper > div.sidebar_right.sidebar_content-area.sticky_init > div.wrapper-sticky > div, &:nth-child(2) > div > div.html_banner_wrap
-      opacity: 0 !important
-      display: none !important
-      visibility: hidden !important
-
-//.xyz_wrappe, .html_banner_wrap .html_banner
-  opacity: 0 !important
-  display: none !important
-  visibility: hidden !important
