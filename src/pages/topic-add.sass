@@ -13,11 +13,15 @@
       border: none !important
       border-bottom: 2px solid $light-green !important
 
-.topic-form form .item > label
-  color: $text
+  form .item > label
+    color: $text
 
-.topic-form .blue_buttons_panel
-  background: $second
+  .blue_buttons_panel
+    background: $second
+  form .fields-group__description
+    color: $text
+  &.topic_add, &.topic_migrate, &.sandbox_edit
+    border: none
 
 .post-type-selector.can_select
   border-color: $dark-main
