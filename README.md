@@ -1,3 +1,8 @@
+> # Больше разработка не ведётся. Используйте [расширение darkreader](https://github.com/darkreader/darkreader)
+
+---
+---
+
 [![Build Status](https://travis-ci.org/BANOnotIT/HabrDarkSide.svg?branch=master)](https://travis-ci.org/BANOnotIT/HabrDarkSide)
 
 # Установка
